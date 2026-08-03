@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🎈 中文學習遊戲 - Traditional Chinese</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: fixed;
+        }
+        body {
+            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        #appContainer {
+            width: 100%;
+            max-width: 600px;
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 8px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .header { text-align: center; color: #e0e0e0; margin-bottom: 6px; width: 100%; }
+        .header h1 { font-size: 1.4em; margin-bottom: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .header p { font-size: 0.7em; color: #b0b0b0; }
+        .level-selector { background: #2a2a3e; padding: 10px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.5); margin-bottom: 6px; width: 100%; max-width: 500px; border: 1px solid #3a3a5e; }
+        .level-selector h2 { font-size: 1em; margin-bottom: 8px; text-align: center; color: #e0e0e0; }
+        .level-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+        .level-btn { padding: 8px 10px; font-size: 0.9em; font-weight: bold; border: none; border-radius: 10px; cursor: pointer; color: #e0e0e0; transition: transform 0.2s; }
+        .level-btn.locked { filter: grayscale(85%); opacity: 0.45; }
+        .game-toast { position: fixed; left: 50%; bottom: 40px; transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.96); color: #e2e8f0; padding: 14px 22px;
+            border-radius: 12px; border: 1px solid #334155; font-weight: bold;
+            text-align: center; z-index: 9999; max-width: 85%; line-height: 1.5;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5); animation: toastIn 0.25s ease-out; }
+        @keyframes toastIn { from { opacity: 0; transform: translate(-50%, 12px); }
+                             to { opacity: 1; transform: translate(-50%, 0); } }
+        .level-btn:active { transform: scale(0.95); }
+        .level-btn.k1 { background: linear-gradient(135deg, #9333ea 0%, #db2777 100%); }
+        .level-btn.k2 { background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%); }
+        .level-btn.k3 { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
+        .level-btn.p1 { background: linear-gradient(135deg, #dc2626 0%, #f59e0b 100%); }
+        .level-btn.p2 { background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%); }
+        .level-btn.p3 { background: linear-gradient(135deg, #06b6d4 0%, #a855f7 100%); }
+        .level-btn.p4 { background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%); }
+        .level-btn.p5 { background: linear-gradient(135deg, #f97316 0%, #fb923c 100%); }
+        .level-btn.p6 { background: linear-gradient(135deg, #be123c 0%, #0ea5e9 100%); }
+        .level-btn.f1 { background: linear-gradient(135deg, #7c3aed 0%, #60a5fa 100%); }
+        .view-words-btn { background: linear-gradient(135deg, #4a5568 0%, #5a67d8 100%); color: #e0e0e0; border: none; padding: 8px 12px; font-size: 0.85em; font-weight: bold; border-radius: 8px; cursor: pointer; margin-top: 8px; width: 100%; transition: transform 0.2s; }
+        .view-words-btn:active { transform: scale(0.95); }
+        .game-container { background: #2a2a3e; padding: 10px; border-radius: 15px; max-width: 500px; width: 100%; border: 1px solid #3a3a5e; }
+        .nav-bar { display: flex; gap: 8px; margin-bottom: 8px; }
+        .nav-btn { flex: 1; background: linear-gradient(135deg, #4a5568 0%, #5a67d8 100%); color: #e0e0e0; border: none; padding: 10px; font-size: 0.85em; font-weight: bold; border-radius: 8px; cursor: pointer; transition: transform 0.2s; }
+        .nav-btn:active { transform: scale(0.95); }
+        .session-progress { display: flex; justify-content: center; gap: 5px; margin-bottom: 8px; }
+        .question-dot { width: 20px; height: 20px; border-radius: 50%; background: #3a3a5e; display: flex; align-items: center; justify-content: center; font-size: 0.65em; font-weight: bold; color: #808080; }
+        .question-dot.current { background: linear-gradient(135deg, #4a5568 0%, #5a67d8 100%); color: #e0e0e0; transform: scale(1.15); }
+        .question-dot.correct { background: #059669; color: #e0e0e0; }
+        .question-dot.wrong { background: #dc2626; color: #e0e0e0; }
+        .score-board { display: flex; justify-content: space-around; margin-bottom: 8px; background: #1a1a2e; padding: 6px; border-radius: 10px; border: 1px solid #3a3a5e; }
+        .score-item { text-align: center; font-size: 0.75em; font-weight: bold; color: #b0b0b0; }
+        .score-number { font-size: 1.2em; color: #60a5fa; display: block; margin-top: 2px; }
+        .question-box { background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6f 100%); padding: 15px 12px; border-radius: 12px; text-align: center; margin-bottom: 10px; border: 1px solid #3a5a7e; }
+        .character-display { font-size: 4em; font-weight: bold; color: #e0e0e0; margin-bottom: 4px; cursor: pointer; transition: transform 0.2s; }
+        .character-display:active { transform: scale(0.9); }
+        .options-grid { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+        .option-card { background: #1a1a2e; padding: 10px; border-radius: 10px; cursor: pointer; border: 2px solid #3a3a5e; display: flex; align-items: center; gap: 10px; transition: all 0.2s; }
+        .option-card:active { transform: scale(0.98); }
+        .option-icon { font-size: 2em; min-width: 45px; text-align: center; }
+        .option-text { font-size: 1em; font-weight: bold; color: #e0e0e0; flex: 1; text-align: left; }
+        .option-card.correct { background: linear-gradient(135deg, #065f46 0%, #059669 100%); border-color: #10b981; }
+        .option-card.wrong { background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%); border-color: #ef4444; }
+        .feedback { position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); font-size: 4em; z-index: 1000; pointer-events: none; animation: feedbackPop 1s ease-out forwards; }
+        @keyframes feedbackPop { 0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); } 50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); } 100% { opacity: 0; transform: translate(-50%, -50%) scale(1); } }
+        .completion-screen { text-align: center; padding: 15px 12px; }
+        .completion-screen h2 { font-size: 1.4em; color: #60a5fa; margin-bottom: 8px; }
+        .star-reward { font-size: 5em; margin: 12px 0; }
+        .button-group { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+        .restart-button, .continue-button { color: #e0e0e0; border: none; padding: 10px 20px; font-size: 1em; font-weight: bold; border-radius: 10px; cursor: pointer; width: 100%; transition: transform 0.2s; }
+        .restart-button:active, .continue-button:active { transform: scale(0.95); }
+        .restart-button { background: linear-gradient(135deg, #4a5568 0%, #5a67d8 100%); }
+        .continue-button { background: linear-gradient(135deg, #9333ea 0%, #db2777 100%); }
+        .level-up-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 2000; }
+        .level-up-content { color: #e0e0e0; text-align: center; padding: 20px; }
+        .level-up-content h1 { font-size: 2em; margin-bottom: 12px; }
+        .level-up-content .big-emoji { font-size: 5em; }
+        .word-list-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; align-items: center; justify-content: center; z-index: 3000; padding: 10px; }
+        .word-list-content { background: #2a2a3e; border-radius: 15px; padding: 15px; max-width: 95%; max-height: 85vh; overflow-y: auto; border: 1px solid #3a3a5e; }
+        .word-list-content h2 { margin-bottom: 12px; color: #60a5fa; font-size: 1.2em; }
+        .word-item { padding: 4px 6px; border-bottom: 1px solid #3a3a5e; display: flex; align-items: center; gap: 6px; font-size: 0.85em; }
+        .word-item-char { font-size: 1.2em; font-weight: bold; min-width: 32px; color: #e0e0e0; cursor: pointer; transition: color 0.2s; }
+        .word-item-char:active { color: #60a5fa; }
+        .toggle-arrow { font-size: 0.9em; opacity: 0.8; transition: transform 0.2s; }
+        .word-item-meaning { color: #b0b0b0; font-size: 0.85em; }
+        .word-item-icon { font-size: 1.3em; }
+        .close-modal-btn { background: linear-gradient(135deg, #4a5568 0%, #5a67d8 100%); color: #e0e0e0; border: none; padding: 10px 15px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 12px; width: 100%; transition: transform 0.2s; font-size: 0.9em; }
+        .close-modal-btn:active { transform: scale(0.95); }
+        .speaker-icon { display: inline-block; margin-left: 8px; font-size: 0.5em; opacity: 0.7; }
+    </style>
+</head>
+<body>
+<div id="appContainer">
+    <div id="profileSelector" style="display: block;">
+        <div style="text-align: center; padding: 20px;">
+            <h2 style="color: #e0e0e0; margin-bottom: 20px;">選擇用戶 Select Profile</h2>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <button onclick="selectProfile('Hugo')" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 20px 30px; border-radius: 15px; cursor: pointer; font-size: 1.2em; font-weight: bold; min-width: 150px;">
+                    👦 Hugo
+                </button>
+                <button onclick="selectProfile('Sophie')" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: none; padding: 20px 30px; border-radius: 15px; cursor: pointer; font-size: 1.2em; font-weight: bold; min-width: 150px;">
+                    👧 Sophie
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainGame" style="display: none;">
+    <div class="header">
+        <h1 style="text-align: center;">🎈 中文學習遊戲</h1>
+        <p style="text-align: center;">K1-P1 Ready - Traditional Chinese</p>
+        <p style="font-size: 0.9em; color: #60a5fa; margin-top: 5px; text-align: center;">
+            <span id="currentProfile"></span>
+        </p>
+        <div style="text-align: center;">
+            <button onclick="switchProfile()" style="background: #2a2a3e; border: 2px solid #60a5fa; color: #60a5fa; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 0.85em; font-weight: bold; margin-top: 8px;">
+                🔄 切換用戶 Switch User
+            </button>
+        </div>
+    </div>
+    
+    <div class="level-selector" id="levelSelector">
+        <h2>選擇級別 Select Level (10 Levels)</h2>
+        <div class="level-buttons">
+            <button class="level-btn k1" onclick="selectLevel('K1')">
+                <div style="font-size: 1.1em; font-weight: bold;">🌈 K1 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">110 words</small>
+            </button>
+            <button class="level-btn k2" onclick="selectLevel('K2')">
+                <div style="font-size: 1.1em; font-weight: bold;">🎨 K2 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">120 words</small>
+            </button>
+            <button class="level-btn k3" onclick="selectLevel('K3')">
+                <div style="font-size: 1.1em; font-weight: bold;">🎯 K3 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">130 words</small>
+            </button>
+            <button class="level-btn p1" onclick="selectLevel('P1')">
+                <div style="font-size: 1.1em; font-weight: bold;">📖 P1 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">140 words</small>
+            </button>
+            <button class="level-btn p2" onclick="selectLevel('P2')">
+                <div style="font-size: 1.1em; font-weight: bold;">📝 P2 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">150 words</small>
+            </button>
+            <button class="level-btn p3" onclick="selectLevel('P3')">
+                <div style="font-size: 1.1em; font-weight: bold;">🎓 P3 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">160 words</small>
+            </button>
+            <button class="level-btn p4" onclick="selectLevel('P4')">
+                <div style="font-size: 1.1em; font-weight: bold;">✏️ P4 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">170 words</small>
+            </button>
+            <button class="level-btn p5" onclick="selectLevel('P5')">
+                <div style="font-size: 1.1em; font-weight: bold;">🖊️ P5 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">180 words</small>
+            </button>
+            <button class="level-btn p6" onclick="selectLevel('P6')">
+                <div style="font-size: 1.1em; font-weight: bold;">🖍️ P6 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">190 words</small>
+            </button>
+            <button class="level-btn f1" onclick="selectLevel('F1')">
+                <div style="font-size: 1.1em; font-weight: bold;">🏆 F1 ☆☆☆☆☆☆</div>
+                <small style="font-size: 0.7em;">200 words</small>
+            </button>
+        </div>
+        <button class="view-words-btn" onclick="showWordList()">📋 查看所有字詞 View All Words</button>
+        <button class="view-words-btn" onclick="showSettings()" style="margin-top: 8px; background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">⚙️ 設定 Settings</button>
+    </div>
+    
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <div class="nav-bar">
+            <button class="nav-btn" onclick="returnToMenu()">🏠 返回主選單<br>Back to Menu</button>
+            <button class="nav-btn" onclick="showWordList()">📚 字詞表<br>Word List</button>
+        </div>
+        <div class="session-progress" id="sessionProgress"></div>
+        <div class="score-board">
+            <div class="score-item"><div>✅ 正確</div><span class="score-number" id="sessionCorrect">0</span></div>
+            <div class="score-item"><div>❌ 錯誤</div><span class="score-number" id="sessionWrong">0</span></div>
+        </div>
+        <div class="question-box"><div id="questionDisplay"></div></div>
+        <div class="options-grid" id="optionsGrid"></div>
+    </div>
+    </div> <!-- Close mainGame -->
+    <script>
+// Profile Management
+let currentProfile = null;
+
+const MAX_STARS = 6;
+const ALL_LEVELS = ['K1', 'K2', 'K3', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'F1'];
+
+// Levels that are permanently mastered for a given child.
+const GUARANTEED_STARS = {
+    Hugo:   { K1: 6, K2: 6, K3: 6, P1: 2 },
+    Sophie: { K1: 3 }
+};
+
+function freshGameState() {
+    const s = { currentLevel: 'K1', totalStars: 0 };
+    ALL_LEVELS.forEach(l => { s[l] = { stars: 0, sublevel: 1 }; });
+    return s;
+}
+
+// Applies the floor of guaranteed stars for a profile. Progress can go up
+// from here, never below.
+function applyGuaranteedStars(state, profileName) {
+    const floors = GUARANTEED_STARS[profileName];
+    if (!floors) return state;
+    Object.keys(floors).forEach(lvl => {
+        if (!state[lvl]) state[lvl] = { stars: 0, sublevel: 1 };
+        if ((state[lvl].stars || 0) < floors[lvl]) {
+            state[lvl].stars = floors[lvl];
+        }
+    });
+    return state;
+}
+
+function selectProfile(profileName) {
+    currentProfile = profileName;
+    localStorage.setItem('currentProfile', profileName);
+    document.getElementById('profileSelector').style.display = 'none';
+    document.getElementById('mainGame').style.display = 'block';
+    document.getElementById('currentProfile').textContent = `👤 ${profileName}`;
+
+    // Always start from a clean slate so one child's progress can never
+    // leak into the other's when switching profiles.
+    gameState = freshGameState();
+    loadGameState();
+    loadSoundSettings();
+
+    // Pull the newest progress from the cloud if a sync code is set up.
+    cloudPull({ silent: true });
+}
+
+function switchProfile() {
+    document.getElementById('mainGame').style.display = 'none';
+    document.getElementById('profileSelector').style.display = 'block';
+    currentProfile = null;
+    localStorage.removeItem('currentProfile');
+}
+
+function getStorageKey(key) {
+    return `${currentProfile}_${key}`;
+}
+
+const knightTitles = {
+    1: {en:'K1 Footman',zh:'K1 步兵',icon:'🎖️'}, 2: {en:'K1 Knight',zh:'K1 騎士',icon:'⚔️'}, 3: {en:'K1 Royal Knight',zh:'K1 皇家騎士',icon:'👑'},
+    4: {en:'K2 Footman',zh:'K2 步兵',icon:'🎖️'}, 5: {en:'K2 Knight',zh:'K2 騎士',icon:'⚔️'}, 6: {en:'K2 Royal Knight',zh:'K2 皇家騎士',icon:'👑'},
+    7: {en:'K3 Footman',zh:'K3 步兵',icon:'🎖️'}, 8: {en:'K3 Knight',zh:'K3 騎士',icon:'⚔️'}, 9: {en:'K3 Royal Knight',zh:'K3 皇家騎士',icon:'👑'},
+    10: {en:'P1 Footman',zh:'P1 步兵',icon:'🎖️'}, 11: {en:'P1 Knight',zh:'P1 騎士',icon:'⚔️'}, 12: {en:'P1 Royal Knight',zh:'P1 皇家騎士',icon:'👑'},
+    13: {en:'P2 Footman',zh:'P2 步兵',icon:'🎖️'}, 14: {en:'P2 Knight',zh:'P2 騎士',icon:'⚔️'}, 15: {en:'P2 Royal Knight',zh:'P2 皇家騎士',icon:'👑'},
+    16: {en:'P3 Footman',zh:'P3 步兵',icon:'🎖️'}, 17: {en:'P3 Knight',zh:'P3 騎士',icon:'⚔️'}, 18: {en:'P3 Royal Knight',zh:'P3 皇家騎士',icon:'👑'},
+    19: {en:'P4 Footman',zh:'P4 步兵',icon:'🎖️'}, 20: {en:'P4 Knight',zh:'P4 騎士',icon:'⚔️'}, 21: {en:'P4 Royal Knight',zh:'P4 皇家騎士',icon:'👑'},
+    22: {en:'P5 Footman',zh:'P5 步兵',icon:'🎖️'}, 23: {en:'P5 Knight',zh:'P5 騎士',icon:'⚔️'}, 24: {en:'P5 Royal Knight',zh:'P5 皇家騎士',icon:'👑'},
+    25: {en:'P6 Footman',zh:'P6 步兵',icon:'🎖️'}, 26: {en:'P6 Knight',zh:'P6 騎士',icon:'⚔️'}, 27: {en:'P6 Royal Knight',zh:'P6 皇家騎士',icon:'👑'},
+    28: {en:'F1 Footman',zh:'F1 步兵',icon:'🎖️'}, 29: {en:'F1 Knight',zh:'F1 騎士',icon:'⚔️'}, 30: {en:'F1 Grand Master',zh:'F1 大師',icon:'✨'}
+};
+const characterDatabase = {
+    K1: [
+        {char:'一',meaning:'one',icon:'1️⃣'},
+        {char:'二',meaning:'two',icon:'2️⃣'},
+        {char:'三',meaning:'three',icon:'3️⃣'},
+        {char:'四',meaning:'four',icon:'4️⃣'},
+        {char:'五',meaning:'five',icon:'5️⃣'},
+        {char:'六',meaning:'six',icon:'6️⃣'},
+        {char:'七',meaning:'seven',icon:'7️⃣'},
+        {char:'八',meaning:'eight',icon:'8️⃣'},
+        {char:'九',meaning:'nine',icon:'9️⃣'},
+        {char:'十',meaning:'ten',icon:'🔟'},
+        {char:'人',meaning:'person',icon:'🧑'},
+        {char:'大',meaning:'big',icon:'🔷'},
+        {char:'小',meaning:'small',icon:'🔹'},
+        {char:'口',meaning:'mouth',icon:'👄'},
+        {char:'手',meaning:'hand',icon:'✋'},
+        {char:'火',meaning:'fire',icon:'🔥'},
+        {char:'水',meaning:'water',icon:'💧'},
+        {char:'山',meaning:'mountain',icon:'⛰️'},
+        {char:'日',meaning:'sun/day',icon:'☀️'},
+        {char:'月',meaning:'moon/month',icon:'🌙'},
+        {char:'木',meaning:'tree/wood',icon:'🌳'},
+        {char:'門',meaning:'door',icon:'🚪'},
+        {char:'田',meaning:'field',icon:'🌾'},
+        {char:'土',meaning:'earth/soil',icon:'🏔️'},
+        {char:'石',meaning:'stone',icon:'🪨'},
+        {char:'目',meaning:'eye',icon:'👁️'},
+        {char:'耳',meaning:'ear',icon:'👂'},
+        {char:'天',meaning:'sky/heaven',icon:'☁️'},
+        {char:'上',meaning:'up/above',icon:'⬆️'},
+        {char:'下',meaning:'down/below',icon:'⬇️'},
+        {char:'爸爸',meaning:'father',icon:'👨'},
+        {char:'媽媽',meaning:'mother',icon:'👩'},
+        {char:'哥哥',meaning:'older brother',icon:'👦'},
+        {char:'姐姐',meaning:'older sister',icon:'👧'},
+        {char:'弟弟',meaning:'younger brother',icon:'👦'},
+        {char:'妹妹',meaning:'younger sister',icon:'👧'},
+        {char:'爺爺',meaning:'grandfather',icon:'👴'},
+        {char:'嫲嫲',meaning:'grandmother',icon:'👵'},
+        {char:'老師',meaning:'teacher',icon:'👨‍🏫'},
+        {char:'同學',meaning:'classmate',icon:'👥'},
+        {char:'來',meaning:'come',icon:'➡️'},
+        {char:'去',meaning:'go',icon:'🏃'},
+        {char:'看',meaning:'look/see',icon:'👀'},
+        {char:'聽',meaning:'listen',icon:'👂'},
+        {char:'吃',meaning:'eat',icon:'🍴'},
+        {char:'喝',meaning:'drink',icon:'🥤'},
+        {char:'坐',meaning:'sit',icon:'🪑'},
+        {char:'站',meaning:'stand',icon:'🧍'},
+        {char:'走',meaning:'walk',icon:'🚶'},
+        {char:'跑',meaning:'run',icon:'🏃'},
+        {char:'笑',meaning:'laugh/smile',icon:'😄'},
+        {char:'哭',meaning:'cry',icon:'😢'},
+        {char:'說',meaning:'say/speak',icon:'💬'},
+        {char:'唱',meaning:'sing',icon:'🎤'},
+        {char:'跳',meaning:'jump',icon:'🤸'},
+        {char:'狗',meaning:'dog',icon:'🐕'},
+        {char:'貓',meaning:'cat',icon:'🐱'},
+        {char:'魚',meaning:'fish',icon:'🐟'},
+        {char:'鳥',meaning:'bird',icon:'🐦'},
+        {char:'牛',meaning:'cow',icon:'🐮'},
+        {char:'羊',meaning:'sheep',icon:'🐑'},
+        {char:'馬',meaning:'horse',icon:'🐴'},
+        {char:'雞',meaning:'chicken',icon:'🐔'},
+        {char:'豬',meaning:'pig',icon:'🐷'},
+        {char:'鴨',meaning:'duck',icon:'🦆'},
+        {char:'兔',meaning:'rabbit',icon:'🐰'},
+        {char:'虎',meaning:'tiger',icon:'🐯'},
+        {char:'龍',meaning:'dragon',icon:'🐉'},
+        {char:'蛇',meaning:'snake',icon:'🐍'},
+        {char:'猴',meaning:'monkey',icon:'🐵'},
+        {char:'紅',meaning:'red',icon:'🔴'},
+        {char:'黃',meaning:'yellow',icon:'🟡'},
+        {char:'藍',meaning:'blue',icon:'🔵'},
+        {char:'綠',meaning:'green',icon:'🟢'},
+        {char:'白',meaning:'white',icon:'⚪'},
+        {char:'黑',meaning:'black',icon:'⚫'},
+        {char:'紅色',meaning:'red color',icon:'🔴'},
+        {char:'黃色',meaning:'yellow color',icon:'🟡'},
+        {char:'藍色',meaning:'blue color',icon:'🔵'},
+        {char:'綠色',meaning:'green color',icon:'🟢'},
+        {char:'頭',meaning:'head',icon:'🗣️'},
+        {char:'眼睛',meaning:'eyes',icon:'👁️'},
+        {char:'鼻子',meaning:'nose',icon:'👃'},
+        {char:'嘴巴',meaning:'mouth',icon:'👄'},
+        {char:'耳朵',meaning:'ears',icon:'👂'},
+        {char:'手',meaning:'hand',icon:'✋'},
+        {char:'腳',meaning:'foot',icon:'🦶'},
+        {char:'臉',meaning:'face',icon:'😊'},
+        {char:'頭髮',meaning:'hair',icon:'💇'},
+        {char:'牙齒',meaning:'teeth',icon:'🦷'},
+        {char:'好',meaning:'good',icon:'👍'},
+        {char:'多',meaning:'many',icon:'📊'},
+        {char:'少',meaning:'few',icon:'📉'},
+        {char:'長',meaning:'long',icon:'📏'},
+        {char:'短',meaning:'short',icon:'📐'},
+        {char:'高',meaning:'tall/high',icon:'📶'},
+        {char:'矮',meaning:'short (height)',icon:'📉'},
+        {char:'新',meaning:'new',icon:'🆕'},
+        {char:'舊',meaning:'old',icon:'📦'},
+        {char:'快',meaning:'fast',icon:'⚡'},
+        {char:'我',meaning:'I/me',icon:'👤'},
+        {char:'你',meaning:'you',icon:'👤'},
+        {char:'他',meaning:'he/him',icon:'👨'},
+        {char:'她',meaning:'she/her',icon:'👩'},
+        {char:'們',meaning:'plural marker',icon:'👥'},
+        {char:'你的',meaning:'your',icon:'👉'},
+        {char:'是',meaning:'is/am/are',icon:'✓'},
+        {char:'不',meaning:'not/no',icon:'❌'},
+        {char:'有',meaning:'have',icon:'✋'},
+        {char:'在',meaning:'at/in',icon:'📍'},
+    ],
+    K2: [
+        {char:'十一',meaning:'eleven',icon:'🔢'},
+        {char:'十二',meaning:'twelve',icon:'🔢'},
+        {char:'十三',meaning:'thirteen',icon:'🔢'},
+        {char:'十四',meaning:'fourteen',icon:'🔢'},
+        {char:'十五',meaning:'fifteen',icon:'🔢'},
+        {char:'十六',meaning:'sixteen',icon:'🔢'},
+        {char:'十七',meaning:'seventeen',icon:'🔢'},
+        {char:'十八',meaning:'eighteen',icon:'🔢'},
+        {char:'十九',meaning:'nineteen',icon:'🔢'},
+        {char:'二十',meaning:'twenty',icon:'🔢'},
+        {char:'三十',meaning:'thirty',icon:'🔢'},
+        {char:'五十',meaning:'fifty',icon:'🔢'},
+        {char:'一百',meaning:'one hundred',icon:'💯'},
+        {char:'第一',meaning:'first',icon:'🥇'},
+        {char:'第二',meaning:'second',icon:'🥈'},
+        {char:'花',meaning:'flower',icon:'🌸'},
+        {char:'草',meaning:'grass',icon:'🌿'},
+        {char:'樹',meaning:'tree',icon:'🌳'},
+        {char:'雲',meaning:'cloud',icon:'☁️'},
+        {char:'雨',meaning:'rain',icon:'🌧️'},
+        {char:'風',meaning:'wind',icon:'💨'},
+        {char:'雪',meaning:'snow',icon:'❄️'},
+        {char:'星星',meaning:'star',icon:'⭐'},
+        {char:'書',meaning:'book',icon:'📚'},
+        {char:'筆',meaning:'pen',icon:'✒️'},
+        {char:'紙',meaning:'paper',icon:'📄'},
+        {char:'車',meaning:'car',icon:'🚗'},
+        {char:'船',meaning:'boat',icon:'🚢'},
+        {char:'飛機',meaning:'airplane',icon:'✈️'},
+        {char:'房子',meaning:'house',icon:'🏠'},
+        {char:'桌子',meaning:'table',icon:'🪑'},
+        {char:'椅子',meaning:'chair',icon:'💺'},
+        {char:'床',meaning:'bed',icon:'🛏️'},
+        {char:'窗',meaning:'window',icon:'🪟'},
+        {char:'燈',meaning:'light/lamp',icon:'💡'},
+        {char:'象',meaning:'elephant',icon:'🐘'},
+        {char:'獅',meaning:'lion',icon:'🦁'},
+        {char:'熊',meaning:'bear',icon:'🐻'},
+        {char:'鹿',meaning:'deer',icon:'🦌'},
+        {char:'狼',meaning:'wolf',icon:'🐺'},
+        {char:'狐',meaning:'fox',icon:'🦊'},
+        {char:'鼠',meaning:'mouse/rat',icon:'🐭'},
+        {char:'蜂',meaning:'bee',icon:'🐝'},
+        {char:'蝶',meaning:'butterfly',icon:'🦋'},
+        {char:'蟲',meaning:'insect',icon:'🐛'},
+        {char:'龜',meaning:'turtle',icon:'🐢'},
+        {char:'蛙',meaning:'frog',icon:'🐸'},
+        {char:'鵝',meaning:'goose',icon:'🦆'},
+        {char:'鷹',meaning:'eagle',icon:'🦅'},
+        {char:'鶴',meaning:'crane',icon:'🦢'},
+        {char:'玩',meaning:'play',icon:'🎮'},
+        {char:'睡',meaning:'sleep',icon:'😴'},
+        {char:'起',meaning:'rise/get up',icon:'⏰'},
+        {char:'開',meaning:'open',icon:'📖'},
+        {char:'關',meaning:'close',icon:'🚪'},
+        {char:'拿',meaning:'take/hold',icon:'🤲'},
+        {char:'放',meaning:'put/place',icon:'📦'},
+        {char:'給',meaning:'give',icon:'🎁'},
+        {char:'買',meaning:'buy',icon:'🛒'},
+        {char:'賣',meaning:'sell',icon:'💰'},
+        {char:'找',meaning:'find/look for',icon:'🔍'},
+        {char:'用',meaning:'use',icon:'🔧'},
+        {char:'做',meaning:'do/make',icon:'🛠️'},
+        {char:'洗',meaning:'wash',icon:'🧼'},
+        {char:'穿',meaning:'wear',icon:'👔'},
+        {char:'飯',meaning:'rice/meal',icon:'🍚'},
+        {char:'麵',meaning:'noodles',icon:'🍜'},
+        {char:'包',meaning:'bread/bun',icon:'🍞'},
+        {char:'肉',meaning:'meat',icon:'🥩'},
+        {char:'菜',meaning:'vegetable',icon:'🥬'},
+        {char:'蛋',meaning:'egg',icon:'🥚'},
+        {char:'奶',meaning:'milk',icon:'🥛'},
+        {char:'茶',meaning:'tea',icon:'🍵'},
+        {char:'果',meaning:'fruit',icon:'🍎'},
+        {char:'糖',meaning:'sugar/candy',icon:'🍬'},
+        {char:'餅',meaning:'biscuit/cake',icon:'🍪'},
+        {char:'湯',meaning:'soup',icon:'🍲'},
+        {char:'鹽',meaning:'salt',icon:'🧂'},
+        {char:'油',meaning:'oil',icon:'🛢️'},
+        {char:'醋',meaning:'vinegar',icon:'🧴'},
+        {char:'熱',meaning:'hot',icon:'🥵'},
+        {char:'冷',meaning:'cold',icon:'🥶'},
+        {char:'慢',meaning:'slow',icon:'🐌'},
+        {char:'重',meaning:'heavy',icon:'⚖️'},
+        {char:'輕',meaning:'light',icon:'🪶'},
+        {char:'粗',meaning:'thick/coarse',icon:'📏'},
+        {char:'細',meaning:'thin/fine',icon:'📐'},
+        {char:'乾',meaning:'dry',icon:'🏜️'},
+        {char:'濕',meaning:'wet',icon:'💦'},
+        {char:'硬',meaning:'hard',icon:'🪨'},
+        {char:'軟',meaning:'soft',icon:'🛋️'},
+        {char:'亮',meaning:'bright',icon:'💡'},
+        {char:'暗',meaning:'dark',icon:'🌑'},
+        {char:'美',meaning:'beautiful',icon:'✨'},
+        {char:'醜',meaning:'ugly',icon:'👹'},
+        {char:'家',meaning:'home',icon:'🏠'},
+        {char:'園',meaning:'garden/park',icon:'🏞️'},
+        {char:'路',meaning:'road',icon:'🛣️'},
+        {char:'街',meaning:'street',icon:'🏙️'},
+        {char:'店',meaning:'shop',icon:'🏪'},
+        {char:'場',meaning:'field/place',icon:'🏟️'},
+        {char:'橋',meaning:'bridge',icon:'🌉'},
+        {char:'河',meaning:'river',icon:'🏞️'},
+        {char:'海',meaning:'sea',icon:'🌊'},
+        {char:'湖',meaning:'lake',icon:'🏞️'},
+        {char:'這',meaning:'this',icon:'👈'},
+        {char:'那',meaning:'that',icon:'👉'},
+        {char:'裡',meaning:'inside',icon:'📦'},
+        {char:'外',meaning:'outside',icon:'🚪'},
+        {char:'前',meaning:'front',icon:'⬆️'},
+        {char:'後',meaning:'back',icon:'⬇️'},
+        {char:'左',meaning:'left',icon:'⬅️'},
+        {char:'右',meaning:'right',icon:'➡️'},
+        {char:'中',meaning:'middle/center',icon:'🎯'},
+        {char:'邊',meaning:'side/edge',icon:'📍'},
+        {char:'間',meaning:'between/room',icon:'🚪'},
+        {char:'起來',meaning:'get up',icon:'⏰'},
+        {char:'出來',meaning:'come out',icon:'🚪'},
+        {char:'進去',meaning:'go in',icon:'🚪'},
+        {char:'回來',meaning:'come back',icon:'↩️'},
+    ],
+    K3: [
+        {char:'今天',meaning:'today',icon:'📅'},
+        {char:'明天',meaning:'tomorrow',icon:'⏭️'},
+        {char:'昨天',meaning:'yesterday',icon:'⏮️'},
+        {char:'早上',meaning:'morning',icon:'🌅'},
+        {char:'中午',meaning:'noon',icon:'☀️'},
+        {char:'下午',meaning:'afternoon',icon:'🌤️'},
+        {char:'晚上',meaning:'evening',icon:'🌆'},
+        {char:'現在',meaning:'now',icon:'⏰'},
+        {char:'以前',meaning:'before',icon:'⏮️'},
+        {char:'以後',meaning:'after',icon:'⏭️'},
+        {char:'時候',meaning:'time/moment',icon:'⏰'},
+        {char:'年',meaning:'year',icon:'📅'},
+        {char:'星期',meaning:'week',icon:'📆'},
+        {char:'小時',meaning:'hour',icon:'⏰'},
+        {char:'分鐘',meaning:'minute',icon:'⏱️'},
+        {char:'秒',meaning:'second',icon:'⏱️'},
+        {char:'春',meaning:'spring',icon:'🌸'},
+        {char:'夏',meaning:'summer',icon:'☀️'},
+        {char:'秋',meaning:'autumn',icon:'🍂'},
+        {char:'冬',meaning:'winter',icon:'❄️'},
+        {char:'高興',meaning:'happy',icon:'😊'},
+        {char:'開心',meaning:'joyful',icon:'😄'},
+        {char:'快樂',meaning:'happy/cheerful',icon:'😆'},
+        {char:'傷心',meaning:'sad',icon:'😢'},
+        {char:'難過',meaning:'upset',icon:'😔'},
+        {char:'生氣',meaning:'angry',icon:'😠'},
+        {char:'害怕',meaning:'afraid/scared',icon:'😨'},
+        {char:'擔心',meaning:'worried',icon:'😟'},
+        {char:'緊張',meaning:'nervous',icon:'😰'},
+        {char:'興奮',meaning:'excited',icon:'🤩'},
+        {char:'累',meaning:'tired',icon:'😴'},
+        {char:'餓',meaning:'hungry',icon:'😋'},
+        {char:'渴',meaning:'thirsty',icon:'🥤'},
+        {char:'飽',meaning:'full',icon:'😌'},
+        {char:'痛',meaning:'pain/hurt',icon:'😣'},
+        {char:'病',meaning:'sick/ill',icon:'🤒'},
+        {char:'舒服',meaning:'comfortable',icon:'😌'},
+        {char:'喜歡',meaning:'like',icon:'❤️'},
+        {char:'愛',meaning:'love',icon:'💕'},
+        {char:'討厭',meaning:'hate/dislike',icon:'💔'},
+        {char:'學',meaning:'learn/study',icon:'📖'},
+        {char:'寫',meaning:'write',icon:'✍️'},
+        {char:'讀',meaning:'read',icon:'📚'},
+        {char:'畫',meaning:'draw/paint',icon:'🎨'},
+        {char:'唱歌',meaning:'sing',icon:'🎤'},
+        {char:'跳舞',meaning:'dance',icon:'💃'},
+        {char:'游泳',meaning:'swim',icon:'🏊'},
+        {char:'跑步',meaning:'run/jog',icon:'🏃'},
+        {char:'打球',meaning:'play ball',icon:'⚽'},
+        {char:'踢球',meaning:'kick ball',icon:'⚽'},
+        {char:'騎',meaning:'ride',icon:'🚲'},
+        {char:'飛',meaning:'fly',icon:'✈️'},
+        {char:'爬',meaning:'climb',icon:'🧗'},
+        {char:'跌',meaning:'fall',icon:'⬇️'},
+        {char:'打',meaning:'hit/play',icon:'🥊'},
+        {char:'推',meaning:'push',icon:'👐'},
+        {char:'拉',meaning:'pull',icon:'↩️'},
+        {char:'扔',meaning:'throw',icon:'🎯'},
+        {char:'接',meaning:'catch/receive',icon:'🤲'},
+        {char:'抱',meaning:'hug/hold',icon:'🤗'},
+        {char:'衣服',meaning:'clothes',icon:'👔'},
+        {char:'鞋',meaning:'shoes',icon:'👞'},
+        {char:'帽子',meaning:'hat',icon:'🎩'},
+        {char:'襪子',meaning:'socks',icon:'🧦'},
+        {char:'包包',meaning:'bag',icon:'🎒'},
+        {char:'傘',meaning:'umbrella',icon:'☂️'},
+        {char:'鏡子',meaning:'mirror',icon:'🪞'},
+        {char:'刀',meaning:'knife',icon:'🔪'},
+        {char:'叉',meaning:'fork',icon:'🍴'},
+        {char:'碗',meaning:'bowl',icon:'🥣'},
+        {char:'盤',meaning:'plate',icon:'🍽️'},
+        {char:'杯',meaning:'cup',icon:'🥤'},
+        {char:'瓶',meaning:'bottle',icon:'🍼'},
+        {char:'箱',meaning:'box/case',icon:'📦'},
+        {char:'袋',meaning:'bag/pocket',icon:'👜'},
+        {char:'鐘',meaning:'clock',icon:'🕐'},
+        {char:'錶',meaning:'watch',icon:'⌚'},
+        {char:'電話',meaning:'telephone',icon:'📞'},
+        {char:'電視',meaning:'television',icon:'📺'},
+        {char:'電腦',meaning:'computer',icon:'💻'},
+        {char:'大聲',meaning:'loud',icon:'🔊'},
+        {char:'小聲',meaning:'quiet',icon:'🔇'},
+        {char:'安靜',meaning:'silent/peaceful',icon:'🤫'},
+        {char:'吵',meaning:'noisy',icon:'📢'},
+        {char:'乾淨',meaning:'clean',icon:'✨'},
+        {char:'髒',meaning:'dirty',icon:'🗑️'},
+        {char:'整齊',meaning:'tidy/neat',icon:'📐'},
+        {char:'亂',meaning:'messy/chaotic',icon:'🌀'},
+        {char:'滿',meaning:'full',icon:'📊'},
+        {char:'空',meaning:'empty',icon:'⭕'},
+        {char:'甜',meaning:'sweet',icon:'🍭'},
+        {char:'酸',meaning:'sour',icon:'🍋'},
+        {char:'苦',meaning:'bitter',icon:'😖'},
+        {char:'辣',meaning:'spicy',icon:'🌶️'},
+        {char:'鹹',meaning:'salty',icon:'🧂'},
+        {char:'香',meaning:'fragrant',icon:'🌺'},
+        {char:'臭',meaning:'stinky',icon:'🦨'},
+        {char:'圓',meaning:'round/circle',icon:'⭕'},
+        {char:'方',meaning:'square',icon:'◻️'},
+        {char:'尖',meaning:'sharp/pointed',icon:'📍'},
+        {char:'想',meaning:'think/want',icon:'💭'},
+        {char:'知道',meaning:'know',icon:'💡'},
+        {char:'記得',meaning:'remember',icon:'🧠'},
+        {char:'忘記',meaning:'forget',icon:'❌'},
+        {char:'告訴',meaning:'tell',icon:'💬'},
+        {char:'問',meaning:'ask',icon:'❓'},
+        {char:'答',meaning:'answer',icon:'✅'},
+        {char:'借',meaning:'borrow/lend',icon:'🤝'},
+        {char:'還',meaning:'return/give back',icon:'↩️'},
+        {char:'幫',meaning:'help',icon:'🤝'},
+        {char:'送',meaning:'send/give as gift',icon:'🎁'},
+        {char:'帶',meaning:'bring/take',icon:'🎒'},
+        {char:'等',meaning:'wait',icon:'⏰'},
+        {char:'住',meaning:'live/stay',icon:'🏠'},
+        {char:'起床',meaning:'get out of bed',icon:'🛏️'},
+        {char:'睡覺',meaning:'sleep/go to bed',icon:'😴'},
+        {char:'吃飯',meaning:'eat meal',icon:'🍽️'},
+        {char:'喝水',meaning:'drink water',icon:'💧'},
+        {char:'洗手',meaning:'wash hands',icon:'🧼'},
+        {char:'刷牙',meaning:'brush teeth',icon:'🪥'},
+        {char:'叔叔',meaning:'uncle',icon:'👨'},
+        {char:'阿姨',meaning:'aunt',icon:'👩'},
+        {char:'表哥',meaning:'older male cousin',icon:'👦'},
+        {char:'表姐',meaning:'older female cousin',icon:'👧'},
+        {char:'朋友',meaning:'friend',icon:'👫'},
+        {char:'客人',meaning:'guest',icon:'🚪'},
+        {char:'鄰居',meaning:'neighbor',icon:'🏘️'},
+        {char:'醫生',meaning:'doctor',icon:'👨‍⚕️'},
+        {char:'護士',meaning:'nurse',icon:'👩‍⚕️'},
+        {char:'警察',meaning:'police',icon:'👮'},
+    ],
+    P1: [
+        {char:'學校',meaning:'school',icon:'🏫'},
+        {char:'教室',meaning:'classroom',icon:'🏫'},
+        {char:'學生',meaning:'student',icon:'👨‍🎓'},
+        {char:'課本',meaning:'textbook',icon:'📚'},
+        {char:'作業',meaning:'homework',icon:'✏️'},
+        {char:'考試',meaning:'exam',icon:'📝'},
+        {char:'學習',meaning:'study/learn',icon:'📖'},
+        {char:'讀書',meaning:'read books',icon:'📚'},
+        {char:'寫字',meaning:'write characters',icon:'✍️'},
+        {char:'上課',meaning:'attend class',icon:'🏫'},
+        {char:'下課',meaning:'class over',icon:'🏃'},
+        {char:'功課',meaning:'schoolwork',icon:'📝'},
+        {char:'練習',meaning:'practice/exercise',icon:'✏️'},
+        {char:'課',meaning:'lesson/class',icon:'📖'},
+        {char:'黑板',meaning:'blackboard',icon:'⬛'},
+        {char:'粉筆',meaning:'chalk',icon:'✏️'},
+        {char:'鉛筆',meaning:'pencil',icon:'✏️'},
+        {char:'橡皮',meaning:'eraser',icon:'🧽'},
+        {char:'尺',meaning:'ruler',icon:'📏'},
+        {char:'書包',meaning:'schoolbag',icon:'🎒'},
+        {char:'文具',meaning:'stationery',icon:'✏️'},
+        {char:'地圖',meaning:'map',icon:'🗺️'},
+        {char:'圖書館',meaning:'library',icon:'📚'},
+        {char:'操場',meaning:'playground',icon:'🏟️'},
+        {char:'禮堂',meaning:'hall/auditorium',icon:'🏛️'},
+        {char:'校長',meaning:'principal',icon:'👔'},
+        {char:'班',meaning:'class/grade',icon:'👥'},
+        {char:'成績',meaning:'grade/score',icon:'📊'},
+        {char:'分數',meaning:'mark/score',icon:'💯'},
+        {char:'答案',meaning:'answer',icon:'✅'},
+        {char:'中文',meaning:'Chinese',icon:'🈵'},
+        {char:'英文',meaning:'English',icon:'🔤'},
+        {char:'數學',meaning:'mathematics',icon:'🔢'},
+        {char:'科學',meaning:'science',icon:'🔬'},
+        {char:'音樂',meaning:'music',icon:'🎵'},
+        {char:'體育',meaning:'PE/sports',icon:'⚽'},
+        {char:'美術',meaning:'art',icon:'🎨'},
+        {char:'歷史',meaning:'history',icon:'📜'},
+        {char:'地理',meaning:'geography',icon:'🗺️'},
+        {char:'常識',meaning:'general studies',icon:'📚'},
+        {char:'加',meaning:'add/plus',icon:'➕'},
+        {char:'減',meaning:'subtract/minus',icon:'➖'},
+        {char:'乘',meaning:'multiply',icon:'✖️'},
+        {char:'除',meaning:'divide',icon:'➗'},
+        {char:'等於',meaning:'equals',icon:'='},
+        {char:'問題',meaning:'problem/question',icon:'❓'},
+        {char:'故事',meaning:'story',icon:'📖'},
+        {char:'句子',meaning:'sentence',icon:'📝'},
+        {char:'詞語',meaning:'word/vocabulary',icon:'📚'},
+        {char:'字',meaning:'character/word',icon:'🔤'},
+        {char:'城市',meaning:'city',icon:'🏙️'},
+        {char:'鄉村',meaning:'countryside',icon:'🏞️'},
+        {char:'公園',meaning:'park',icon:'🏞️'},
+        {char:'動物園',meaning:'zoo',icon:'🦁'},
+        {char:'博物館',meaning:'museum',icon:'🏛️'},
+        {char:'醫院',meaning:'hospital',icon:'🏥'},
+        {char:'銀行',meaning:'bank',icon:'🏦'},
+        {char:'郵局',meaning:'post office',icon:'📮'},
+        {char:'超市',meaning:'supermarket',icon:'🏬'},
+        {char:'餐廳',meaning:'restaurant',icon:'🍽️'},
+        {char:'酒店',meaning:'hotel',icon:'🏨'},
+        {char:'車站',meaning:'station',icon:'🚉'},
+        {char:'機場',meaning:'airport',icon:'✈️'},
+        {char:'海邊',meaning:'seaside/beach',icon:'🏖️'},
+        {char:'山上',meaning:'on the mountain',icon:'⛰️'},
+        {char:'島',meaning:'island',icon:'🏝️'},
+        {char:'國家',meaning:'country/nation',icon:'🌍'},
+        {char:'香港',meaning:'Hong Kong',icon:'🇭🇰'},
+        {char:'中國',meaning:'China',icon:'🇨🇳'},
+        {char:'世界',meaning:'world',icon:'🌎'},
+        {char:'開始',meaning:'begin/start',icon:'▶️'},
+        {char:'結束',meaning:'end/finish',icon:'🔚'},
+        {char:'完成',meaning:'complete',icon:'✅'},
+        {char:'停止',meaning:'stop',icon:'🛑'},
+        {char:'繼續',meaning:'continue',icon:'▶️'},
+        {char:'改變',meaning:'change',icon:'🔄'},
+        {char:'變成',meaning:'become',icon:'➡️'},
+        {char:'增加',meaning:'increase',icon:'📈'},
+        {char:'減少',meaning:'decrease',icon:'📉'},
+        {char:'需要',meaning:'need',icon:'📌'},
+        {char:'應該',meaning:'should',icon:'✓'},
+        {char:'可以',meaning:'can/may',icon:'✅'},
+        {char:'會',meaning:'will/can',icon:'💡'},
+        {char:'能夠',meaning:'be able to',icon:'💪'},
+        {char:'希望',meaning:'hope',icon:'🌟'},
+        {char:'決定',meaning:'decide',icon:'🤔'},
+        {char:'選擇',meaning:'choose',icon:'🔀'},
+        {char:'準備',meaning:'prepare',icon:'📋'},
+        {char:'注意',meaning:'pay attention',icon:'⚠️'},
+        {char:'小心',meaning:'be careful',icon:'⚠️'},
+        {char:'東西',meaning:'thing/stuff',icon:'📦'},
+        {char:'地方',meaning:'place',icon:'📍'},
+        {char:'方法',meaning:'method/way',icon:'🔧'},
+        {char:'原因',meaning:'reason/cause',icon:'❓'},
+        {char:'結果',meaning:'result',icon:'✅'},
+        {char:'意思',meaning:'meaning',icon:'💭'},
+        {char:'主意',meaning:'idea',icon:'💡'},
+        {char:'辦法',meaning:'way/method',icon:'🔧'},
+        {char:'力量',meaning:'strength/power',icon:'💪'},
+        {char:'聲音',meaning:'sound/voice',icon:'🔊'},
+        {char:'顏色',meaning:'color',icon:'🎨'},
+        {char:'形狀',meaning:'shape',icon:'◻️'},
+        {char:'大小',meaning:'size',icon:'📏'},
+        {char:'重量',meaning:'weight',icon:'⚖️'},
+        {char:'速度',meaning:'speed',icon:'⚡'},
+        {char:'溫度',meaning:'temperature',icon:'🌡️'},
+        {char:'數量',meaning:'quantity/amount',icon:'🔢'},
+        {char:'名字',meaning:'name',icon:'📛'},
+        {char:'年齡',meaning:'age',icon:'🎂'},
+        {char:'生日',meaning:'birthday',icon:'🎁'},
+        {char:'但是',meaning:'but/however',icon:'↔️'},
+        {char:'所以',meaning:'therefore/so',icon:'➡️'},
+        {char:'因為',meaning:'because',icon:'❓'},
+        {char:'如果',meaning:'if',icon:'❓'},
+        {char:'那麼',meaning:'then/in that case',icon:'➡️'},
+        {char:'或者',meaning:'or',icon:'🔀'},
+        {char:'還是',meaning:'or (in question)',icon:'❓'},
+        {char:'和',meaning:'and',icon:'➕'},
+        {char:'跟',meaning:'with/and',icon:'👥'},
+        {char:'同',meaning:'with/same',icon:'='},
+        {char:'什麼',meaning:'what',icon:'❓'},
+        {char:'誰',meaning:'who',icon:'❓'},
+        {char:'哪',meaning:'which',icon:'❓'},
+        {char:'怎樣',meaning:'how',icon:'❓'},
+        {char:'為什麼',meaning:'why',icon:'❓'},
+        {char:'多少',meaning:'how many/much',icon:'🔢'},
+        {char:'幾',meaning:'how many/several',icon:'🔢'},
+        {char:'哪裡',meaning:'where',icon:'📍'},
+        {char:'什麼時候',meaning:'when',icon:'⏰'},
+        {char:'怎麼',meaning:'how',icon:'❓'},
+        {char:'比較',meaning:'compare',icon:'↔️'},
+        {char:'特別',meaning:'special',icon:'⭐'},
+        {char:'一般',meaning:'general/ordinary',icon:'📊'},
+        {char:'重要',meaning:'important',icon:'❗'},
+        {char:'容易',meaning:'easy',icon:'😊'},
+        {char:'困難',meaning:'difficult',icon:'😓'},
+        {char:'簡單',meaning:'simple',icon:'✓'},
+        {char:'複雜',meaning:'complex',icon:'🌀'},
+        {char:'明白',meaning:'understand',icon:'💡'},
+        {char:'清楚',meaning:'clear',icon:'✨'},
+    ],
+    P2: [],
+    P3: [],
+    P4: [],
+    P5: [],
+    P6: [],
+    F1: [],
+};
+
+let gameState = {
+    currentLevel: 'K1', totalStars: 0,
+    K1: { stars: 0, sublevel: 1 }, K2: { stars: 0, sublevel: 1 }, K3: { stars: 0, sublevel: 1 },
+    P1: { stars: 0, sublevel: 1 }, P2: { stars: 0, sublevel: 1 }, P3: { stars: 0, sublevel: 1 },
+    P4: { stars: 0, sublevel: 1 }, P5: { stars: 0, sublevel: 1 }, P6: { stars: 0, sublevel: 1 },
+    F1: { stars: 0, sublevel: 1 }
+};
+
+let currentSession = {
+    level: 'K1', questionIndex: 0, sessionCorrect: 0, sessionWrong: 0,
+    questions: [], currentQuestion: null, answered: false, answers: []
+};
+
+function loadGameState() {
+    const saved = localStorage.getItem(getStorageKey('chineseGameState'));
+    if (saved) {
+        try { gameState = JSON.parse(saved); }
+        catch (e) { gameState = freshGameState(); }
+    } else {
+        gameState = freshGameState();
+    }
+
+    // Repair any missing levels from older saves.
+    ALL_LEVELS.forEach(l => {
+        if (!gameState[l]) gameState[l] = { stars: 0, sublevel: 1 };
+        if (gameState[l].stars > MAX_STARS) gameState[l].stars = MAX_STARS;
+    });
+    if (!gameState.currentLevel) gameState.currentLevel = 'K1';
+    // A previous click may have parked us on a level with no words yet.
+    const cur = characterDatabase[gameState.currentLevel];
+    if (!cur || cur.length < 4) gameState.currentLevel = 'K1';
+
+    applyGuaranteedStars(gameState, currentProfile);
+    updateRPGDisplay();
+}
+
+function saveGameState() {
+    if (!currentProfile) return;
+    applyGuaranteedStars(gameState, currentProfile);
+    gameState.updatedAt = Date.now();
+    localStorage.setItem(getStorageKey('chineseGameState'), JSON.stringify(gameState));
+    cloudPushDebounced();
+}
+
+function updateRPGDisplay() {
+    const level = gameState.currentLevel;
+    if (!gameState[level]) { gameState[level] = { stars: 0, sublevel: 1 }; }
+    
+    const sublevel = gameState[level].sublevel;
+    const stars = gameState[level].stars;
+    
+    gameState.totalStars = ALL_LEVELS.reduce((sum, key) => {
+        const d = gameState[key];
+        return sum + (d && d.stars ? d.stars : 0);
+    }, 0);
+    
+    // Update level buttons with progress indicators
+    updateLevelButtons();
+}
+
+function updateLevelButtons() {
+    const levels = ['K1', 'K2', 'K3', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'F1'];
+    const icons = ['🌈', '🎨', '🎯', '📖', '📝', '🎓', '✏️', '🖊️', '🖍️', '🏆'];
+    const wordCounts = [110, 120, 130, 140, 150, 160, 170, 180, 190, 200];
+    
+    levels.forEach((levelCode, index) => {
+        const btn = document.querySelector(`.level-btn.${levelCode.toLowerCase()}`);
+        if (!btn) return;
+        
+        const levelData = gameState[levelCode];
+        const raw = levelData && levelData.stars ? levelData.stars : 0;
+        const stars = Math.max(0, Math.min(MAX_STARS, raw));
+        
+        // Create star display: filled stars + empty stars (total 6)
+        const filledStars = '⭐'.repeat(stars);
+        const emptyStars = '☆'.repeat(MAX_STARS - stars);
+        const starsDisplay = filledStars + emptyStars;
+
+        const pool = characterDatabase[levelCode];
+        const ready = pool && pool.length >= 4;
+
+        if (ready) {
+            btn.classList.remove('locked');
+            btn.innerHTML = `
+                <div style="font-size: 1.1em; font-weight: bold;">${icons[index]} ${levelCode} ${starsDisplay}</div>
+                <small style="font-size: 0.7em;">${wordCounts[index]} words</small>
+            `;
+        } else {
+            btn.classList.add('locked');
+            btn.innerHTML = `
+                <div style="font-size: 1.1em; font-weight: bold;">🔒 ${levelCode}</div>
+                <small style="font-size: 0.7em;">即將推出 Coming soon</small>
+            `;
+        }
+    });
+}
+
+function showToast(message) {
+    const existing = document.getElementById('gameToast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.id = 'gameToast';
+    toast.className = 'game-toast';
+    toast.innerHTML = message;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2600);
+}
+
+function selectLevel(level) {
+    const pool = characterDatabase[level];
+    if (!pool || pool.length < 4) {
+        showToast(`🔒 ${level} 字詞仍在準備中<br><small>${level} is coming soon</small>`);
+        return;
+    }
+    gameState.currentLevel = level;
+    saveGameState();
+    updateRPGDisplay();
+    startSession();
+}
+
+function returnToMenu() {
+    document.getElementById('gameContainer').style.display = 'none';
+    document.getElementById('levelSelector').style.display = 'block';
+    saveGameState();
+}
+
+
+function buildGameShell() {
+    const progressHtml = Array.from({length: 10}, (_, i) => 
+        `<div class="question-dot ${i === 0 ? 'current' : ''}">${i + 1}</div>`
+    ).join('');
+
+    document.getElementById('gameContainer').innerHTML = `
+        <div class="nav-bar">
+            <button class="nav-btn" onclick="returnToMenu()">🏠 返回主選單<br>Back to Menu</button>
+            <button class="nav-btn" onclick="showWordList()">📚 字詞表<br>Word List</button>
+        </div>
+        <div class="session-progress" id="sessionProgress">${progressHtml}</div>
+        <div class="score-board">
+            <div class="score-item"><div>✅ 正確</div><span class="score-number" id="sessionCorrect">0</span></div>
+            <div class="score-item"><div>❌ 錯誤</div><span class="score-number" id="sessionWrong">0</span></div>
+        </div>
+        <div class="question-box"><div id="questionDisplay"></div></div>
+        <div class="options-grid" id="optionsGrid"></div>
+    `;
+}
+
+function startSession() {
+    const level = gameState.currentLevel;
+    const pool = characterDatabase[level];
+
+    if (!pool || pool.length < 4) {
+        showToast(`🔒 ${level} 字詞仍在準備中<br><small>${level} is coming soon</small>`);
+        document.getElementById('gameContainer').style.display = 'none';
+        document.getElementById('levelSelector').style.display = 'block';
+        return;
+    }
+
+    currentSession = {
+        level: level, questionIndex: 0, sessionCorrect: 0, sessionWrong: 0,
+        questions: [], currentQuestion: null, answered: false, answers: []
+    };
+
+    currentSession.questions = shuffleArray([...pool]).slice(0, 10);
+
+    document.getElementById('levelSelector').style.display = 'none';
+    document.getElementById('gameContainer').style.display = 'block';
+
+    // Rebuild the shell every time — the results screen replaces it,
+    // so the question elements may not exist any more.
+    buildGameShell();
+
+    loadQuestion();
+}
+
+function shuffleArray(array) {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+}
+
+function loadQuestion() {
+    if (currentSession.questionIndex >= 10) {
+        showSessionResults();
+        return;
+    }
+    
+    currentSession.answered = false;
+    currentSession.currentQuestion = currentSession.questions[currentSession.questionIndex];
+    
+    document.getElementById('sessionCorrect').textContent = currentSession.sessionCorrect;
+    document.getElementById('sessionWrong').textContent = currentSession.sessionWrong;
+    
+    const charLen = currentSession.currentQuestion.char.length;
+    const fontSize = charLen <= 2 ? '4em' : charLen === 3 ? '3em' : '2.5em';
+    document.getElementById('questionDisplay').innerHTML = 
+        `<div class="character-display" style="font-size: ${fontSize}" onclick="speakCantonese('${currentSession.currentQuestion.char}')" title="點擊聽發音 Click to hear pronunciation">${currentSession.currentQuestion.char}<span class="speaker-icon">🔊</span></div>`;
+    
+    generateOptions();
+    updateSessionProgress();
+}
+
+function generateOptions() {
+    const allChars = characterDatabase[currentSession.level];
+    const wrongOptions = [];
+    const usedChars = new Set([currentSession.currentQuestion.char]);
+    const usedMeanings = new Set([currentSession.currentQuestion.meaning]);
+    
+    while (wrongOptions.length < 4) {
+        const randomChar = allChars[Math.floor(Math.random() * allChars.length)];
+        if (!usedChars.has(randomChar.char) && !usedMeanings.has(randomChar.meaning)) {
+            wrongOptions.push(randomChar);
+            usedChars.add(randomChar.char);
+            usedMeanings.add(randomChar.meaning);
+        }
+    }
+    
+    const allOptions = shuffleArray([currentSession.currentQuestion, ...wrongOptions]);
+    
+    document.getElementById('optionsGrid').innerHTML = allOptions.map(option => `
+        <div class="option-card" onclick="selectOption(this, '${option.char}')">
+            <div class="option-icon">${option.icon}</div>
+            <div class="option-text">${option.meaning}</div>
+        </div>
+    `).join('');
+}
+
+function selectOption(card, selectedChar) {
+    if (currentSession.answered) return;
+    
+    currentSession.answered = true;
+    const isCorrect = selectedChar === currentSession.currentQuestion.char;
+    
+    currentSession.answers[currentSession.questionIndex] = isCorrect;
+    
+    if (isCorrect) {
+        card.classList.add('correct');
+        currentSession.sessionCorrect++;
+        showFeedback('🎉');
+        playSuccessSound(); // Play uplifting chime!
+    } else {
+        card.classList.add('wrong');
+        currentSession.sessionWrong++;
+        showFeedback('❌');
+        playWrongSound(); // Play wrong answer sound
+        
+        document.querySelectorAll('.option-card').forEach(c => {
+            if (c.querySelector('.option-text').textContent === currentSession.currentQuestion.meaning) {
+                c.classList.add('correct');
+            }
+        });
+    }
+    
+    document.getElementById('sessionCorrect').textContent = currentSession.sessionCorrect;
+    document.getElementById('sessionWrong').textContent = currentSession.sessionWrong;
+    updateSessionProgress();
+    
+    setTimeout(() => {
+        currentSession.questionIndex++;
+        loadQuestion();
+    }, 500);
+}
+
+function updateSessionProgress() {
+    document.querySelectorAll('.question-dot').forEach((dot, index) => {
+        dot.className = 'question-dot';
+        if (index < currentSession.questionIndex) {
+            dot.classList.add(currentSession.answers[index] ? 'correct' : 'wrong');
+        } else if (index === currentSession.questionIndex) {
+            dot.classList.add('current');
+        }
+    });
+}
+
+function showFeedback(emoji) {
+    const feedback = document.createElement('div');
+    feedback.className = 'feedback';
+    feedback.textContent = emoji;
+    document.body.appendChild(feedback);
+    setTimeout(() => feedback.remove(), 1000);
+}
+
+function showSessionResults() {
+    const perfect = currentSession.sessionCorrect === 10;
+    let starAwarded = false;
+    
+    const lvl = gameState[currentSession.level];
+
+    if (perfect && lvl.stars < MAX_STARS) {
+        starAwarded = true;
+        lvl.stars++;
+
+        if (lvl.stars >= MAX_STARS) {
+            lvl.stars = MAX_STARS;
+            setTimeout(() => showLevelUpAnimation(), 1500);
+        }
+
+        saveGameState();
+        updateRPGDisplay();
+    } else if (perfect) {
+        // Already fully mastered — celebrate but don't add a 7th star.
+        starAwarded = true;
+    }
+    
+    document.getElementById('gameContainer').innerHTML = `
+        <div class="completion-screen">
+            ${starAwarded ? '<div class="star-reward">⭐</div>' : '<div style="font-size: 5em; margin: 15px 0;">👍</div>'}
+            <h2>${starAwarded ? '完美！獲得一顆星！<br>Perfect! Star Earned!' : '做得好！<br>Good Job!'}</h2>
+            <div style="font-size: 1.1em; color: #666; margin: 12px 0; line-height: 1.6;">
+                <p>✅ 正確: ${currentSession.sessionCorrect}/10</p>
+                <p>❌ 錯誤: ${currentSession.sessionWrong}/10</p>
+            </div>
+            <div class="button-group">
+                <button class="continue-button" onclick="continueGame()">繼續練習 Continue</button>
+                <button class="restart-button" onclick="backToMenu()">返回選單 Menu</button>
+            </div>
+        </div>
+    `;
+}
+
+function showLevelUpAnimation() {
+    const animation = document.createElement('div');
+    animation.className = 'level-up-animation';
+    animation.innerHTML = `
+        <div class="level-up-content">
+            <h1>🎊 全部完成！Mastered!</h1>
+            <div class="big-emoji">🏆</div>
+            <h2 style="color: white; font-size: 2em; margin-top: 20px;">
+                ${currentSession.level}<br>⭐⭐⭐⭐⭐⭐
+            </h2>
+        </div>
+    `;
+    document.body.appendChild(animation);
+    setTimeout(() => animation.remove(), 3000);
+}
+
+function continueGame() {
+    startSession();
+}
+
+function backToMenu() {
+    document.getElementById('gameContainer').style.display = 'none';
+    document.getElementById('levelSelector').style.display = 'block';
+    updateRPGDisplay();
+}
+
+function toggleWordList(header) {
+    const section = header.nextElementSibling;
+    const arrow = header.querySelector('.toggle-arrow');
+    
+    if (section.style.display === 'none' || section.style.display === '') {
+        section.style.display = 'block';
+        arrow.textContent = '▼';
+    } else {
+        section.style.display = 'none';
+        arrow.textContent = '►';
+    }
+}
+
+function showWordList() {
+    const allLevels = ['K1', 'K2', 'K3', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'F1'];
+    
+    const modal = document.createElement('div');
+    modal.className = 'word-list-modal';
+    modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+    
+    let levelSections = allLevels.map(level => {
+        const words = characterDatabase[level];
+        return `
+            <div style="margin-bottom: 10px;">
+                <h3 style="background: linear-gradient(135deg, #4a5568 0%, #5a67d8 100%); color: white; padding: 8px 12px; border-radius: 8px; cursor: pointer; margin-bottom: 0; font-size: 0.95em; display: flex; justify-content: space-between; align-items: center;" 
+                    onclick="toggleWordList(this)">
+                    <span>${level} - ${words.length} words</span>
+                    <span class="toggle-arrow">►</span>
+                </h3>
+                <div style="display: none;" class="word-list-section">
+                    ${words.map((word, i) => `
+                        <div class="word-item" style="padding: 5px; font-size: 0.85em;">
+                            <span style="color: #999; min-width: 25px; font-size: 0.8em;">${i + 1}.</span>
+                            <span class="word-item-char" onclick="speakCantonese('${word.char}')" title="點擊聽發音">${word.char}</span>
+                            <span class="word-item-icon" style="font-size: 1.2em;">${word.icon}</span>
+                            <span class="word-item-meaning" style="font-size: 0.8em;">${word.meaning}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }).join('');
+    
+    modal.innerHTML = `
+        <div class="word-list-content" style="max-height: 90vh;">
+            <h2 style="font-size: 1.1em; margin-bottom: 10px;">📚 所有字詞 All Words (1,550)</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 15px; font-size: 0.9em;">點擊級別查看字詞 Click level to view words</p>
+            ${levelSections}
+            <button class="close-modal-btn" onclick="this.closest('.word-list-modal').remove()">關閉 Close</button>
+        </div>
+    `;
+    document.body.appendChild(modal);
+}
+
+// Sound Settings (stored in localStorage)
+let soundSettings = {
+    enabled: true,
+    successVolume: 0.4,
+    wrongVolume: 0.3
+};
+
+function loadSoundSettings() {
+    const saved = localStorage.getItem(getStorageKey('chineseSoundSettings'));
+    if (saved) {
+        soundSettings = JSON.parse(saved);
+    }
+}
+
+function saveSoundSettings() {
+    localStorage.setItem(getStorageKey('chineseSoundSettings'), JSON.stringify(soundSettings));
+}
+
+// Success Sound Effect - More hopeful and uplifting!
+function playSuccessSound() {
+    if (!soundSettings.enabled) return;
+    
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    
+    // Longer, more triumphant melody with 5 notes
+    const notes = [
+        { freq: 523.25, time: 0, duration: 0.12 },      // C5
+        { freq: 659.25, time: 0.10, duration: 0.12 },   // E5
+        { freq: 783.99, time: 0.20, duration: 0.15 },   // G5
+        { freq: 1046.50, time: 0.32, duration: 0.18 },  // C6 - higher octave!
+        { freq: 1318.51, time: 0.46, duration: 0.30 }   // E6 - triumphant finish!
+    ];
+    
+    notes.forEach(note => {
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        // Triangle wave for a softer, more pleasant sound
+        oscillator.type = 'triangle';
+        oscillator.frequency.setValueAtTime(note.freq, audioContext.currentTime + note.time);
+        
+        // Envelope: quick attack, sustain, then fade out
+        gainNode.gain.setValueAtTime(0, audioContext.currentTime + note.time);
+        gainNode.gain.linearRampToValueAtTime(soundSettings.successVolume, audioContext.currentTime + note.time + 0.02);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + note.time + note.duration);
+        
+        oscillator.start(audioContext.currentTime + note.time);
+        oscillator.stop(audioContext.currentTime + note.time + note.duration);
+    });
+}
+
+// Wrong Answer Sound Effect - Longer and more noticeable
+function playWrongSound() {
+    if (!soundSettings.enabled) return;
+    
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    
+    // Two-tone descending sound
+    const tones = [
+        { freq: 350, time: 0, duration: 0.25 },
+        { freq: 250, time: 0.22, duration: 0.35 }
+    ];
+    
+    tones.forEach(tone => {
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        // Sine wave for a gentle tone
+        oscillator.type = 'sine';
+        oscillator.frequency.setValueAtTime(tone.freq, audioContext.currentTime + tone.time);
+        oscillator.frequency.exponentialRampToValueAtTime(tone.freq * 0.8, audioContext.currentTime + tone.time + tone.duration);
+        
+        gainNode.gain.setValueAtTime(0, audioContext.currentTime + tone.time);
+        gainNode.gain.linearRampToValueAtTime(soundSettings.wrongVolume, audioContext.currentTime + tone.time + 0.02);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + tone.time + tone.duration);
+        
+        oscillator.start(audioContext.currentTime + tone.time);
+        oscillator.stop(audioContext.currentTime + tone.time + tone.duration);
+    });
+}
+
+// Show Settings Modal
+function showSettings() {
+    const modal = document.createElement('div');
+    modal.className = 'word-list-modal';
+    modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+    
+    modal.innerHTML = `
+        <div class="word-list-content" style="max-width: 400px;">
+            <h2>⚙️ 設定 Settings</h2>
+            
+            <div style="margin: 20px 0; padding: 15px; background: #1a1a2e; border-radius: 10px;">
+                <h3 style="color: #60a5fa; margin-bottom: 15px; font-size: 1.1em;">🔊 音效 Sound Effects</h3>
+                
+                <div style="margin: 15px 0;">
+                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; color: #e0e0e0;">
+                        <input type="checkbox" id="soundEnabled" ${soundSettings.enabled ? 'checked' : ''} 
+                               style="width: 20px; height: 20px; cursor: pointer;">
+                        <span>啟用音效 Enable Sounds</span>
+                    </label>
+                </div>
+                
+                <div style="margin: 20px 0;">
+                    <label style="color: #b0b0b0; display: block; margin-bottom: 8px;">
+                        ✅ 正確音量 Success Volume
+                    </label>
+                    <input type="range" id="successVolume" min="0" max="1" step="0.1" 
+                           value="${soundSettings.successVolume}"
+                           style="width: 100%; height: 30px; cursor: pointer;">
+                    <div style="text-align: center; color: #60a5fa; margin-top: 5px;">
+                        <span id="successVolumeDisplay">${Math.round(soundSettings.successVolume * 100)}%</span>
+                    </div>
+                </div>
+                
+                <div style="margin: 20px 0;">
+                    <label style="color: #b0b0b0; display: block; margin-bottom: 8px;">
+                        ❌ 錯誤音量 Wrong Volume
+                    </label>
+                    <input type="range" id="wrongVolume" min="0" max="1" step="0.1" 
+                           value="${soundSettings.wrongVolume}"
+                           style="width: 100%; height: 30px; cursor: pointer;">
+                    <div style="text-align: center; color: #60a5fa; margin-top: 5px;">
+                        <span id="wrongVolumeDisplay">${Math.round(soundSettings.wrongVolume * 100)}%</span>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 10px; margin-top: 15px;">
+                    <button onclick="playSuccessSound()" 
+                            style="flex: 1; padding: 10px; background: linear-gradient(135deg, #059669 0%, #10b981 100%); 
+                                   color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                        🎵 測試正確音效<br>Test Success
+                    </button>
+                    <button onclick="playWrongSound()" 
+                            style="flex: 1; padding: 10px; background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); 
+                                   color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                        🎵 測試錯誤音效<br>Test Wrong
+                    </button>
+                </div>
+            </div>
+            
+            <div style="margin: 20px 0; padding: 15px; background: #1a1a2e; border-radius: 10px;">
+                <h3 style="color: #60a5fa; margin-bottom: 15px; font-size: 1.1em;">☁️ 線上同步 Online Sync</h3>
+                <p style="color: #b0b0b0; font-size: 0.85em; margin-bottom: 12px;">
+                    自動在所有電腦和手機之間同步進度。<br>
+                    Auto-syncs progress across every computer and phone.
+                </p>
+
+                <div id="syncStatusBox" style="padding: 10px; border-radius: 8px; background: #0f172a; color: #94a3b8; font-size: 0.85em; text-align: center; margin-bottom: 12px;">
+                    ${getSyncCode()
+                        ? `✅ 已連接 Connected<br><span style="color:#60a5fa; font-family: monospace; font-size: 1.1em; letter-spacing: 1px;">${getSyncCode()}</span>`
+                        : '⚪ 未設定 Not set up yet'}
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
+                    ${getSyncCode() ? `
+                    <div style="display: flex; gap: 10px;">
+                        <button onclick="cloudPush()"
+                                style="flex: 1; padding: 12px; background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+                                       color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                            ⬆️ 上傳<br>Upload
+                        </button>
+                        <button onclick="cloudPull()"
+                                style="flex: 1; padding: 12px; background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+                                       color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                            ⬇️ 下載<br>Download
+                        </button>
+                    </div>
+                    <button onclick="copySyncCode()"
+                            style="padding: 10px; background: #334155; color: #e2e8f0; border: none;
+                                   border-radius: 8px; cursor: pointer; font-weight: bold;">
+                        📋 複製同步碼 Copy Sync Code
+                    </button>
+                    <button onclick="disconnectSync()"
+                            style="padding: 8px; background: transparent; color: #64748b; border: 1px solid #334155;
+                                   border-radius: 8px; cursor: pointer; font-size: 0.85em;">
+                        ✖️ 中斷連接 Disconnect
+                    </button>
+                    ` : `
+                    <button onclick="createSyncCode()"
+                            style="padding: 14px; background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+                                   color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                        ✨ 建立同步碼 Create Sync Code
+                    </button>
+                    <p style="color: #94a3b8; font-size: 0.75em; text-align: center; margin: 4px 0;">
+                        在第一台設備上建立，然後在其他設備輸入同一個碼。<br>
+                        Create once, then enter the same code on other devices.
+                    </p>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="text" id="syncCodeInput" placeholder="輸入同步碼 Enter code"
+                               style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #334155;
+                                      background: #0f172a; color: #e2e8f0; font-family: monospace;">
+                        <button onclick="connectSyncCode()"
+                                style="padding: 10px 16px; background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+                                       color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                            連接
+                        </button>
+                    </div>
+                    `}
+                </div>
+
+                <h3 style="color: #60a5fa; margin: 18px 0 10px; font-size: 1em; border-top: 1px solid #334155; padding-top: 15px;">
+                    💾 檔案備份 File Backup
+                </h3>
+                <p style="color: #b0b0b0; font-size: 0.8em; margin-bottom: 12px;">
+                    離線備用方案 — Offline fallback.
+                </p>
+                
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <button onclick="exportProgress()" 
+                            style="padding: 12px; background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%); 
+                                   color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                        📤 匯出進度 Export Progress
+                    </button>
+                    
+                    <button onclick="document.getElementById('importFile').click()" 
+                            style="padding: 12px; background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%); 
+                                   color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                        📥 匯入進度 Import Progress
+                    </button>
+                    <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importProgress(this)">
+                    
+                    <p style="color: #94a3b8; font-size: 0.75em; margin-top: 5px; text-align: center;">
+                        💡 提示：將匯出的檔案存到 Google Drive，<br>在其他設備上匯入即可同步！
+                    </p>
+                </div>
+            </div>
+            
+            <button class="close-modal-btn" onclick="saveSettingsAndClose(this)">
+                💾 儲存並關閉 Save & Close
+            </button>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Add event listeners for live updates
+    document.getElementById('soundEnabled').onchange = function() {
+        soundSettings.enabled = this.checked;
+    };
+    
+    document.getElementById('successVolume').oninput = function() {
+        soundSettings.successVolume = parseFloat(this.value);
+        document.getElementById('successVolumeDisplay').textContent = Math.round(this.value * 100) + '%';
+    };
+    
+    document.getElementById('wrongVolume').oninput = function() {
+        soundSettings.wrongVolume = parseFloat(this.value);
+        document.getElementById('wrongVolumeDisplay').textContent = Math.round(this.value * 100) + '%';
+    };
+}
+
+function saveSettingsAndClose(btn) {
+    saveSoundSettings();
+    btn.closest('.word-list-modal').remove();
+}
+
+/* ============================================================
+   ONLINE SYNC
+   Progress for BOTH children is stored in one small JSON record
+   on jsonblob.com, addressed by a "sync code" (the blob id).
+   Enter the same code on every device and they stay in sync.
+   ============================================================ */
+
+const SYNC_API = 'https://jsonblob.com/api/jsonBlob';
+let cloudPushTimer = null;
+let cloudBusy = false;
+
+function getSyncCode() {
+    return localStorage.getItem('chineseGameSyncCode') || '';
+}
+
+function setSyncCode(code) {
+    if (code) localStorage.setItem('chineseGameSyncCode', code);
+    else localStorage.removeItem('chineseGameSyncCode');
+}
+
+function setSyncStatus(text) {
+    const box = document.getElementById('syncStatusBox');
+    if (box) box.innerHTML = text;
+}
+
+// Collect every profile's saved progress into one object.
+function collectAllProfiles() {
+    const bundle = { app: 'chinese-learning-game', savedAt: Date.now(), profiles: {} };
+    ['Hugo', 'Sophie'].forEach(name => {
+        const raw = localStorage.getItem(`${name}_chineseGameState`);
+        if (raw) {
+            try { bundle.profiles[name] = JSON.parse(raw); } catch (e) {}
+        }
+    });
+    return bundle;
+}
+
+// Merge remote into local, keeping the HIGHER star count per level so a
+// stale device can never wipe out progress earned somewhere else.
+function mergeBundle(remote) {
+    if (!remote || !remote.profiles) return false;
+    let changed = false;
+
+    ['Hugo', 'Sophie'].forEach(name => {
+        const incoming = remote.profiles[name];
+        if (!incoming) return;
+
+        let local = {};
+        try { local = JSON.parse(localStorage.getItem(`${name}_chineseGameState`) || '{}'); }
+        catch (e) { local = {}; }
+
+        const merged = Object.assign(freshGameState(), local);
+
+        ALL_LEVELS.forEach(lvl => {
+            const a = (local[lvl] && local[lvl].stars) || 0;
+            const b = (incoming[lvl] && incoming[lvl].stars) || 0;
+            const best = Math.min(MAX_STARS, Math.max(a, b));
+            if (!merged[lvl]) merged[lvl] = { stars: 0, sublevel: 1 };
+            if (merged[lvl].stars !== best) changed = true;
+            merged[lvl].stars = best;
+        });
+
+        if ((incoming.updatedAt || 0) > (local.updatedAt || 0)) {
+            merged.currentLevel = incoming.currentLevel || merged.currentLevel || 'K1';
+        }
+        merged.updatedAt = Math.max(local.updatedAt || 0, incoming.updatedAt || 0);
+
+        applyGuaranteedStars(merged, name);
+        localStorage.setItem(`${name}_chineseGameState`, JSON.stringify(merged));
+
+        if (name === currentProfile) {
+            gameState = merged;
+            updateRPGDisplay();
+        }
+    });
+
+    return changed;
+}
+
+async function createSyncCode() {
+    setSyncStatus('⏳ 建立中… Creating…');
+    try {
+        const res = await fetch(SYNC_API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(collectAllProfiles())
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+
+        // The new blob's id comes back in the Location header.
+        const loc = res.headers.get('Location') || res.headers.get('location') || '';
+        const code = loc.split('/').pop();
+        if (!code) throw new Error('no-id');
+
+        setSyncCode(code);
+        setSyncStatus(`✅ 已建立 Created<br><span style="color:#60a5fa; font-family: monospace; font-size:1.1em;">${code}</span>`);
+        alert(`同步碼已建立！Sync code created:\n\n${code}\n\n請在其他設備的設定中輸入這個碼。\nEnter this code in Settings on your other devices.`);
+    } catch (e) {
+        setSyncStatus('❌ 建立失敗 Failed — 請檢查網絡 Check connection');
+        alert('無法建立同步碼。Could not create sync code.\n\n請檢查網絡連接，或改用下面的檔案備份。\nCheck your internet, or use File Backup below.');
+    }
+}
+
+async function connectSyncCode() {
+    const input = document.getElementById('syncCodeInput');
+    const code = input ? input.value.trim() : '';
+    if (!code) { alert('請輸入同步碼 Please enter a sync code'); return; }
+
+    setSyncStatus('⏳ 連接中… Connecting…');
+    try {
+        const res = await fetch(`${SYNC_API}/${encodeURIComponent(code)}`);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const remote = await res.json();
+
+        setSyncCode(code);
+        mergeBundle(remote);
+        await cloudPush(true);
+
+        setSyncStatus(`✅ 已連接 Connected<br><span style="color:#60a5fa; font-family: monospace;">${code}</span>`);
+        alert('連接成功！進度已同步。\nConnected — progress synced.');
+    } catch (e) {
+        setSyncStatus('❌ 連接失敗 — 同步碼可能不正確');
+        alert('找不到這個同步碼。Sync code not found.\n\n請檢查是否輸入正確。\nPlease check the code is correct.');
+    }
+}
+
+async function cloudPush(silent) {
+    const code = getSyncCode();
+    if (!code || cloudBusy) return;
+
+    cloudBusy = true;
+    if (!silent) setSyncStatus('⏳ 上傳中… Uploading…');
+    try {
+        const res = await fetch(`${SYNC_API}/${encodeURIComponent(code)}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(collectAllProfiles())
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        if (!silent) {
+            setSyncStatus(`✅ 已上傳 Uploaded<br><span style="color:#60a5fa; font-family: monospace;">${code}</span>`);
+            alert('進度已上傳到雲端！\nProgress uploaded to the cloud.');
+        }
+    } catch (e) {
+        if (!silent) {
+            setSyncStatus('❌ 上傳失敗 Upload failed');
+            alert('上傳失敗，進度已安全存在本機。\nUpload failed — progress is still saved on this device.');
+        }
+    } finally {
+        cloudBusy = false;
+    }
+}
+
+function cloudPushDebounced() {
+    if (!getSyncCode()) return;
+    clearTimeout(cloudPushTimer);
+    cloudPushTimer = setTimeout(() => cloudPush(true), 1500);
+}
+
+async function cloudPull(opts) {
+    const silent = opts && opts.silent;
+    const code = getSyncCode();
+    if (!code) {
+        if (!silent) alert('尚未設定同步碼。\nNo sync code set up yet.');
+        return;
+    }
+
+    if (!silent) setSyncStatus('⏳ 下載中… Downloading…');
+    try {
+        const res = await fetch(`${SYNC_API}/${encodeURIComponent(code)}`, { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const remote = await res.json();
+        mergeBundle(remote);
+
+        if (!silent) {
+            setSyncStatus(`✅ 已同步 Synced<br><span style="color:#60a5fa; font-family: monospace;">${code}</span>`);
+            alert('進度已從雲端更新！\nProgress updated from the cloud.');
+        }
+    } catch (e) {
+        if (!silent) {
+            setSyncStatus('❌ 下載失敗 Download failed');
+            alert('下載失敗，請檢查網絡。\nDownload failed — please check your connection.');
+        }
+    }
+}
+
+function copySyncCode() {
+    const code = getSyncCode();
+    if (!code) return;
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(code)
+            .then(() => alert(`同步碼已複製！Copied:\n\n${code}`))
+            .catch(() => alert(`同步碼 Sync code:\n\n${code}`));
+    } else {
+        alert(`同步碼 Sync code:\n\n${code}`);
+    }
+}
+
+function disconnectSync() {
+    if (!confirm('中斷雲端同步？本機進度會保留。\nDisconnect cloud sync? Local progress is kept.')) return;
+    setSyncCode('');
+    setSyncStatus('⚪ 未設定 Not set up yet');
+}
+
+// Cloud Sync Functions
+function exportProgress() {
+    // Collect all data for current profile
+    const profileData = {
+        profile: currentProfile,
+        gameState: gameState,
+        soundSettings: soundSettings,
+        exportDate: new Date().toISOString(),
+        version: '1.0'
+    };
+    
+    // Convert to JSON
+    const dataStr = JSON.stringify(profileData, null, 2);
+    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    
+    // Create download link
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${currentProfile}_progress_${new Date().toISOString().split('T')[0]}.json`;
+    
+    // Trigger download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    
+    // Show success message
+    alert(`✅ 進度已匯出！
+Progress exported!
+
+檔案名稱: ${link.download}
+
+請將此檔案存到 Google Drive 或其他雲端，
+在其他設備上匯入即可同步進度！
+
+Save this file to Google Drive or cloud storage,
+then import it on other devices to sync!`);
+}
+
+function importProgress(input) {
+    const file = input.files[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const importedData = JSON.parse(e.target.result);
+            
+            // Verify data structure
+            if (!importedData.gameState || !importedData.profile) {
+                alert('❌ 無效的檔案格式！\nInvalid file format!');
+                return;
+            }
+            
+            // Confirm import
+            const confirmMsg = `📥 確認匯入進度？
+Confirm import progress?
+
+用戶: ${importedData.profile}
+Profile: ${importedData.profile}
+
+匯出日期: ${new Date(importedData.exportDate).toLocaleString('zh-HK')}
+Export date: ${new Date(importedData.exportDate).toLocaleString('en-US')}
+
+⚠️ 這將覆蓋 ${currentProfile} 的當前進度！
+This will overwrite ${currentProfile}'s current progress!`;
+            
+            if (!confirm(confirmMsg)) {
+                input.value = ''; // Clear file input
+                return;
+            }
+            
+            // Import the data
+            gameState = importedData.gameState;
+            if (importedData.soundSettings) {
+                soundSettings = importedData.soundSettings;
+            }
+            
+            // Save to localStorage
+            saveGameState();
+            saveSoundSettings();
+            
+            // Refresh display
+            updateRPGDisplay();
+            
+            // Clear file input
+            input.value = '';
+            
+            // Close modal and show success
+            const modal = document.querySelector('.word-list-modal');
+            if (modal) modal.remove();
+            
+            alert(`✅ 進度匯入成功！
+Progress imported successfully!
+
+${currentProfile} 的進度已更新！
+${currentProfile}'s progress has been updated!`);
+            
+        } catch (error) {
+            alert(`❌ 匯入失敗！
+Import failed!
+
+錯誤: ${error.message}
+Error: ${error.message}`);
+            input.value = ''; // Clear file input
+        }
+    };
+    
+    reader.readAsText(file);
+}
+
+
+// Cantonese Text-to-Speech Function
+function speakCantonese(text) {
+    // Cancel any ongoing speech
+    window.speechSynthesis.cancel();
+    
+    // Create a new speech utterance
+    const utterance = new SpeechSynthesisUtterance(text);
+    
+    // Try to use Cantonese voice (zh-HK or yue)
+    const voices = window.speechSynthesis.getVoices();
+    const cantoneseVoice = voices.find(voice => 
+        voice.lang === 'zh-HK' || 
+        voice.lang === 'yue-HK' ||
+        voice.lang.startsWith('zh-HK') ||
+        voice.name.includes('Cantonese') ||
+        voice.name.includes('粵語') ||
+        voice.name.includes('Hong Kong')
+    );
+    
+    if (cantoneseVoice) {
+        utterance.voice = cantoneseVoice;
+    } else {
+        // Fallback to any Chinese voice
+        const chineseVoice = voices.find(voice => 
+            voice.lang.startsWith('zh') ||
+            voice.name.includes('Chinese')
+        );
+        if (chineseVoice) {
+            utterance.voice = chineseVoice;
+        }
+    }
+    
+    // Set speech properties
+    utterance.lang = 'zh-HK'; // Set to Hong Kong Cantonese
+    utterance.rate = 0.9; // Slightly slower for clarity
+    utterance.pitch = 1.0;
+    utterance.volume = 1.0;
+    
+    // Speak the text
+    window.speechSynthesis.speak(utterance);
+}
+
+// Load voices (needed for some browsers)
+if (window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = function() {
+        window.speechSynthesis.getVoices();
+    };
+}
+
+window.onload = function() {
+    const savedProfile = localStorage.getItem('currentProfile');
+    if (savedProfile) {
+        selectProfile(savedProfile);
+    } else {
+        document.getElementById('profileSelector').style.display = 'block';
+    }
+};
+    </script>
+</div> <!-- Close appContainer -->
+</body>
+</html>

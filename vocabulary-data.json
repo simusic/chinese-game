@@ -1,0 +1,2510 @@
+{
+  "K1": [
+    {
+      "char": "一",
+      "meaning": "one",
+      "icon": "1️⃣"
+    },
+    {
+      "char": "二",
+      "meaning": "two",
+      "icon": "2️⃣"
+    },
+    {
+      "char": "三",
+      "meaning": "three",
+      "icon": "3️⃣"
+    },
+    {
+      "char": "四",
+      "meaning": "four",
+      "icon": "4️⃣"
+    },
+    {
+      "char": "五",
+      "meaning": "five",
+      "icon": "5️⃣"
+    },
+    {
+      "char": "六",
+      "meaning": "six",
+      "icon": "6️⃣"
+    },
+    {
+      "char": "七",
+      "meaning": "seven",
+      "icon": "7️⃣"
+    },
+    {
+      "char": "八",
+      "meaning": "eight",
+      "icon": "8️⃣"
+    },
+    {
+      "char": "九",
+      "meaning": "nine",
+      "icon": "9️⃣"
+    },
+    {
+      "char": "十",
+      "meaning": "ten",
+      "icon": "🔟"
+    },
+    {
+      "char": "人",
+      "meaning": "person",
+      "icon": "🧑"
+    },
+    {
+      "char": "大",
+      "meaning": "big",
+      "icon": "🔷"
+    },
+    {
+      "char": "小",
+      "meaning": "small",
+      "icon": "🔹"
+    },
+    {
+      "char": "口",
+      "meaning": "mouth",
+      "icon": "👄"
+    },
+    {
+      "char": "手",
+      "meaning": "hand",
+      "icon": "✋"
+    },
+    {
+      "char": "火",
+      "meaning": "fire",
+      "icon": "🔥"
+    },
+    {
+      "char": "水",
+      "meaning": "water",
+      "icon": "💧"
+    },
+    {
+      "char": "山",
+      "meaning": "mountain",
+      "icon": "⛰️"
+    },
+    {
+      "char": "日",
+      "meaning": "sun/day",
+      "icon": "☀️"
+    },
+    {
+      "char": "月",
+      "meaning": "moon/month",
+      "icon": "🌙"
+    },
+    {
+      "char": "木",
+      "meaning": "tree/wood",
+      "icon": "🌳"
+    },
+    {
+      "char": "門",
+      "meaning": "door",
+      "icon": "🚪"
+    },
+    {
+      "char": "田",
+      "meaning": "field",
+      "icon": "🌾"
+    },
+    {
+      "char": "土",
+      "meaning": "earth/soil",
+      "icon": "🏔️"
+    },
+    {
+      "char": "石",
+      "meaning": "stone",
+      "icon": "🪨"
+    },
+    {
+      "char": "目",
+      "meaning": "eye",
+      "icon": "👁️"
+    },
+    {
+      "char": "耳",
+      "meaning": "ear",
+      "icon": "👂"
+    },
+    {
+      "char": "天",
+      "meaning": "sky/heaven",
+      "icon": "☁️"
+    },
+    {
+      "char": "上",
+      "meaning": "up/above",
+      "icon": "⬆️"
+    },
+    {
+      "char": "下",
+      "meaning": "down/below",
+      "icon": "⬇️"
+    },
+    {
+      "char": "爸爸",
+      "meaning": "father",
+      "icon": "👨"
+    },
+    {
+      "char": "媽媽",
+      "meaning": "mother",
+      "icon": "👩"
+    },
+    {
+      "char": "哥哥",
+      "meaning": "older brother",
+      "icon": "👦"
+    },
+    {
+      "char": "姐姐",
+      "meaning": "older sister",
+      "icon": "👧"
+    },
+    {
+      "char": "弟弟",
+      "meaning": "younger brother",
+      "icon": "👦"
+    },
+    {
+      "char": "妹妹",
+      "meaning": "younger sister",
+      "icon": "👧"
+    },
+    {
+      "char": "爺爺",
+      "meaning": "grandfather",
+      "icon": "👴"
+    },
+    {
+      "char": "嫲嫲",
+      "meaning": "grandmother",
+      "icon": "👵"
+    },
+    {
+      "char": "老師",
+      "meaning": "teacher",
+      "icon": "👨‍🏫"
+    },
+    {
+      "char": "同學",
+      "meaning": "classmate",
+      "icon": "👥"
+    },
+    {
+      "char": "來",
+      "meaning": "come",
+      "icon": "➡️"
+    },
+    {
+      "char": "去",
+      "meaning": "go",
+      "icon": "🏃"
+    },
+    {
+      "char": "看",
+      "meaning": "look/see",
+      "icon": "👀"
+    },
+    {
+      "char": "聽",
+      "meaning": "listen",
+      "icon": "👂"
+    },
+    {
+      "char": "吃",
+      "meaning": "eat",
+      "icon": "🍴"
+    },
+    {
+      "char": "喝",
+      "meaning": "drink",
+      "icon": "🥤"
+    },
+    {
+      "char": "坐",
+      "meaning": "sit",
+      "icon": "🪑"
+    },
+    {
+      "char": "站",
+      "meaning": "stand",
+      "icon": "🧍"
+    },
+    {
+      "char": "走",
+      "meaning": "walk",
+      "icon": "🚶"
+    },
+    {
+      "char": "跑",
+      "meaning": "run",
+      "icon": "🏃"
+    },
+    {
+      "char": "笑",
+      "meaning": "laugh/smile",
+      "icon": "😄"
+    },
+    {
+      "char": "哭",
+      "meaning": "cry",
+      "icon": "😢"
+    },
+    {
+      "char": "說",
+      "meaning": "say/speak",
+      "icon": "💬"
+    },
+    {
+      "char": "唱",
+      "meaning": "sing",
+      "icon": "🎤"
+    },
+    {
+      "char": "跳",
+      "meaning": "jump",
+      "icon": "🤸"
+    },
+    {
+      "char": "狗",
+      "meaning": "dog",
+      "icon": "🐕"
+    },
+    {
+      "char": "貓",
+      "meaning": "cat",
+      "icon": "🐱"
+    },
+    {
+      "char": "魚",
+      "meaning": "fish",
+      "icon": "🐟"
+    },
+    {
+      "char": "鳥",
+      "meaning": "bird",
+      "icon": "🐦"
+    },
+    {
+      "char": "牛",
+      "meaning": "cow",
+      "icon": "🐮"
+    },
+    {
+      "char": "羊",
+      "meaning": "sheep",
+      "icon": "🐑"
+    },
+    {
+      "char": "馬",
+      "meaning": "horse",
+      "icon": "🐴"
+    },
+    {
+      "char": "雞",
+      "meaning": "chicken",
+      "icon": "🐔"
+    },
+    {
+      "char": "豬",
+      "meaning": "pig",
+      "icon": "🐷"
+    },
+    {
+      "char": "鴨",
+      "meaning": "duck",
+      "icon": "🦆"
+    },
+    {
+      "char": "兔",
+      "meaning": "rabbit",
+      "icon": "🐰"
+    },
+    {
+      "char": "虎",
+      "meaning": "tiger",
+      "icon": "🐯"
+    },
+    {
+      "char": "龍",
+      "meaning": "dragon",
+      "icon": "🐉"
+    },
+    {
+      "char": "蛇",
+      "meaning": "snake",
+      "icon": "🐍"
+    },
+    {
+      "char": "猴",
+      "meaning": "monkey",
+      "icon": "🐵"
+    },
+    {
+      "char": "紅",
+      "meaning": "red",
+      "icon": "🔴"
+    },
+    {
+      "char": "黃",
+      "meaning": "yellow",
+      "icon": "🟡"
+    },
+    {
+      "char": "藍",
+      "meaning": "blue",
+      "icon": "🔵"
+    },
+    {
+      "char": "綠",
+      "meaning": "green",
+      "icon": "🟢"
+    },
+    {
+      "char": "白",
+      "meaning": "white",
+      "icon": "⚪"
+    },
+    {
+      "char": "黑",
+      "meaning": "black",
+      "icon": "⚫"
+    },
+    {
+      "char": "紅色",
+      "meaning": "red color",
+      "icon": "🔴"
+    },
+    {
+      "char": "黃色",
+      "meaning": "yellow color",
+      "icon": "🟡"
+    },
+    {
+      "char": "藍色",
+      "meaning": "blue color",
+      "icon": "🔵"
+    },
+    {
+      "char": "綠色",
+      "meaning": "green color",
+      "icon": "🟢"
+    },
+    {
+      "char": "頭",
+      "meaning": "head",
+      "icon": "🗣️"
+    },
+    {
+      "char": "眼睛",
+      "meaning": "eyes",
+      "icon": "👁️"
+    },
+    {
+      "char": "鼻子",
+      "meaning": "nose",
+      "icon": "👃"
+    },
+    {
+      "char": "嘴巴",
+      "meaning": "mouth",
+      "icon": "👄"
+    },
+    {
+      "char": "耳朵",
+      "meaning": "ears",
+      "icon": "👂"
+    },
+    {
+      "char": "手",
+      "meaning": "hand",
+      "icon": "✋"
+    },
+    {
+      "char": "腳",
+      "meaning": "foot",
+      "icon": "🦶"
+    },
+    {
+      "char": "臉",
+      "meaning": "face",
+      "icon": "😊"
+    },
+    {
+      "char": "頭髮",
+      "meaning": "hair",
+      "icon": "💇"
+    },
+    {
+      "char": "牙齒",
+      "meaning": "teeth",
+      "icon": "🦷"
+    },
+    {
+      "char": "好",
+      "meaning": "good",
+      "icon": "👍"
+    },
+    {
+      "char": "多",
+      "meaning": "many",
+      "icon": "📊"
+    },
+    {
+      "char": "少",
+      "meaning": "few",
+      "icon": "📉"
+    },
+    {
+      "char": "長",
+      "meaning": "long",
+      "icon": "📏"
+    },
+    {
+      "char": "短",
+      "meaning": "short",
+      "icon": "📐"
+    },
+    {
+      "char": "高",
+      "meaning": "tall/high",
+      "icon": "📶"
+    },
+    {
+      "char": "矮",
+      "meaning": "short (height)",
+      "icon": "📉"
+    },
+    {
+      "char": "新",
+      "meaning": "new",
+      "icon": "🆕"
+    },
+    {
+      "char": "舊",
+      "meaning": "old",
+      "icon": "📦"
+    },
+    {
+      "char": "快",
+      "meaning": "fast",
+      "icon": "⚡"
+    },
+    {
+      "char": "我",
+      "meaning": "I/me",
+      "icon": "👤"
+    },
+    {
+      "char": "你",
+      "meaning": "you",
+      "icon": "👤"
+    },
+    {
+      "char": "他",
+      "meaning": "he/him",
+      "icon": "👨"
+    },
+    {
+      "char": "她",
+      "meaning": "she/her",
+      "icon": "👩"
+    },
+    {
+      "char": "們",
+      "meaning": "plural marker",
+      "icon": "👥"
+    },
+    {
+      "char": "你的",
+      "meaning": "your",
+      "icon": "👉"
+    },
+    {
+      "char": "是",
+      "meaning": "is/am/are",
+      "icon": "✓"
+    },
+    {
+      "char": "不",
+      "meaning": "not/no",
+      "icon": "❌"
+    },
+    {
+      "char": "有",
+      "meaning": "have",
+      "icon": "✋"
+    },
+    {
+      "char": "在",
+      "meaning": "at/in",
+      "icon": "📍"
+    }
+  ],
+  "K2": [
+    {
+      "char": "十一",
+      "meaning": "eleven",
+      "icon": "🔢"
+    },
+    {
+      "char": "十二",
+      "meaning": "twelve",
+      "icon": "🔢"
+    },
+    {
+      "char": "十三",
+      "meaning": "thirteen",
+      "icon": "🔢"
+    },
+    {
+      "char": "十四",
+      "meaning": "fourteen",
+      "icon": "🔢"
+    },
+    {
+      "char": "十五",
+      "meaning": "fifteen",
+      "icon": "🔢"
+    },
+    {
+      "char": "十六",
+      "meaning": "sixteen",
+      "icon": "🔢"
+    },
+    {
+      "char": "十七",
+      "meaning": "seventeen",
+      "icon": "🔢"
+    },
+    {
+      "char": "十八",
+      "meaning": "eighteen",
+      "icon": "🔢"
+    },
+    {
+      "char": "十九",
+      "meaning": "nineteen",
+      "icon": "🔢"
+    },
+    {
+      "char": "二十",
+      "meaning": "twenty",
+      "icon": "🔢"
+    },
+    {
+      "char": "三十",
+      "meaning": "thirty",
+      "icon": "🔢"
+    },
+    {
+      "char": "五十",
+      "meaning": "fifty",
+      "icon": "🔢"
+    },
+    {
+      "char": "一百",
+      "meaning": "one hundred",
+      "icon": "💯"
+    },
+    {
+      "char": "第一",
+      "meaning": "first",
+      "icon": "🥇"
+    },
+    {
+      "char": "第二",
+      "meaning": "second",
+      "icon": "🥈"
+    },
+    {
+      "char": "花",
+      "meaning": "flower",
+      "icon": "🌸"
+    },
+    {
+      "char": "草",
+      "meaning": "grass",
+      "icon": "🌿"
+    },
+    {
+      "char": "樹",
+      "meaning": "tree",
+      "icon": "🌳"
+    },
+    {
+      "char": "雲",
+      "meaning": "cloud",
+      "icon": "☁️"
+    },
+    {
+      "char": "雨",
+      "meaning": "rain",
+      "icon": "🌧️"
+    },
+    {
+      "char": "風",
+      "meaning": "wind",
+      "icon": "💨"
+    },
+    {
+      "char": "雪",
+      "meaning": "snow",
+      "icon": "❄️"
+    },
+    {
+      "char": "星星",
+      "meaning": "star",
+      "icon": "⭐"
+    },
+    {
+      "char": "書",
+      "meaning": "book",
+      "icon": "📚"
+    },
+    {
+      "char": "筆",
+      "meaning": "pen",
+      "icon": "✒️"
+    },
+    {
+      "char": "紙",
+      "meaning": "paper",
+      "icon": "📄"
+    },
+    {
+      "char": "車",
+      "meaning": "car",
+      "icon": "🚗"
+    },
+    {
+      "char": "船",
+      "meaning": "boat",
+      "icon": "🚢"
+    },
+    {
+      "char": "飛機",
+      "meaning": "airplane",
+      "icon": "✈️"
+    },
+    {
+      "char": "房子",
+      "meaning": "house",
+      "icon": "🏠"
+    },
+    {
+      "char": "桌子",
+      "meaning": "table",
+      "icon": "🪑"
+    },
+    {
+      "char": "椅子",
+      "meaning": "chair",
+      "icon": "💺"
+    },
+    {
+      "char": "床",
+      "meaning": "bed",
+      "icon": "🛏️"
+    },
+    {
+      "char": "窗",
+      "meaning": "window",
+      "icon": "🪟"
+    },
+    {
+      "char": "燈",
+      "meaning": "light/lamp",
+      "icon": "💡"
+    },
+    {
+      "char": "象",
+      "meaning": "elephant",
+      "icon": "🐘"
+    },
+    {
+      "char": "獅",
+      "meaning": "lion",
+      "icon": "🦁"
+    },
+    {
+      "char": "熊",
+      "meaning": "bear",
+      "icon": "🐻"
+    },
+    {
+      "char": "鹿",
+      "meaning": "deer",
+      "icon": "🦌"
+    },
+    {
+      "char": "狼",
+      "meaning": "wolf",
+      "icon": "🐺"
+    },
+    {
+      "char": "狐",
+      "meaning": "fox",
+      "icon": "🦊"
+    },
+    {
+      "char": "鼠",
+      "meaning": "mouse/rat",
+      "icon": "🐭"
+    },
+    {
+      "char": "蜂",
+      "meaning": "bee",
+      "icon": "🐝"
+    },
+    {
+      "char": "蝶",
+      "meaning": "butterfly",
+      "icon": "🦋"
+    },
+    {
+      "char": "蟲",
+      "meaning": "insect",
+      "icon": "🐛"
+    },
+    {
+      "char": "龜",
+      "meaning": "turtle",
+      "icon": "🐢"
+    },
+    {
+      "char": "蛙",
+      "meaning": "frog",
+      "icon": "🐸"
+    },
+    {
+      "char": "鵝",
+      "meaning": "goose",
+      "icon": "🦆"
+    },
+    {
+      "char": "鷹",
+      "meaning": "eagle",
+      "icon": "🦅"
+    },
+    {
+      "char": "鶴",
+      "meaning": "crane",
+      "icon": "🦢"
+    },
+    {
+      "char": "玩",
+      "meaning": "play",
+      "icon": "🎮"
+    },
+    {
+      "char": "睡",
+      "meaning": "sleep",
+      "icon": "😴"
+    },
+    {
+      "char": "起",
+      "meaning": "rise/get up",
+      "icon": "⏰"
+    },
+    {
+      "char": "開",
+      "meaning": "open",
+      "icon": "📖"
+    },
+    {
+      "char": "關",
+      "meaning": "close",
+      "icon": "🚪"
+    },
+    {
+      "char": "拿",
+      "meaning": "take/hold",
+      "icon": "🤲"
+    },
+    {
+      "char": "放",
+      "meaning": "put/place",
+      "icon": "📦"
+    },
+    {
+      "char": "給",
+      "meaning": "give",
+      "icon": "🎁"
+    },
+    {
+      "char": "買",
+      "meaning": "buy",
+      "icon": "🛒"
+    },
+    {
+      "char": "賣",
+      "meaning": "sell",
+      "icon": "💰"
+    },
+    {
+      "char": "找",
+      "meaning": "find/look for",
+      "icon": "🔍"
+    },
+    {
+      "char": "用",
+      "meaning": "use",
+      "icon": "🔧"
+    },
+    {
+      "char": "做",
+      "meaning": "do/make",
+      "icon": "🛠️"
+    },
+    {
+      "char": "洗",
+      "meaning": "wash",
+      "icon": "🧼"
+    },
+    {
+      "char": "穿",
+      "meaning": "wear",
+      "icon": "👔"
+    },
+    {
+      "char": "飯",
+      "meaning": "rice/meal",
+      "icon": "🍚"
+    },
+    {
+      "char": "麵",
+      "meaning": "noodles",
+      "icon": "🍜"
+    },
+    {
+      "char": "包",
+      "meaning": "bread/bun",
+      "icon": "🍞"
+    },
+    {
+      "char": "肉",
+      "meaning": "meat",
+      "icon": "🥩"
+    },
+    {
+      "char": "菜",
+      "meaning": "vegetable",
+      "icon": "🥬"
+    },
+    {
+      "char": "蛋",
+      "meaning": "egg",
+      "icon": "🥚"
+    },
+    {
+      "char": "奶",
+      "meaning": "milk",
+      "icon": "🥛"
+    },
+    {
+      "char": "茶",
+      "meaning": "tea",
+      "icon": "🍵"
+    },
+    {
+      "char": "果",
+      "meaning": "fruit",
+      "icon": "🍎"
+    },
+    {
+      "char": "糖",
+      "meaning": "sugar/candy",
+      "icon": "🍬"
+    },
+    {
+      "char": "餅",
+      "meaning": "biscuit/cake",
+      "icon": "🍪"
+    },
+    {
+      "char": "湯",
+      "meaning": "soup",
+      "icon": "🍲"
+    },
+    {
+      "char": "鹽",
+      "meaning": "salt",
+      "icon": "🧂"
+    },
+    {
+      "char": "油",
+      "meaning": "oil",
+      "icon": "🛢️"
+    },
+    {
+      "char": "醋",
+      "meaning": "vinegar",
+      "icon": "🧴"
+    },
+    {
+      "char": "熱",
+      "meaning": "hot",
+      "icon": "🥵"
+    },
+    {
+      "char": "冷",
+      "meaning": "cold",
+      "icon": "🥶"
+    },
+    {
+      "char": "慢",
+      "meaning": "slow",
+      "icon": "🐌"
+    },
+    {
+      "char": "重",
+      "meaning": "heavy",
+      "icon": "⚖️"
+    },
+    {
+      "char": "輕",
+      "meaning": "light",
+      "icon": "🪶"
+    },
+    {
+      "char": "粗",
+      "meaning": "thick/coarse",
+      "icon": "📏"
+    },
+    {
+      "char": "細",
+      "meaning": "thin/fine",
+      "icon": "📐"
+    },
+    {
+      "char": "乾",
+      "meaning": "dry",
+      "icon": "🏜️"
+    },
+    {
+      "char": "濕",
+      "meaning": "wet",
+      "icon": "💦"
+    },
+    {
+      "char": "硬",
+      "meaning": "hard",
+      "icon": "🪨"
+    },
+    {
+      "char": "軟",
+      "meaning": "soft",
+      "icon": "🛋️"
+    },
+    {
+      "char": "亮",
+      "meaning": "bright",
+      "icon": "💡"
+    },
+    {
+      "char": "暗",
+      "meaning": "dark",
+      "icon": "🌑"
+    },
+    {
+      "char": "美",
+      "meaning": "beautiful",
+      "icon": "✨"
+    },
+    {
+      "char": "醜",
+      "meaning": "ugly",
+      "icon": "👹"
+    },
+    {
+      "char": "家",
+      "meaning": "home",
+      "icon": "🏠"
+    },
+    {
+      "char": "園",
+      "meaning": "garden/park",
+      "icon": "🏞️"
+    },
+    {
+      "char": "路",
+      "meaning": "road",
+      "icon": "🛣️"
+    },
+    {
+      "char": "街",
+      "meaning": "street",
+      "icon": "🏙️"
+    },
+    {
+      "char": "店",
+      "meaning": "shop",
+      "icon": "🏪"
+    },
+    {
+      "char": "場",
+      "meaning": "field/place",
+      "icon": "🏟️"
+    },
+    {
+      "char": "橋",
+      "meaning": "bridge",
+      "icon": "🌉"
+    },
+    {
+      "char": "河",
+      "meaning": "river",
+      "icon": "🏞️"
+    },
+    {
+      "char": "海",
+      "meaning": "sea",
+      "icon": "🌊"
+    },
+    {
+      "char": "湖",
+      "meaning": "lake",
+      "icon": "🏞️"
+    },
+    {
+      "char": "這",
+      "meaning": "this",
+      "icon": "👈"
+    },
+    {
+      "char": "那",
+      "meaning": "that",
+      "icon": "👉"
+    },
+    {
+      "char": "裡",
+      "meaning": "inside",
+      "icon": "📦"
+    },
+    {
+      "char": "外",
+      "meaning": "outside",
+      "icon": "🚪"
+    },
+    {
+      "char": "前",
+      "meaning": "front",
+      "icon": "⬆️"
+    },
+    {
+      "char": "後",
+      "meaning": "back",
+      "icon": "⬇️"
+    },
+    {
+      "char": "左",
+      "meaning": "left",
+      "icon": "⬅️"
+    },
+    {
+      "char": "右",
+      "meaning": "right",
+      "icon": "➡️"
+    },
+    {
+      "char": "中",
+      "meaning": "middle/center",
+      "icon": "🎯"
+    },
+    {
+      "char": "邊",
+      "meaning": "side/edge",
+      "icon": "📍"
+    },
+    {
+      "char": "間",
+      "meaning": "between/room",
+      "icon": "🚪"
+    },
+    {
+      "char": "起來",
+      "meaning": "get up",
+      "icon": "⏰"
+    },
+    {
+      "char": "出來",
+      "meaning": "come out",
+      "icon": "🚪"
+    },
+    {
+      "char": "進去",
+      "meaning": "go in",
+      "icon": "🚪"
+    },
+    {
+      "char": "回來",
+      "meaning": "come back",
+      "icon": "↩️"
+    }
+  ],
+  "K3": [
+    {
+      "char": "今天",
+      "meaning": "today",
+      "icon": "📅"
+    },
+    {
+      "char": "明天",
+      "meaning": "tomorrow",
+      "icon": "⏭️"
+    },
+    {
+      "char": "昨天",
+      "meaning": "yesterday",
+      "icon": "⏮️"
+    },
+    {
+      "char": "早上",
+      "meaning": "morning",
+      "icon": "🌅"
+    },
+    {
+      "char": "中午",
+      "meaning": "noon",
+      "icon": "☀️"
+    },
+    {
+      "char": "下午",
+      "meaning": "afternoon",
+      "icon": "🌤️"
+    },
+    {
+      "char": "晚上",
+      "meaning": "evening",
+      "icon": "🌆"
+    },
+    {
+      "char": "現在",
+      "meaning": "now",
+      "icon": "⏰"
+    },
+    {
+      "char": "以前",
+      "meaning": "before",
+      "icon": "⏮️"
+    },
+    {
+      "char": "以後",
+      "meaning": "after",
+      "icon": "⏭️"
+    },
+    {
+      "char": "時候",
+      "meaning": "time/moment",
+      "icon": "⏰"
+    },
+    {
+      "char": "年",
+      "meaning": "year",
+      "icon": "📅"
+    },
+    {
+      "char": "星期",
+      "meaning": "week",
+      "icon": "📆"
+    },
+    {
+      "char": "小時",
+      "meaning": "hour",
+      "icon": "⏰"
+    },
+    {
+      "char": "分鐘",
+      "meaning": "minute",
+      "icon": "⏱️"
+    },
+    {
+      "char": "秒",
+      "meaning": "second",
+      "icon": "⏱️"
+    },
+    {
+      "char": "春",
+      "meaning": "spring",
+      "icon": "🌸"
+    },
+    {
+      "char": "夏",
+      "meaning": "summer",
+      "icon": "☀️"
+    },
+    {
+      "char": "秋",
+      "meaning": "autumn",
+      "icon": "🍂"
+    },
+    {
+      "char": "冬",
+      "meaning": "winter",
+      "icon": "❄️"
+    },
+    {
+      "char": "高興",
+      "meaning": "happy",
+      "icon": "😊"
+    },
+    {
+      "char": "開心",
+      "meaning": "joyful",
+      "icon": "😄"
+    },
+    {
+      "char": "快樂",
+      "meaning": "happy/cheerful",
+      "icon": "😆"
+    },
+    {
+      "char": "傷心",
+      "meaning": "sad",
+      "icon": "😢"
+    },
+    {
+      "char": "難過",
+      "meaning": "upset",
+      "icon": "😔"
+    },
+    {
+      "char": "生氣",
+      "meaning": "angry",
+      "icon": "😠"
+    },
+    {
+      "char": "害怕",
+      "meaning": "afraid/scared",
+      "icon": "😨"
+    },
+    {
+      "char": "擔心",
+      "meaning": "worried",
+      "icon": "😟"
+    },
+    {
+      "char": "緊張",
+      "meaning": "nervous",
+      "icon": "😰"
+    },
+    {
+      "char": "興奮",
+      "meaning": "excited",
+      "icon": "🤩"
+    },
+    {
+      "char": "累",
+      "meaning": "tired",
+      "icon": "😴"
+    },
+    {
+      "char": "餓",
+      "meaning": "hungry",
+      "icon": "😋"
+    },
+    {
+      "char": "渴",
+      "meaning": "thirsty",
+      "icon": "🥤"
+    },
+    {
+      "char": "飽",
+      "meaning": "full",
+      "icon": "😌"
+    },
+    {
+      "char": "痛",
+      "meaning": "pain/hurt",
+      "icon": "😣"
+    },
+    {
+      "char": "病",
+      "meaning": "sick/ill",
+      "icon": "🤒"
+    },
+    {
+      "char": "舒服",
+      "meaning": "comfortable",
+      "icon": "😌"
+    },
+    {
+      "char": "喜歡",
+      "meaning": "like",
+      "icon": "❤️"
+    },
+    {
+      "char": "愛",
+      "meaning": "love",
+      "icon": "💕"
+    },
+    {
+      "char": "討厭",
+      "meaning": "hate/dislike",
+      "icon": "💔"
+    },
+    {
+      "char": "學",
+      "meaning": "learn/study",
+      "icon": "📖"
+    },
+    {
+      "char": "寫",
+      "meaning": "write",
+      "icon": "✍️"
+    },
+    {
+      "char": "讀",
+      "meaning": "read",
+      "icon": "📚"
+    },
+    {
+      "char": "畫",
+      "meaning": "draw/paint",
+      "icon": "🎨"
+    },
+    {
+      "char": "唱歌",
+      "meaning": "sing",
+      "icon": "🎤"
+    },
+    {
+      "char": "跳舞",
+      "meaning": "dance",
+      "icon": "💃"
+    },
+    {
+      "char": "游泳",
+      "meaning": "swim",
+      "icon": "🏊"
+    },
+    {
+      "char": "跑步",
+      "meaning": "run/jog",
+      "icon": "🏃"
+    },
+    {
+      "char": "打球",
+      "meaning": "play ball",
+      "icon": "⚽"
+    },
+    {
+      "char": "踢球",
+      "meaning": "kick ball",
+      "icon": "⚽"
+    },
+    {
+      "char": "騎",
+      "meaning": "ride",
+      "icon": "🚲"
+    },
+    {
+      "char": "飛",
+      "meaning": "fly",
+      "icon": "✈️"
+    },
+    {
+      "char": "爬",
+      "meaning": "climb",
+      "icon": "🧗"
+    },
+    {
+      "char": "跌",
+      "meaning": "fall",
+      "icon": "⬇️"
+    },
+    {
+      "char": "打",
+      "meaning": "hit/play",
+      "icon": "🥊"
+    },
+    {
+      "char": "推",
+      "meaning": "push",
+      "icon": "👐"
+    },
+    {
+      "char": "拉",
+      "meaning": "pull",
+      "icon": "↩️"
+    },
+    {
+      "char": "扔",
+      "meaning": "throw",
+      "icon": "🎯"
+    },
+    {
+      "char": "接",
+      "meaning": "catch/receive",
+      "icon": "🤲"
+    },
+    {
+      "char": "抱",
+      "meaning": "hug/hold",
+      "icon": "🤗"
+    },
+    {
+      "char": "衣服",
+      "meaning": "clothes",
+      "icon": "👔"
+    },
+    {
+      "char": "鞋",
+      "meaning": "shoes",
+      "icon": "👞"
+    },
+    {
+      "char": "帽子",
+      "meaning": "hat",
+      "icon": "🎩"
+    },
+    {
+      "char": "襪子",
+      "meaning": "socks",
+      "icon": "🧦"
+    },
+    {
+      "char": "包包",
+      "meaning": "bag",
+      "icon": "🎒"
+    },
+    {
+      "char": "傘",
+      "meaning": "umbrella",
+      "icon": "☂️"
+    },
+    {
+      "char": "鏡子",
+      "meaning": "mirror",
+      "icon": "🪞"
+    },
+    {
+      "char": "刀",
+      "meaning": "knife",
+      "icon": "🔪"
+    },
+    {
+      "char": "叉",
+      "meaning": "fork",
+      "icon": "🍴"
+    },
+    {
+      "char": "碗",
+      "meaning": "bowl",
+      "icon": "🥣"
+    },
+    {
+      "char": "盤",
+      "meaning": "plate",
+      "icon": "🍽️"
+    },
+    {
+      "char": "杯",
+      "meaning": "cup",
+      "icon": "🥤"
+    },
+    {
+      "char": "瓶",
+      "meaning": "bottle",
+      "icon": "🍼"
+    },
+    {
+      "char": "箱",
+      "meaning": "box/case",
+      "icon": "📦"
+    },
+    {
+      "char": "袋",
+      "meaning": "bag/pocket",
+      "icon": "👜"
+    },
+    {
+      "char": "鐘",
+      "meaning": "clock",
+      "icon": "🕐"
+    },
+    {
+      "char": "錶",
+      "meaning": "watch",
+      "icon": "⌚"
+    },
+    {
+      "char": "電話",
+      "meaning": "telephone",
+      "icon": "📞"
+    },
+    {
+      "char": "電視",
+      "meaning": "television",
+      "icon": "📺"
+    },
+    {
+      "char": "電腦",
+      "meaning": "computer",
+      "icon": "💻"
+    },
+    {
+      "char": "大聲",
+      "meaning": "loud",
+      "icon": "🔊"
+    },
+    {
+      "char": "小聲",
+      "meaning": "quiet",
+      "icon": "🔇"
+    },
+    {
+      "char": "安靜",
+      "meaning": "silent/peaceful",
+      "icon": "🤫"
+    },
+    {
+      "char": "吵",
+      "meaning": "noisy",
+      "icon": "📢"
+    },
+    {
+      "char": "乾淨",
+      "meaning": "clean",
+      "icon": "✨"
+    },
+    {
+      "char": "髒",
+      "meaning": "dirty",
+      "icon": "🗑️"
+    },
+    {
+      "char": "整齊",
+      "meaning": "tidy/neat",
+      "icon": "📐"
+    },
+    {
+      "char": "亂",
+      "meaning": "messy/chaotic",
+      "icon": "🌀"
+    },
+    {
+      "char": "滿",
+      "meaning": "full",
+      "icon": "📊"
+    },
+    {
+      "char": "空",
+      "meaning": "empty",
+      "icon": "⭕"
+    },
+    {
+      "char": "甜",
+      "meaning": "sweet",
+      "icon": "🍭"
+    },
+    {
+      "char": "酸",
+      "meaning": "sour",
+      "icon": "🍋"
+    },
+    {
+      "char": "苦",
+      "meaning": "bitter",
+      "icon": "😖"
+    },
+    {
+      "char": "辣",
+      "meaning": "spicy",
+      "icon": "🌶️"
+    },
+    {
+      "char": "鹹",
+      "meaning": "salty",
+      "icon": "🧂"
+    },
+    {
+      "char": "香",
+      "meaning": "fragrant",
+      "icon": "🌺"
+    },
+    {
+      "char": "臭",
+      "meaning": "stinky",
+      "icon": "🦨"
+    },
+    {
+      "char": "圓",
+      "meaning": "round/circle",
+      "icon": "⭕"
+    },
+    {
+      "char": "方",
+      "meaning": "square",
+      "icon": "◻️"
+    },
+    {
+      "char": "尖",
+      "meaning": "sharp/pointed",
+      "icon": "📍"
+    },
+    {
+      "char": "想",
+      "meaning": "think/want",
+      "icon": "💭"
+    },
+    {
+      "char": "知道",
+      "meaning": "know",
+      "icon": "💡"
+    },
+    {
+      "char": "記得",
+      "meaning": "remember",
+      "icon": "🧠"
+    },
+    {
+      "char": "忘記",
+      "meaning": "forget",
+      "icon": "❌"
+    },
+    {
+      "char": "告訴",
+      "meaning": "tell",
+      "icon": "💬"
+    },
+    {
+      "char": "問",
+      "meaning": "ask",
+      "icon": "❓"
+    },
+    {
+      "char": "答",
+      "meaning": "answer",
+      "icon": "✅"
+    },
+    {
+      "char": "借",
+      "meaning": "borrow/lend",
+      "icon": "🤝"
+    },
+    {
+      "char": "還",
+      "meaning": "return/give back",
+      "icon": "↩️"
+    },
+    {
+      "char": "幫",
+      "meaning": "help",
+      "icon": "🤝"
+    },
+    {
+      "char": "送",
+      "meaning": "send/give as gift",
+      "icon": "🎁"
+    },
+    {
+      "char": "帶",
+      "meaning": "bring/take",
+      "icon": "🎒"
+    },
+    {
+      "char": "等",
+      "meaning": "wait",
+      "icon": "⏰"
+    },
+    {
+      "char": "住",
+      "meaning": "live/stay",
+      "icon": "🏠"
+    },
+    {
+      "char": "起床",
+      "meaning": "get out of bed",
+      "icon": "🛏️"
+    },
+    {
+      "char": "睡覺",
+      "meaning": "sleep/go to bed",
+      "icon": "😴"
+    },
+    {
+      "char": "吃飯",
+      "meaning": "eat meal",
+      "icon": "🍽️"
+    },
+    {
+      "char": "喝水",
+      "meaning": "drink water",
+      "icon": "💧"
+    },
+    {
+      "char": "洗手",
+      "meaning": "wash hands",
+      "icon": "🧼"
+    },
+    {
+      "char": "刷牙",
+      "meaning": "brush teeth",
+      "icon": "🪥"
+    },
+    {
+      "char": "叔叔",
+      "meaning": "uncle",
+      "icon": "👨"
+    },
+    {
+      "char": "阿姨",
+      "meaning": "aunt",
+      "icon": "👩"
+    },
+    {
+      "char": "表哥",
+      "meaning": "older male cousin",
+      "icon": "👦"
+    },
+    {
+      "char": "表姐",
+      "meaning": "older female cousin",
+      "icon": "👧"
+    },
+    {
+      "char": "朋友",
+      "meaning": "friend",
+      "icon": "👫"
+    },
+    {
+      "char": "客人",
+      "meaning": "guest",
+      "icon": "🚪"
+    },
+    {
+      "char": "鄰居",
+      "meaning": "neighbor",
+      "icon": "🏘️"
+    },
+    {
+      "char": "醫生",
+      "meaning": "doctor",
+      "icon": "👨‍⚕️"
+    },
+    {
+      "char": "護士",
+      "meaning": "nurse",
+      "icon": "👩‍⚕️"
+    },
+    {
+      "char": "警察",
+      "meaning": "police",
+      "icon": "👮"
+    }
+  ],
+  "P1": [
+    {
+      "char": "學校",
+      "meaning": "school",
+      "icon": "🏫"
+    },
+    {
+      "char": "教室",
+      "meaning": "classroom",
+      "icon": "🏫"
+    },
+    {
+      "char": "學生",
+      "meaning": "student",
+      "icon": "👨‍🎓"
+    },
+    {
+      "char": "課本",
+      "meaning": "textbook",
+      "icon": "📚"
+    },
+    {
+      "char": "作業",
+      "meaning": "homework",
+      "icon": "✏️"
+    },
+    {
+      "char": "考試",
+      "meaning": "exam",
+      "icon": "📝"
+    },
+    {
+      "char": "學習",
+      "meaning": "study/learn",
+      "icon": "📖"
+    },
+    {
+      "char": "讀書",
+      "meaning": "read books",
+      "icon": "📚"
+    },
+    {
+      "char": "寫字",
+      "meaning": "write characters",
+      "icon": "✍️"
+    },
+    {
+      "char": "上課",
+      "meaning": "attend class",
+      "icon": "🏫"
+    },
+    {
+      "char": "下課",
+      "meaning": "class over",
+      "icon": "🏃"
+    },
+    {
+      "char": "功課",
+      "meaning": "schoolwork",
+      "icon": "📝"
+    },
+    {
+      "char": "練習",
+      "meaning": "practice/exercise",
+      "icon": "✏️"
+    },
+    {
+      "char": "課",
+      "meaning": "lesson/class",
+      "icon": "📖"
+    },
+    {
+      "char": "黑板",
+      "meaning": "blackboard",
+      "icon": "⬛"
+    },
+    {
+      "char": "粉筆",
+      "meaning": "chalk",
+      "icon": "✏️"
+    },
+    {
+      "char": "鉛筆",
+      "meaning": "pencil",
+      "icon": "✏️"
+    },
+    {
+      "char": "橡皮",
+      "meaning": "eraser",
+      "icon": "🧽"
+    },
+    {
+      "char": "尺",
+      "meaning": "ruler",
+      "icon": "📏"
+    },
+    {
+      "char": "書包",
+      "meaning": "schoolbag",
+      "icon": "🎒"
+    },
+    {
+      "char": "文具",
+      "meaning": "stationery",
+      "icon": "✏️"
+    },
+    {
+      "char": "地圖",
+      "meaning": "map",
+      "icon": "🗺️"
+    },
+    {
+      "char": "圖書館",
+      "meaning": "library",
+      "icon": "📚"
+    },
+    {
+      "char": "操場",
+      "meaning": "playground",
+      "icon": "🏟️"
+    },
+    {
+      "char": "禮堂",
+      "meaning": "hall/auditorium",
+      "icon": "🏛️"
+    },
+    {
+      "char": "校長",
+      "meaning": "principal",
+      "icon": "👔"
+    },
+    {
+      "char": "班",
+      "meaning": "class/grade",
+      "icon": "👥"
+    },
+    {
+      "char": "成績",
+      "meaning": "grade/score",
+      "icon": "📊"
+    },
+    {
+      "char": "分數",
+      "meaning": "mark/score",
+      "icon": "💯"
+    },
+    {
+      "char": "答案",
+      "meaning": "answer",
+      "icon": "✅"
+    },
+    {
+      "char": "中文",
+      "meaning": "Chinese",
+      "icon": "🈵"
+    },
+    {
+      "char": "英文",
+      "meaning": "English",
+      "icon": "🔤"
+    },
+    {
+      "char": "數學",
+      "meaning": "mathematics",
+      "icon": "🔢"
+    },
+    {
+      "char": "科學",
+      "meaning": "science",
+      "icon": "🔬"
+    },
+    {
+      "char": "音樂",
+      "meaning": "music",
+      "icon": "🎵"
+    },
+    {
+      "char": "體育",
+      "meaning": "PE/sports",
+      "icon": "⚽"
+    },
+    {
+      "char": "美術",
+      "meaning": "art",
+      "icon": "🎨"
+    },
+    {
+      "char": "歷史",
+      "meaning": "history",
+      "icon": "📜"
+    },
+    {
+      "char": "地理",
+      "meaning": "geography",
+      "icon": "🗺️"
+    },
+    {
+      "char": "常識",
+      "meaning": "general studies",
+      "icon": "📚"
+    },
+    {
+      "char": "加",
+      "meaning": "add/plus",
+      "icon": "➕"
+    },
+    {
+      "char": "減",
+      "meaning": "subtract/minus",
+      "icon": "➖"
+    },
+    {
+      "char": "乘",
+      "meaning": "multiply",
+      "icon": "✖️"
+    },
+    {
+      "char": "除",
+      "meaning": "divide",
+      "icon": "➗"
+    },
+    {
+      "char": "等於",
+      "meaning": "equals",
+      "icon": "="
+    },
+    {
+      "char": "問題",
+      "meaning": "problem/question",
+      "icon": "❓"
+    },
+    {
+      "char": "故事",
+      "meaning": "story",
+      "icon": "📖"
+    },
+    {
+      "char": "句子",
+      "meaning": "sentence",
+      "icon": "📝"
+    },
+    {
+      "char": "詞語",
+      "meaning": "word/vocabulary",
+      "icon": "📚"
+    },
+    {
+      "char": "字",
+      "meaning": "character/word",
+      "icon": "🔤"
+    },
+    {
+      "char": "城市",
+      "meaning": "city",
+      "icon": "🏙️"
+    },
+    {
+      "char": "鄉村",
+      "meaning": "countryside",
+      "icon": "🏞️"
+    },
+    {
+      "char": "公園",
+      "meaning": "park",
+      "icon": "🏞️"
+    },
+    {
+      "char": "動物園",
+      "meaning": "zoo",
+      "icon": "🦁"
+    },
+    {
+      "char": "博物館",
+      "meaning": "museum",
+      "icon": "🏛️"
+    },
+    {
+      "char": "醫院",
+      "meaning": "hospital",
+      "icon": "🏥"
+    },
+    {
+      "char": "銀行",
+      "meaning": "bank",
+      "icon": "🏦"
+    },
+    {
+      "char": "郵局",
+      "meaning": "post office",
+      "icon": "📮"
+    },
+    {
+      "char": "超市",
+      "meaning": "supermarket",
+      "icon": "🏬"
+    },
+    {
+      "char": "餐廳",
+      "meaning": "restaurant",
+      "icon": "🍽️"
+    },
+    {
+      "char": "酒店",
+      "meaning": "hotel",
+      "icon": "🏨"
+    },
+    {
+      "char": "車站",
+      "meaning": "station",
+      "icon": "🚉"
+    },
+    {
+      "char": "機場",
+      "meaning": "airport",
+      "icon": "✈️"
+    },
+    {
+      "char": "海邊",
+      "meaning": "seaside/beach",
+      "icon": "🏖️"
+    },
+    {
+      "char": "山上",
+      "meaning": "on the mountain",
+      "icon": "⛰️"
+    },
+    {
+      "char": "島",
+      "meaning": "island",
+      "icon": "🏝️"
+    },
+    {
+      "char": "國家",
+      "meaning": "country/nation",
+      "icon": "🌍"
+    },
+    {
+      "char": "香港",
+      "meaning": "Hong Kong",
+      "icon": "🇭🇰"
+    },
+    {
+      "char": "中國",
+      "meaning": "China",
+      "icon": "🇨🇳"
+    },
+    {
+      "char": "世界",
+      "meaning": "world",
+      "icon": "🌎"
+    },
+    {
+      "char": "開始",
+      "meaning": "begin/start",
+      "icon": "▶️"
+    },
+    {
+      "char": "結束",
+      "meaning": "end/finish",
+      "icon": "🔚"
+    },
+    {
+      "char": "完成",
+      "meaning": "complete",
+      "icon": "✅"
+    },
+    {
+      "char": "停止",
+      "meaning": "stop",
+      "icon": "🛑"
+    },
+    {
+      "char": "繼續",
+      "meaning": "continue",
+      "icon": "▶️"
+    },
+    {
+      "char": "改變",
+      "meaning": "change",
+      "icon": "🔄"
+    },
+    {
+      "char": "變成",
+      "meaning": "become",
+      "icon": "➡️"
+    },
+    {
+      "char": "增加",
+      "meaning": "increase",
+      "icon": "📈"
+    },
+    {
+      "char": "減少",
+      "meaning": "decrease",
+      "icon": "📉"
+    },
+    {
+      "char": "需要",
+      "meaning": "need",
+      "icon": "📌"
+    },
+    {
+      "char": "應該",
+      "meaning": "should",
+      "icon": "✓"
+    },
+    {
+      "char": "可以",
+      "meaning": "can/may",
+      "icon": "✅"
+    },
+    {
+      "char": "會",
+      "meaning": "will/can",
+      "icon": "💡"
+    },
+    {
+      "char": "能夠",
+      "meaning": "be able to",
+      "icon": "💪"
+    },
+    {
+      "char": "希望",
+      "meaning": "hope",
+      "icon": "🌟"
+    },
+    {
+      "char": "決定",
+      "meaning": "decide",
+      "icon": "🤔"
+    },
+    {
+      "char": "選擇",
+      "meaning": "choose",
+      "icon": "🔀"
+    },
+    {
+      "char": "準備",
+      "meaning": "prepare",
+      "icon": "📋"
+    },
+    {
+      "char": "注意",
+      "meaning": "pay attention",
+      "icon": "⚠️"
+    },
+    {
+      "char": "小心",
+      "meaning": "be careful",
+      "icon": "⚠️"
+    },
+    {
+      "char": "東西",
+      "meaning": "thing/stuff",
+      "icon": "📦"
+    },
+    {
+      "char": "地方",
+      "meaning": "place",
+      "icon": "📍"
+    },
+    {
+      "char": "方法",
+      "meaning": "method/way",
+      "icon": "🔧"
+    },
+    {
+      "char": "原因",
+      "meaning": "reason/cause",
+      "icon": "❓"
+    },
+    {
+      "char": "結果",
+      "meaning": "result",
+      "icon": "✅"
+    },
+    {
+      "char": "意思",
+      "meaning": "meaning",
+      "icon": "💭"
+    },
+    {
+      "char": "主意",
+      "meaning": "idea",
+      "icon": "💡"
+    },
+    {
+      "char": "辦法",
+      "meaning": "way/method",
+      "icon": "🔧"
+    },
+    {
+      "char": "力量",
+      "meaning": "strength/power",
+      "icon": "💪"
+    },
+    {
+      "char": "聲音",
+      "meaning": "sound/voice",
+      "icon": "🔊"
+    },
+    {
+      "char": "顏色",
+      "meaning": "color",
+      "icon": "🎨"
+    },
+    {
+      "char": "形狀",
+      "meaning": "shape",
+      "icon": "◻️"
+    },
+    {
+      "char": "大小",
+      "meaning": "size",
+      "icon": "📏"
+    },
+    {
+      "char": "重量",
+      "meaning": "weight",
+      "icon": "⚖️"
+    },
+    {
+      "char": "速度",
+      "meaning": "speed",
+      "icon": "⚡"
+    },
+    {
+      "char": "溫度",
+      "meaning": "temperature",
+      "icon": "🌡️"
+    },
+    {
+      "char": "數量",
+      "meaning": "quantity/amount",
+      "icon": "🔢"
+    },
+    {
+      "char": "名字",
+      "meaning": "name",
+      "icon": "📛"
+    },
+    {
+      "char": "年齡",
+      "meaning": "age",
+      "icon": "🎂"
+    },
+    {
+      "char": "生日",
+      "meaning": "birthday",
+      "icon": "🎁"
+    },
+    {
+      "char": "但是",
+      "meaning": "but/however",
+      "icon": "↔️"
+    },
+    {
+      "char": "所以",
+      "meaning": "therefore/so",
+      "icon": "➡️"
+    },
+    {
+      "char": "因為",
+      "meaning": "because",
+      "icon": "❓"
+    },
+    {
+      "char": "如果",
+      "meaning": "if",
+      "icon": "❓"
+    },
+    {
+      "char": "那麼",
+      "meaning": "then/in that case",
+      "icon": "➡️"
+    },
+    {
+      "char": "或者",
+      "meaning": "or",
+      "icon": "🔀"
+    },
+    {
+      "char": "還是",
+      "meaning": "or (in question)",
+      "icon": "❓"
+    },
+    {
+      "char": "和",
+      "meaning": "and",
+      "icon": "➕"
+    },
+    {
+      "char": "跟",
+      "meaning": "with/and",
+      "icon": "👥"
+    },
+    {
+      "char": "同",
+      "meaning": "with/same",
+      "icon": "="
+    },
+    {
+      "char": "什麼",
+      "meaning": "what",
+      "icon": "❓"
+    },
+    {
+      "char": "誰",
+      "meaning": "who",
+      "icon": "❓"
+    },
+    {
+      "char": "哪",
+      "meaning": "which",
+      "icon": "❓"
+    },
+    {
+      "char": "怎樣",
+      "meaning": "how",
+      "icon": "❓"
+    },
+    {
+      "char": "為什麼",
+      "meaning": "why",
+      "icon": "❓"
+    },
+    {
+      "char": "多少",
+      "meaning": "how many/much",
+      "icon": "🔢"
+    },
+    {
+      "char": "幾",
+      "meaning": "how many/several",
+      "icon": "🔢"
+    },
+    {
+      "char": "哪裡",
+      "meaning": "where",
+      "icon": "📍"
+    },
+    {
+      "char": "什麼時候",
+      "meaning": "when",
+      "icon": "⏰"
+    },
+    {
+      "char": "怎麼",
+      "meaning": "how",
+      "icon": "❓"
+    },
+    {
+      "char": "比較",
+      "meaning": "compare",
+      "icon": "↔️"
+    },
+    {
+      "char": "特別",
+      "meaning": "special",
+      "icon": "⭐"
+    },
+    {
+      "char": "一般",
+      "meaning": "general/ordinary",
+      "icon": "📊"
+    },
+    {
+      "char": "重要",
+      "meaning": "important",
+      "icon": "❗"
+    },
+    {
+      "char": "容易",
+      "meaning": "easy",
+      "icon": "😊"
+    },
+    {
+      "char": "困難",
+      "meaning": "difficult",
+      "icon": "😓"
+    },
+    {
+      "char": "簡單",
+      "meaning": "simple",
+      "icon": "✓"
+    },
+    {
+      "char": "複雜",
+      "meaning": "complex",
+      "icon": "🌀"
+    },
+    {
+      "char": "明白",
+      "meaning": "understand",
+      "icon": "💡"
+    },
+    {
+      "char": "清楚",
+      "meaning": "clear",
+      "icon": "✨"
+    }
+  ]
+}
