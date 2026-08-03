@@ -3258,5 +3258,4515 @@
       "meaning": "together",
       "icon": "👫"
     }
+  ],
+  "P3": [
+    {
+      "char": "蘋果",
+      "meaning": "apple",
+      "icon": "🍎"
+    },
+    {
+      "char": "香蕉",
+      "meaning": "banana",
+      "icon": "🍌"
+    },
+    {
+      "char": "橙子",
+      "meaning": "orange",
+      "icon": "🍊"
+    },
+    {
+      "char": "西瓜",
+      "meaning": "watermelon",
+      "icon": "🍉"
+    },
+    {
+      "char": "葡萄",
+      "meaning": "grape",
+      "icon": "🍇"
+    },
+    {
+      "char": "草莓",
+      "meaning": "strawberry",
+      "icon": "🍓"
+    },
+    {
+      "char": "芒果",
+      "meaning": "mango",
+      "icon": "🥭"
+    },
+    {
+      "char": "檸檬",
+      "meaning": "lemon",
+      "icon": "🍋"
+    },
+    {
+      "char": "菠蘿",
+      "meaning": "pineapple",
+      "icon": "🍍"
+    },
+    {
+      "char": "桃子",
+      "meaning": "peach",
+      "icon": "🍑"
+    },
+    {
+      "char": "梨子",
+      "meaning": "pear",
+      "icon": "🍐"
+    },
+    {
+      "char": "櫻桃",
+      "meaning": "cherry",
+      "icon": "🍒"
+    },
+    {
+      "char": "番茄",
+      "meaning": "tomato",
+      "icon": "🍅"
+    },
+    {
+      "char": "蘿蔔",
+      "meaning": "carrot",
+      "icon": "🥕"
+    },
+    {
+      "char": "洋蔥",
+      "meaning": "onion",
+      "icon": "🧅"
+    },
+    {
+      "char": "粟米",
+      "meaning": "corn",
+      "icon": "🌽"
+    },
+    {
+      "char": "青瓜",
+      "meaning": "cucumber",
+      "icon": "🥒"
+    },
+    {
+      "char": "蘑菇",
+      "meaning": "mushroom",
+      "icon": "🍄"
+    },
+    {
+      "char": "白菜",
+      "meaning": "cabbage",
+      "icon": "🥬"
+    },
+    {
+      "char": "南瓜",
+      "meaning": "pumpkin",
+      "icon": "🎃"
+    },
+    {
+      "char": "茄子",
+      "meaning": "eggplant",
+      "icon": "🍆"
+    },
+    {
+      "char": "粥",
+      "meaning": "congee",
+      "icon": "🥣"
+    },
+    {
+      "char": "餃子",
+      "meaning": "dumpling",
+      "icon": "🥟"
+    },
+    {
+      "char": "壽司",
+      "meaning": "sushi",
+      "icon": "🍣"
+    },
+    {
+      "char": "雪糕",
+      "meaning": "ice cream",
+      "icon": "🍦"
+    },
+    {
+      "char": "蛋糕",
+      "meaning": "cake",
+      "icon": "🎂"
+    },
+    {
+      "char": "果汁",
+      "meaning": "juice",
+      "icon": "🧃"
+    },
+    {
+      "char": "咖啡",
+      "meaning": "coffee",
+      "icon": "☕"
+    },
+    {
+      "char": "蜜糖",
+      "meaning": "honey",
+      "icon": "🍯"
+    },
+    {
+      "char": "花生",
+      "meaning": "peanut",
+      "icon": "🥜"
+    },
+    {
+      "char": "斑馬",
+      "meaning": "zebra",
+      "icon": "🦓"
+    },
+    {
+      "char": "長頸鹿",
+      "meaning": "giraffe",
+      "icon": "🦒"
+    },
+    {
+      "char": "河馬",
+      "meaning": "hippo",
+      "icon": "🦛"
+    },
+    {
+      "char": "袋鼠",
+      "meaning": "kangaroo",
+      "icon": "🦘"
+    },
+    {
+      "char": "熊貓",
+      "meaning": "panda",
+      "icon": "🐼"
+    },
+    {
+      "char": "企鵝",
+      "meaning": "penguin",
+      "icon": "🐧"
+    },
+    {
+      "char": "海豚",
+      "meaning": "dolphin",
+      "icon": "🐬"
+    },
+    {
+      "char": "鯨魚",
+      "meaning": "whale",
+      "icon": "🐋"
+    },
+    {
+      "char": "鯊魚",
+      "meaning": "shark",
+      "icon": "🦈"
+    },
+    {
+      "char": "章魚",
+      "meaning": "octopus",
+      "icon": "🐙"
+    },
+    {
+      "char": "螃蟹",
+      "meaning": "crab",
+      "icon": "🦀"
+    },
+    {
+      "char": "蝦",
+      "meaning": "shrimp",
+      "icon": "🦐"
+    },
+    {
+      "char": "蝸牛",
+      "meaning": "snail",
+      "icon": "🐌"
+    },
+    {
+      "char": "松鼠",
+      "meaning": "squirrel",
+      "icon": "🐿️"
+    },
+    {
+      "char": "刺蝟",
+      "meaning": "hedgehog",
+      "icon": "🦔"
+    },
+    {
+      "char": "蝙蝠",
+      "meaning": "bat",
+      "icon": "🦇"
+    },
+    {
+      "char": "貓頭鷹",
+      "meaning": "owl",
+      "icon": "🦉"
+    },
+    {
+      "char": "孔雀",
+      "meaning": "peacock",
+      "icon": "🦚"
+    },
+    {
+      "char": "鸚鵡",
+      "meaning": "parrot",
+      "icon": "🦜"
+    },
+    {
+      "char": "駱駝",
+      "meaning": "camel",
+      "icon": "🐪"
+    },
+    {
+      "char": "玫瑰",
+      "meaning": "rose",
+      "icon": "🌹"
+    },
+    {
+      "char": "向日葵",
+      "meaning": "sunflower",
+      "icon": "🌻"
+    },
+    {
+      "char": "鬱金香",
+      "meaning": "tulip",
+      "icon": "🌷"
+    },
+    {
+      "char": "仙人掌",
+      "meaning": "cactus",
+      "icon": "🌵"
+    },
+    {
+      "char": "竹",
+      "meaning": "bamboo",
+      "icon": "🎋"
+    },
+    {
+      "char": "楓葉",
+      "meaning": "maple leaf",
+      "icon": "🍁"
+    },
+    {
+      "char": "稻米",
+      "meaning": "paddy rice",
+      "icon": "🌾"
+    },
+    {
+      "char": "樹枝",
+      "meaning": "branch",
+      "icon": "🪵"
+    },
+    {
+      "char": "花園",
+      "meaning": "flower garden",
+      "icon": "🏡"
+    },
+    {
+      "char": "泥土",
+      "meaning": "soil",
+      "icon": "🟤"
+    },
+    {
+      "char": "沙",
+      "meaning": "sand",
+      "icon": "🏖️"
+    },
+    {
+      "char": "岩石",
+      "meaning": "rock",
+      "icon": "🪨"
+    },
+    {
+      "char": "山谷",
+      "meaning": "valley",
+      "icon": "🏞️"
+    },
+    {
+      "char": "山坡",
+      "meaning": "hillside",
+      "icon": "⛰️"
+    },
+    {
+      "char": "草叢",
+      "meaning": "bushes",
+      "icon": "🌿"
+    },
+    {
+      "char": "客廳",
+      "meaning": "living room",
+      "icon": "🛋️"
+    },
+    {
+      "char": "睡房",
+      "meaning": "bedroom",
+      "icon": "🛏️"
+    },
+    {
+      "char": "廚房",
+      "meaning": "kitchen",
+      "icon": "🍳"
+    },
+    {
+      "char": "浴室",
+      "meaning": "bathroom",
+      "icon": "🛁"
+    },
+    {
+      "char": "廁所",
+      "meaning": "toilet",
+      "icon": "🚽"
+    },
+    {
+      "char": "花瓶",
+      "meaning": "vase",
+      "icon": "🏺"
+    },
+    {
+      "char": "枕頭",
+      "meaning": "pillow",
+      "icon": "🛌"
+    },
+    {
+      "char": "被子",
+      "meaning": "blanket",
+      "icon": "🧣"
+    },
+    {
+      "char": "衣櫃",
+      "meaning": "wardrobe",
+      "icon": "🚪"
+    },
+    {
+      "char": "書架",
+      "meaning": "bookshelf",
+      "icon": "📚"
+    },
+    {
+      "char": "外套",
+      "meaning": "coat",
+      "icon": "🧥"
+    },
+    {
+      "char": "褲子",
+      "meaning": "trousers",
+      "icon": "👖"
+    },
+    {
+      "char": "裙子",
+      "meaning": "skirt",
+      "icon": "👗"
+    },
+    {
+      "char": "手套",
+      "meaning": "gloves",
+      "icon": "🧤"
+    },
+    {
+      "char": "圍巾",
+      "meaning": "scarf",
+      "icon": "🧶"
+    },
+    {
+      "char": "眼鏡",
+      "meaning": "glasses",
+      "icon": "👓"
+    },
+    {
+      "char": "戒指",
+      "meaning": "ring",
+      "icon": "💍"
+    },
+    {
+      "char": "項鏈",
+      "meaning": "necklace",
+      "icon": "📿"
+    },
+    {
+      "char": "手錶",
+      "meaning": "wristwatch",
+      "icon": "⌚"
+    },
+    {
+      "char": "皮帶",
+      "meaning": "belt",
+      "icon": "🪢"
+    },
+    {
+      "char": "星空",
+      "meaning": "starry sky",
+      "icon": "🌌"
+    },
+    {
+      "char": "閃電",
+      "meaning": "lightning",
+      "icon": "⚡"
+    },
+    {
+      "char": "露水",
+      "meaning": "dew",
+      "icon": "💧"
+    },
+    {
+      "char": "霜",
+      "meaning": "frost",
+      "icon": "🌨️"
+    },
+    {
+      "char": "潮濕",
+      "meaning": "humid",
+      "icon": "💦"
+    },
+    {
+      "char": "晴天",
+      "meaning": "sunny day",
+      "icon": "🌞"
+    },
+    {
+      "char": "陰天",
+      "meaning": "overcast",
+      "icon": "☁️"
+    },
+    {
+      "char": "氣溫",
+      "meaning": "air temperature",
+      "icon": "🌡️"
+    },
+    {
+      "char": "季節",
+      "meaning": "season",
+      "icon": "🍂"
+    },
+    {
+      "char": "彩雲",
+      "meaning": "rosy clouds",
+      "icon": "🌥️"
+    },
+    {
+      "char": "跳躍",
+      "meaning": "leap",
+      "icon": "🤸"
+    },
+    {
+      "char": "爬行",
+      "meaning": "crawl",
+      "icon": "🐛"
+    },
+    {
+      "char": "飛翔",
+      "meaning": "soar",
+      "icon": "🕊️"
+    },
+    {
+      "char": "洗澡",
+      "meaning": "bathe",
+      "icon": "🚿"
+    },
+    {
+      "char": "梳頭",
+      "meaning": "comb hair",
+      "icon": "💇"
+    },
+    {
+      "char": "擁抱",
+      "meaning": "embrace",
+      "icon": "🤗"
+    },
+    {
+      "char": "握手",
+      "meaning": "shake hands",
+      "icon": "🤝"
+    },
+    {
+      "char": "點頭",
+      "meaning": "nod",
+      "icon": "🙂"
+    },
+    {
+      "char": "搖頭",
+      "meaning": "shake head",
+      "icon": "🙅"
+    },
+    {
+      "char": "微笑",
+      "meaning": "smile",
+      "icon": "😊"
+    },
+    {
+      "char": "流淚",
+      "meaning": "shed tears",
+      "icon": "😢"
+    },
+    {
+      "char": "呼吸",
+      "meaning": "breathe",
+      "icon": "😮‍💨"
+    },
+    {
+      "char": "咳嗽",
+      "meaning": "cough",
+      "icon": "😷"
+    },
+    {
+      "char": "打掃",
+      "meaning": "clean up",
+      "icon": "🧹"
+    },
+    {
+      "char": "整理",
+      "meaning": "tidy up",
+      "icon": "🗂️"
+    },
+    {
+      "char": "擺放",
+      "meaning": "place",
+      "icon": "📦"
+    },
+    {
+      "char": "搬運",
+      "meaning": "haul",
+      "icon": "🚚"
+    },
+    {
+      "char": "修理",
+      "meaning": "repair",
+      "icon": "🔧"
+    },
+    {
+      "char": "製作",
+      "meaning": "craft",
+      "icon": "🛠️"
+    },
+    {
+      "char": "包裝",
+      "meaning": "wrap",
+      "icon": "🎀"
+    },
+    {
+      "char": "勤奮",
+      "meaning": "diligent",
+      "icon": "💪"
+    },
+    {
+      "char": "聰明",
+      "meaning": "clever",
+      "icon": "🧠"
+    },
+    {
+      "char": "愚蠢",
+      "meaning": "foolish",
+      "icon": "🤪"
+    },
+    {
+      "char": "善良",
+      "meaning": "kind",
+      "icon": "😇"
+    },
+    {
+      "char": "兇惡",
+      "meaning": "fierce",
+      "icon": "😡"
+    },
+    {
+      "char": "溫柔",
+      "meaning": "gentle",
+      "icon": "🌸"
+    },
+    {
+      "char": "活潑",
+      "meaning": "lively",
+      "icon": "🎈"
+    },
+    {
+      "char": "文靜",
+      "meaning": "quiet",
+      "icon": "🤫"
+    },
+    {
+      "char": "害羞",
+      "meaning": "shy",
+      "icon": "😳"
+    },
+    {
+      "char": "驕傲",
+      "meaning": "proud",
+      "icon": "😤"
+    },
+    {
+      "char": "謙虛",
+      "meaning": "humble",
+      "icon": "🙇"
+    },
+    {
+      "char": "懶惰",
+      "meaning": "lazy",
+      "icon": "😪"
+    },
+    {
+      "char": "可愛",
+      "meaning": "cute",
+      "icon": "🥰"
+    },
+    {
+      "char": "漂亮",
+      "meaning": "pretty",
+      "icon": "💖"
+    },
+    {
+      "char": "英俊",
+      "meaning": "handsome",
+      "icon": "🤵"
+    },
+    {
+      "char": "市場",
+      "meaning": "market",
+      "icon": "🏪"
+    },
+    {
+      "char": "街市",
+      "meaning": "wet market",
+      "icon": "🧺"
+    },
+    {
+      "char": "公司",
+      "meaning": "company",
+      "icon": "🏢"
+    },
+    {
+      "char": "工廠",
+      "meaning": "factory",
+      "icon": "🏭"
+    },
+    {
+      "char": "農場",
+      "meaning": "farm",
+      "icon": "🚜"
+    },
+    {
+      "char": "牧場",
+      "meaning": "ranch",
+      "icon": "🐄"
+    },
+    {
+      "char": "碼頭",
+      "meaning": "pier",
+      "icon": "⚓"
+    },
+    {
+      "char": "燈塔",
+      "meaning": "lighthouse",
+      "icon": "🗼"
+    },
+    {
+      "char": "廣場",
+      "meaning": "plaza",
+      "icon": "🏟️"
+    },
+    {
+      "char": "市中心",
+      "meaning": "downtown",
+      "icon": "🏙️"
+    },
+    {
+      "char": "郊外",
+      "meaning": "outskirts",
+      "icon": "🌄"
+    },
+    {
+      "char": "村莊",
+      "meaning": "village",
+      "icon": "🏘️"
+    },
+    {
+      "char": "社區",
+      "meaning": "community",
+      "icon": "🏬"
+    },
+    {
+      "char": "鄰里",
+      "meaning": "neighbourhood",
+      "icon": "🏡"
+    },
+    {
+      "char": "街道",
+      "meaning": "street",
+      "icon": "🛣️"
+    },
+    {
+      "char": "郵差",
+      "meaning": "postman",
+      "icon": "📮"
+    },
+    {
+      "char": "清潔工",
+      "meaning": "cleaner",
+      "icon": "🧽"
+    },
+    {
+      "char": "店員",
+      "meaning": "shop assistant",
+      "icon": "🛒"
+    },
+    {
+      "char": "老闆",
+      "meaning": "boss",
+      "icon": "💼"
+    },
+    {
+      "char": "顧客",
+      "meaning": "customer",
+      "icon": "🛍️"
+    },
+    {
+      "char": "記者",
+      "meaning": "reporter",
+      "icon": "📰"
+    },
+    {
+      "char": "畫家",
+      "meaning": "painter",
+      "icon": "🎨"
+    },
+    {
+      "char": "歌手",
+      "meaning": "singer",
+      "icon": "🎤"
+    },
+    {
+      "char": "演員",
+      "meaning": "actor",
+      "icon": "🎭"
+    },
+    {
+      "char": "運動員",
+      "meaning": "athlete",
+      "icon": "🏃"
+    },
+    {
+      "char": "科學家",
+      "meaning": "scientist",
+      "icon": "🔬"
+    },
+    {
+      "char": "工程師",
+      "meaning": "engineer",
+      "icon": "👷"
+    },
+    {
+      "char": "律師",
+      "meaning": "lawyer",
+      "icon": "⚖️"
+    },
+    {
+      "char": "士兵",
+      "meaning": "soldier",
+      "icon": "🪖"
+    },
+    {
+      "char": "隊長",
+      "meaning": "captain",
+      "icon": "🎖️"
+    }
+  ],
+  "P4": [
+    {
+      "char": "大腦",
+      "meaning": "brain",
+      "icon": "🧠"
+    },
+    {
+      "char": "心臟",
+      "meaning": "heart organ",
+      "icon": "❤️"
+    },
+    {
+      "char": "肺",
+      "meaning": "lungs",
+      "icon": "🫁"
+    },
+    {
+      "char": "胃",
+      "meaning": "stomach organ",
+      "icon": "🥴"
+    },
+    {
+      "char": "肝",
+      "meaning": "liver",
+      "icon": "🫀"
+    },
+    {
+      "char": "腎",
+      "meaning": "kidney",
+      "icon": "🫘"
+    },
+    {
+      "char": "血液",
+      "meaning": "blood",
+      "icon": "🩸"
+    },
+    {
+      "char": "骨頭",
+      "meaning": "bone",
+      "icon": "🦴"
+    },
+    {
+      "char": "肌肉",
+      "meaning": "muscle",
+      "icon": "💪"
+    },
+    {
+      "char": "神經",
+      "meaning": "nerve",
+      "icon": "⚡"
+    },
+    {
+      "char": "關節",
+      "meaning": "joint",
+      "icon": "🦿"
+    },
+    {
+      "char": "器官",
+      "meaning": "organ",
+      "icon": "🧬"
+    },
+    {
+      "char": "感冒",
+      "meaning": "flu",
+      "icon": "🤧"
+    },
+    {
+      "char": "發燒",
+      "meaning": "fever",
+      "icon": "🤒"
+    },
+    {
+      "char": "頭痛",
+      "meaning": "headache",
+      "icon": "🤕"
+    },
+    {
+      "char": "受傷",
+      "meaning": "injured",
+      "icon": "🩹"
+    },
+    {
+      "char": "康復",
+      "meaning": "recover",
+      "icon": "🧑‍⚕️"
+    },
+    {
+      "char": "藥物",
+      "meaning": "medicine",
+      "icon": "💊"
+    },
+    {
+      "char": "診所",
+      "meaning": "clinic",
+      "icon": "🏥"
+    },
+    {
+      "char": "打針",
+      "meaning": "injection",
+      "icon": "💉"
+    },
+    {
+      "char": "手術",
+      "meaning": "surgery",
+      "icon": "🔪"
+    },
+    {
+      "char": "疫苗",
+      "meaning": "vaccine",
+      "icon": "🧪"
+    },
+    {
+      "char": "營養",
+      "meaning": "nutrition",
+      "icon": "🥗"
+    },
+    {
+      "char": "衛生",
+      "meaning": "hygiene",
+      "icon": "🧼"
+    },
+    {
+      "char": "感覺",
+      "meaning": "sensation",
+      "icon": "💭"
+    },
+    {
+      "char": "情緒",
+      "meaning": "emotion",
+      "icon": "😶"
+    },
+    {
+      "char": "心情",
+      "meaning": "feelings",
+      "icon": "🙂"
+    },
+    {
+      "char": "感動",
+      "meaning": "touched",
+      "icon": "🥹"
+    },
+    {
+      "char": "感激",
+      "meaning": "grateful",
+      "icon": "🙏"
+    },
+    {
+      "char": "後悔",
+      "meaning": "regret",
+      "icon": "😞"
+    },
+    {
+      "char": "失望",
+      "meaning": "disappointed",
+      "icon": "😔"
+    },
+    {
+      "char": "滿意",
+      "meaning": "satisfied",
+      "icon": "😌"
+    },
+    {
+      "char": "驚訝",
+      "meaning": "surprised",
+      "icon": "😲"
+    },
+    {
+      "char": "好奇",
+      "meaning": "curious",
+      "icon": "🤔"
+    },
+    {
+      "char": "專心",
+      "meaning": "attentive",
+      "icon": "🧐"
+    },
+    {
+      "char": "冷靜",
+      "meaning": "calm",
+      "icon": "😐"
+    },
+    {
+      "char": "思考",
+      "meaning": "ponder",
+      "icon": "🤯"
+    },
+    {
+      "char": "理解",
+      "meaning": "comprehend",
+      "icon": "💡"
+    },
+    {
+      "char": "想像",
+      "meaning": "imagine",
+      "icon": "🌈"
+    },
+    {
+      "char": "記憶",
+      "meaning": "memorise",
+      "icon": "🧠"
+    },
+    {
+      "char": "觀察",
+      "meaning": "observe",
+      "icon": "🔍"
+    },
+    {
+      "char": "判斷",
+      "meaning": "judge",
+      "icon": "⚖️"
+    },
+    {
+      "char": "分析",
+      "meaning": "analyse",
+      "icon": "📊"
+    },
+    {
+      "char": "計算",
+      "meaning": "calculate",
+      "icon": "🧮"
+    },
+    {
+      "char": "估計",
+      "meaning": "estimate",
+      "icon": "📐"
+    },
+    {
+      "char": "猜測",
+      "meaning": "guess",
+      "icon": "🎲"
+    },
+    {
+      "char": "解釋",
+      "meaning": "explain",
+      "icon": "🗣️"
+    },
+    {
+      "char": "討論",
+      "meaning": "discuss",
+      "icon": "💬"
+    },
+    {
+      "char": "政府",
+      "meaning": "government",
+      "icon": "🏛️"
+    },
+    {
+      "char": "法律",
+      "meaning": "law",
+      "icon": "📜"
+    },
+    {
+      "char": "規則",
+      "meaning": "rule",
+      "icon": "📏"
+    },
+    {
+      "char": "責任",
+      "meaning": "responsibility",
+      "icon": "🎯"
+    },
+    {
+      "char": "權利",
+      "meaning": "rights",
+      "icon": "✊"
+    },
+    {
+      "char": "自由",
+      "meaning": "freedom",
+      "icon": "🕊️"
+    },
+    {
+      "char": "平等",
+      "meaning": "equality",
+      "icon": "🟰"
+    },
+    {
+      "char": "和平",
+      "meaning": "peace",
+      "icon": "☮️"
+    },
+    {
+      "char": "公平",
+      "meaning": "fairness",
+      "icon": "🤝"
+    },
+    {
+      "char": "秩序",
+      "meaning": "order",
+      "icon": "🚦"
+    },
+    {
+      "char": "公民",
+      "meaning": "citizen",
+      "icon": "🧑"
+    },
+    {
+      "char": "社會",
+      "meaning": "society",
+      "icon": "🏙️"
+    },
+    {
+      "char": "大自然",
+      "meaning": "nature",
+      "icon": "🌿"
+    },
+    {
+      "char": "環境",
+      "meaning": "environment",
+      "icon": "🌍"
+    },
+    {
+      "char": "沙漠",
+      "meaning": "desert",
+      "icon": "🏜️"
+    },
+    {
+      "char": "草原",
+      "meaning": "grassland",
+      "icon": "🌾"
+    },
+    {
+      "char": "平原",
+      "meaning": "plain",
+      "icon": "🟩"
+    },
+    {
+      "char": "高原",
+      "meaning": "plateau",
+      "icon": "🗻"
+    },
+    {
+      "char": "火山",
+      "meaning": "volcano",
+      "icon": "🌋"
+    },
+    {
+      "char": "瀑布",
+      "meaning": "waterfall",
+      "icon": "💦"
+    },
+    {
+      "char": "山洞",
+      "meaning": "cave",
+      "icon": "🕳️"
+    },
+    {
+      "char": "峽谷",
+      "meaning": "canyon",
+      "icon": "🏞️"
+    },
+    {
+      "char": "海洋",
+      "meaning": "ocean",
+      "icon": "🌊"
+    },
+    {
+      "char": "池塘",
+      "meaning": "pond",
+      "icon": "🦆"
+    },
+    {
+      "char": "溪流",
+      "meaning": "stream",
+      "icon": "🏕️"
+    },
+    {
+      "char": "泉水",
+      "meaning": "spring",
+      "icon": "⛲"
+    },
+    {
+      "char": "冰川",
+      "meaning": "glacier",
+      "icon": "🧊"
+    },
+    {
+      "char": "恐龍",
+      "meaning": "dinosaur",
+      "icon": "🦕"
+    },
+    {
+      "char": "鱷魚",
+      "meaning": "crocodile",
+      "icon": "🐊"
+    },
+    {
+      "char": "蜥蜴",
+      "meaning": "lizard",
+      "icon": "🦎"
+    },
+    {
+      "char": "犀牛",
+      "meaning": "rhino",
+      "icon": "🦏"
+    },
+    {
+      "char": "豹",
+      "meaning": "leopard",
+      "icon": "🐆"
+    },
+    {
+      "char": "水牛",
+      "meaning": "buffalo",
+      "icon": "🐃"
+    },
+    {
+      "char": "綿羊",
+      "meaning": "wool sheep",
+      "icon": "🐑"
+    },
+    {
+      "char": "山羊",
+      "meaning": "goat",
+      "icon": "🐐"
+    },
+    {
+      "char": "蜜蜂",
+      "meaning": "honeybee",
+      "icon": "🐝"
+    },
+    {
+      "char": "蜻蜓",
+      "meaning": "dragonfly",
+      "icon": "🪰"
+    },
+    {
+      "char": "毛蟲",
+      "meaning": "caterpillar",
+      "icon": "🐛"
+    },
+    {
+      "char": "螢火蟲",
+      "meaning": "firefly",
+      "icon": "✨"
+    },
+    {
+      "char": "海星",
+      "meaning": "starfish",
+      "icon": "⭐"
+    },
+    {
+      "char": "水母",
+      "meaning": "jellyfish",
+      "icon": "🪼"
+    },
+    {
+      "char": "農作物",
+      "meaning": "crops",
+      "icon": "🌾"
+    },
+    {
+      "char": "稻田",
+      "meaning": "paddy field",
+      "icon": "🌾"
+    },
+    {
+      "char": "收成",
+      "meaning": "harvest",
+      "icon": "🧑‍🌾"
+    },
+    {
+      "char": "播種",
+      "meaning": "sow",
+      "icon": "🌱"
+    },
+    {
+      "char": "灌溉",
+      "meaning": "irrigate",
+      "icon": "💧"
+    },
+    {
+      "char": "施肥",
+      "meaning": "fertilise",
+      "icon": "🌿"
+    },
+    {
+      "char": "果實",
+      "meaning": "botanical fruit",
+      "icon": "🍎"
+    },
+    {
+      "char": "花瓣",
+      "meaning": "petal",
+      "icon": "🌸"
+    },
+    {
+      "char": "花粉",
+      "meaning": "pollen",
+      "icon": "🌼"
+    },
+    {
+      "char": "果核",
+      "meaning": "core",
+      "icon": "🌰"
+    },
+    {
+      "char": "樹幹",
+      "meaning": "trunk",
+      "icon": "🪵"
+    },
+    {
+      "char": "嫩芽",
+      "meaning": "sprout",
+      "icon": "🌱"
+    },
+    {
+      "char": "世紀",
+      "meaning": "century",
+      "icon": "📅"
+    },
+    {
+      "char": "年代",
+      "meaning": "era",
+      "icon": "🕰️"
+    },
+    {
+      "char": "日期",
+      "meaning": "date",
+      "icon": "📆"
+    },
+    {
+      "char": "假期",
+      "meaning": "holiday",
+      "icon": "🏖️"
+    },
+    {
+      "char": "節日",
+      "meaning": "festival",
+      "icon": "🎊"
+    },
+    {
+      "char": "週末",
+      "meaning": "weekend",
+      "icon": "🗓️"
+    },
+    {
+      "char": "平日",
+      "meaning": "weekday",
+      "icon": "📅"
+    },
+    {
+      "char": "黎明",
+      "meaning": "dawn",
+      "icon": "🌄"
+    },
+    {
+      "char": "黃昏",
+      "meaning": "dusk",
+      "icon": "🌆"
+    },
+    {
+      "char": "深夜",
+      "meaning": "late night",
+      "icon": "🌙"
+    },
+    {
+      "char": "公斤",
+      "meaning": "kilogram",
+      "icon": "⚖️"
+    },
+    {
+      "char": "公里",
+      "meaning": "kilometre",
+      "icon": "📏"
+    },
+    {
+      "char": "公尺",
+      "meaning": "metre",
+      "icon": "📐"
+    },
+    {
+      "char": "厘米",
+      "meaning": "centimetre",
+      "icon": "📎"
+    },
+    {
+      "char": "面積",
+      "meaning": "area",
+      "icon": "🟦"
+    },
+    {
+      "char": "體積",
+      "meaning": "volume",
+      "icon": "🧊"
+    },
+    {
+      "char": "長度",
+      "meaning": "length",
+      "icon": "📏"
+    },
+    {
+      "char": "距離",
+      "meaning": "distance",
+      "icon": "🛣️"
+    },
+    {
+      "char": "高度",
+      "meaning": "height",
+      "icon": "📶"
+    },
+    {
+      "char": "一半",
+      "meaning": "half",
+      "icon": "🌗"
+    },
+    {
+      "char": "直升機",
+      "meaning": "helicopter",
+      "icon": "🚁"
+    },
+    {
+      "char": "火箭",
+      "meaning": "rocket",
+      "icon": "🚀"
+    },
+    {
+      "char": "太空船",
+      "meaning": "spaceship",
+      "icon": "🛸"
+    },
+    {
+      "char": "潛水艇",
+      "meaning": "submarine",
+      "icon": "🚤"
+    },
+    {
+      "char": "遊艇",
+      "meaning": "yacht",
+      "icon": "🛥️"
+    },
+    {
+      "char": "貨車",
+      "meaning": "truck",
+      "icon": "🚚"
+    },
+    {
+      "char": "救護車",
+      "meaning": "ambulance",
+      "icon": "🚑"
+    },
+    {
+      "char": "消防車",
+      "meaning": "fire engine",
+      "icon": "🚒"
+    },
+    {
+      "char": "警車",
+      "meaning": "police car",
+      "icon": "🚓"
+    },
+    {
+      "char": "的士",
+      "meaning": "taxi",
+      "icon": "🚕"
+    },
+    {
+      "char": "電單車",
+      "meaning": "motorcycle",
+      "icon": "🏍️"
+    },
+    {
+      "char": "單車",
+      "meaning": "bicycle",
+      "icon": "🚲"
+    },
+    {
+      "char": "知識",
+      "meaning": "knowledge",
+      "icon": "📚"
+    },
+    {
+      "char": "智慧",
+      "meaning": "wisdom",
+      "icon": "🦉"
+    },
+    {
+      "char": "教育",
+      "meaning": "education",
+      "icon": "🎓"
+    },
+    {
+      "char": "課程",
+      "meaning": "curriculum",
+      "icon": "📘"
+    },
+    {
+      "char": "學問",
+      "meaning": "scholarship",
+      "icon": "📖"
+    },
+    {
+      "char": "語文",
+      "meaning": "language arts",
+      "icon": "🈶"
+    },
+    {
+      "char": "作文",
+      "meaning": "composition",
+      "icon": "📝"
+    },
+    {
+      "char": "筆記",
+      "meaning": "notes",
+      "icon": "📓"
+    },
+    {
+      "char": "字典",
+      "meaning": "dictionary",
+      "icon": "📕"
+    },
+    {
+      "char": "百科",
+      "meaning": "encyclopedia",
+      "icon": "📗"
+    },
+    {
+      "char": "圖表",
+      "meaning": "chart",
+      "icon": "📊"
+    },
+    {
+      "char": "標題",
+      "meaning": "heading",
+      "icon": "🔖"
+    },
+    {
+      "char": "夢想",
+      "meaning": "dream goal",
+      "icon": "🌟"
+    },
+    {
+      "char": "目標",
+      "meaning": "target",
+      "icon": "🎯"
+    },
+    {
+      "char": "計劃",
+      "meaning": "plan",
+      "icon": "📋"
+    },
+    {
+      "char": "機會",
+      "meaning": "chance",
+      "icon": "🍀"
+    },
+    {
+      "char": "選項",
+      "meaning": "option",
+      "icon": "🔀"
+    },
+    {
+      "char": "條件",
+      "meaning": "condition",
+      "icon": "📑"
+    },
+    {
+      "char": "過程",
+      "meaning": "process",
+      "icon": "🔄"
+    },
+    {
+      "char": "階段",
+      "meaning": "stage",
+      "icon": "📶"
+    },
+    {
+      "char": "範圍",
+      "meaning": "scope",
+      "icon": "🌐"
+    },
+    {
+      "char": "系統",
+      "meaning": "system",
+      "icon": "⚙️"
+    },
+    {
+      "char": "資料",
+      "meaning": "data",
+      "icon": "🗂️"
+    },
+    {
+      "char": "消息",
+      "meaning": "news",
+      "icon": "📨"
+    },
+    {
+      "char": "秘密",
+      "meaning": "secret",
+      "icon": "🤫"
+    },
+    {
+      "char": "網絡",
+      "meaning": "internet",
+      "icon": "🕸️"
+    },
+    {
+      "char": "手機",
+      "meaning": "mobile phone",
+      "icon": "📱"
+    },
+    {
+      "char": "相機",
+      "meaning": "camera",
+      "icon": "📷"
+    },
+    {
+      "char": "螢幕",
+      "meaning": "screen",
+      "icon": "🖥️"
+    },
+    {
+      "char": "鍵盤",
+      "meaning": "keyboard",
+      "icon": "⌨️"
+    },
+    {
+      "char": "滑鼠",
+      "meaning": "mouse",
+      "icon": "🖱️"
+    },
+    {
+      "char": "信件",
+      "meaning": "letter",
+      "icon": "✉️"
+    },
+    {
+      "char": "郵票",
+      "meaning": "stamp",
+      "icon": "🏷️"
+    },
+    {
+      "char": "廣告",
+      "meaning": "advertisement",
+      "icon": "📢"
+    },
+    {
+      "char": "報紙",
+      "meaning": "newspaper",
+      "icon": "📰"
+    },
+    {
+      "char": "密碼",
+      "meaning": "password",
+      "icon": "🔑"
+    },
+    {
+      "char": "訊號",
+      "meaning": "signal",
+      "icon": "📶"
+    }
+  ],
+  "P5": [
+    {
+      "char": "品德",
+      "meaning": "morality",
+      "icon": "🌟"
+    },
+    {
+      "char": "誠信",
+      "meaning": "integrity",
+      "icon": "🤝"
+    },
+    {
+      "char": "正直",
+      "meaning": "upright",
+      "icon": "📏"
+    },
+    {
+      "char": "忠誠",
+      "meaning": "loyal",
+      "icon": "🐕"
+    },
+    {
+      "char": "慷慨",
+      "meaning": "generous",
+      "icon": "🎁"
+    },
+    {
+      "char": "寬容",
+      "meaning": "tolerant",
+      "icon": "🕊️"
+    },
+    {
+      "char": "體貼",
+      "meaning": "considerate",
+      "icon": "💗"
+    },
+    {
+      "char": "耐心",
+      "meaning": "patient",
+      "icon": "⏳"
+    },
+    {
+      "char": "樂觀",
+      "meaning": "optimistic",
+      "icon": "😄"
+    },
+    {
+      "char": "積極",
+      "meaning": "proactive",
+      "icon": "🔥"
+    },
+    {
+      "char": "自信",
+      "meaning": "confident",
+      "icon": "😎"
+    },
+    {
+      "char": "獨立",
+      "meaning": "independent",
+      "icon": "🧍"
+    },
+    {
+      "char": "堅強",
+      "meaning": "resilient",
+      "icon": "💪"
+    },
+    {
+      "char": "勇氣",
+      "meaning": "courage",
+      "icon": "🦁"
+    },
+    {
+      "char": "決心",
+      "meaning": "determination",
+      "icon": "✊"
+    },
+    {
+      "char": "毅力",
+      "meaning": "perseverance",
+      "icon": "🏔️"
+    },
+    {
+      "char": "上進",
+      "meaning": "aspiring",
+      "icon": "📈"
+    },
+    {
+      "char": "自私",
+      "meaning": "selfish",
+      "icon": "🙅"
+    },
+    {
+      "char": "貪心",
+      "meaning": "greedy",
+      "icon": "🤑"
+    },
+    {
+      "char": "傲慢",
+      "meaning": "arrogant",
+      "icon": "😤"
+    },
+    {
+      "char": "固執",
+      "meaning": "stubborn",
+      "icon": "🐂"
+    },
+    {
+      "char": "粗心",
+      "meaning": "careless",
+      "icon": "😵"
+    },
+    {
+      "char": "膽小",
+      "meaning": "timid",
+      "icon": "🐭"
+    },
+    {
+      "char": "浪費",
+      "meaning": "wasteful",
+      "icon": "🗑️"
+    },
+    {
+      "char": "說謊",
+      "meaning": "lying",
+      "icon": "🤥"
+    },
+    {
+      "char": "欺騙",
+      "meaning": "deceive",
+      "icon": "🃏"
+    },
+    {
+      "char": "抱怨",
+      "meaning": "complain",
+      "icon": "😩"
+    },
+    {
+      "char": "嫉妒",
+      "meaning": "jealous",
+      "icon": "💚"
+    },
+    {
+      "char": "冷漠",
+      "meaning": "indifferent",
+      "icon": "🥶"
+    },
+    {
+      "char": "喜悅",
+      "meaning": "joy",
+      "icon": "😊"
+    },
+    {
+      "char": "悲傷",
+      "meaning": "sorrow",
+      "icon": "😭"
+    },
+    {
+      "char": "憤怒",
+      "meaning": "fury",
+      "icon": "😡"
+    },
+    {
+      "char": "恐懼",
+      "meaning": "fear",
+      "icon": "😱"
+    },
+    {
+      "char": "焦慮",
+      "meaning": "anxiety",
+      "icon": "😰"
+    },
+    {
+      "char": "孤獨",
+      "meaning": "lonely",
+      "icon": "🌑"
+    },
+    {
+      "char": "思念",
+      "meaning": "longing",
+      "icon": "💌"
+    },
+    {
+      "char": "憐憫",
+      "meaning": "pity",
+      "icon": "🥺"
+    },
+    {
+      "char": "敬佩",
+      "meaning": "admire",
+      "icon": "🙌"
+    },
+    {
+      "char": "羞愧",
+      "meaning": "ashamed",
+      "icon": "😳"
+    },
+    {
+      "char": "委屈",
+      "meaning": "aggrieved",
+      "icon": "😢"
+    },
+    {
+      "char": "激動",
+      "meaning": "stirred",
+      "icon": "🤩"
+    },
+    {
+      "char": "文學",
+      "meaning": "literature",
+      "icon": "📖"
+    },
+    {
+      "char": "藝術",
+      "meaning": "art",
+      "icon": "🎨"
+    },
+    {
+      "char": "哲學",
+      "meaning": "philosophy",
+      "icon": "🤔"
+    },
+    {
+      "char": "邏輯",
+      "meaning": "logic",
+      "icon": "🧩"
+    },
+    {
+      "char": "物理",
+      "meaning": "physics",
+      "icon": "⚛️"
+    },
+    {
+      "char": "化學",
+      "meaning": "chemistry",
+      "icon": "🧪"
+    },
+    {
+      "char": "生物",
+      "meaning": "biology",
+      "icon": "🧬"
+    },
+    {
+      "char": "天文",
+      "meaning": "astronomy",
+      "icon": "🔭"
+    },
+    {
+      "char": "地質",
+      "meaning": "geology",
+      "icon": "🪨"
+    },
+    {
+      "char": "經濟",
+      "meaning": "economy",
+      "icon": "💰"
+    },
+    {
+      "char": "政治",
+      "meaning": "politics",
+      "icon": "🏛️"
+    },
+    {
+      "char": "文化",
+      "meaning": "culture",
+      "icon": "🎭"
+    },
+    {
+      "char": "宗教",
+      "meaning": "religion",
+      "icon": "⛩️"
+    },
+    {
+      "char": "語言",
+      "meaning": "language",
+      "icon": "🗣️"
+    },
+    {
+      "char": "宇宙",
+      "meaning": "universe",
+      "icon": "🌌"
+    },
+    {
+      "char": "星球",
+      "meaning": "planet",
+      "icon": "🪐"
+    },
+    {
+      "char": "銀河",
+      "meaning": "galaxy",
+      "icon": "🌠"
+    },
+    {
+      "char": "衛星",
+      "meaning": "satellite",
+      "icon": "🛰️"
+    },
+    {
+      "char": "引力",
+      "meaning": "gravity",
+      "icon": "🍎"
+    },
+    {
+      "char": "能量",
+      "meaning": "energy",
+      "icon": "⚡"
+    },
+    {
+      "char": "磁力",
+      "meaning": "magnetism",
+      "icon": "🧲"
+    },
+    {
+      "char": "光線",
+      "meaning": "ray",
+      "icon": "🔦"
+    },
+    {
+      "char": "聲波",
+      "meaning": "sound wave",
+      "icon": "🔊"
+    },
+    {
+      "char": "溫室",
+      "meaning": "greenhouse",
+      "icon": "🏡"
+    },
+    {
+      "char": "氧氣",
+      "meaning": "oxygen",
+      "icon": "💨"
+    },
+    {
+      "char": "細胞",
+      "meaning": "cell",
+      "icon": "🦠"
+    },
+    {
+      "char": "基因",
+      "meaning": "gene",
+      "icon": "🧬"
+    },
+    {
+      "char": "密度",
+      "meaning": "density",
+      "icon": "🧱"
+    },
+    {
+      "char": "國際",
+      "meaning": "international",
+      "icon": "🌐"
+    },
+    {
+      "char": "貿易",
+      "meaning": "trade",
+      "icon": "🚢"
+    },
+    {
+      "char": "貨幣",
+      "meaning": "currency",
+      "icon": "💵"
+    },
+    {
+      "char": "工業",
+      "meaning": "industry",
+      "icon": "🏭"
+    },
+    {
+      "char": "農業",
+      "meaning": "agriculture",
+      "icon": "🌾"
+    },
+    {
+      "char": "商業",
+      "meaning": "commerce",
+      "icon": "🏪"
+    },
+    {
+      "char": "科技",
+      "meaning": "technology",
+      "icon": "💻"
+    },
+    {
+      "char": "建築",
+      "meaning": "architecture",
+      "icon": "🏛️"
+    },
+    {
+      "char": "職業",
+      "meaning": "occupation",
+      "icon": "💼"
+    },
+    {
+      "char": "財富",
+      "meaning": "wealth",
+      "icon": "💰"
+    },
+    {
+      "char": "貧窮",
+      "meaning": "poverty",
+      "icon": "🪙"
+    },
+    {
+      "char": "稅款",
+      "meaning": "tax",
+      "icon": "🧾"
+    },
+    {
+      "char": "保險",
+      "meaning": "insurance",
+      "icon": "🛡️"
+    },
+    {
+      "char": "投資",
+      "meaning": "investment",
+      "icon": "📈"
+    },
+    {
+      "char": "傳統",
+      "meaning": "tradition",
+      "icon": "🏮"
+    },
+    {
+      "char": "文明",
+      "meaning": "civilisation",
+      "icon": "🏛️"
+    },
+    {
+      "char": "古代",
+      "meaning": "ancient",
+      "icon": "📜"
+    },
+    {
+      "char": "現代",
+      "meaning": "modern",
+      "icon": "🏙️"
+    },
+    {
+      "char": "朝代",
+      "meaning": "dynasty",
+      "icon": "👑"
+    },
+    {
+      "char": "皇帝",
+      "meaning": "emperor",
+      "icon": "🤴"
+    },
+    {
+      "char": "將軍",
+      "meaning": "general",
+      "icon": "🎖️"
+    },
+    {
+      "char": "英雄",
+      "meaning": "hero",
+      "icon": "🦸"
+    },
+    {
+      "char": "神話",
+      "meaning": "mythology",
+      "icon": "🐉"
+    },
+    {
+      "char": "傳說",
+      "meaning": "legend",
+      "icon": "📖"
+    },
+    {
+      "char": "遺跡",
+      "meaning": "ruins",
+      "icon": "🏚️"
+    },
+    {
+      "char": "文物",
+      "meaning": "relic",
+      "icon": "🏺"
+    },
+    {
+      "char": "古董",
+      "meaning": "antique",
+      "icon": "🕰️"
+    },
+    {
+      "char": "遺產",
+      "meaning": "heritage",
+      "icon": "🏯"
+    },
+    {
+      "char": "大陸",
+      "meaning": "continent",
+      "icon": "🌍"
+    },
+    {
+      "char": "半島",
+      "meaning": "peninsula",
+      "icon": "🗺️"
+    },
+    {
+      "char": "海峽",
+      "meaning": "strait",
+      "icon": "🌊"
+    },
+    {
+      "char": "沙丘",
+      "meaning": "dune",
+      "icon": "🏜️"
+    },
+    {
+      "char": "山脈",
+      "meaning": "mountain range",
+      "icon": "⛰️"
+    },
+    {
+      "char": "盆地",
+      "meaning": "basin",
+      "icon": "🏞️"
+    },
+    {
+      "char": "邊界",
+      "meaning": "border",
+      "icon": "🚧"
+    },
+    {
+      "char": "首都",
+      "meaning": "capital",
+      "icon": "🏛️"
+    },
+    {
+      "char": "省份",
+      "meaning": "province",
+      "icon": "🗾"
+    },
+    {
+      "char": "城鎮",
+      "meaning": "town",
+      "icon": "🏘️"
+    },
+    {
+      "char": "地區",
+      "meaning": "region",
+      "icon": "📍"
+    },
+    {
+      "char": "領土",
+      "meaning": "territory",
+      "icon": "🗾"
+    },
+    {
+      "char": "氣候",
+      "meaning": "climate",
+      "icon": "🌡️"
+    },
+    {
+      "char": "生態",
+      "meaning": "ecology",
+      "icon": "🌿"
+    },
+    {
+      "char": "表達",
+      "meaning": "express",
+      "icon": "🗨️"
+    },
+    {
+      "char": "溝通",
+      "meaning": "communicate",
+      "icon": "💬"
+    },
+    {
+      "char": "描述",
+      "meaning": "describe",
+      "icon": "📝"
+    },
+    {
+      "char": "敘述",
+      "meaning": "narrate",
+      "icon": "📖"
+    },
+    {
+      "char": "形容",
+      "meaning": "depict",
+      "icon": "🎨"
+    },
+    {
+      "char": "比喻",
+      "meaning": "metaphor",
+      "icon": "🔤"
+    },
+    {
+      "char": "修辭",
+      "meaning": "rhetoric",
+      "icon": "✍️"
+    },
+    {
+      "char": "標點",
+      "meaning": "punctuation",
+      "icon": "❓"
+    },
+    {
+      "char": "段落",
+      "meaning": "paragraph",
+      "icon": "📄"
+    },
+    {
+      "char": "主題",
+      "meaning": "theme",
+      "icon": "🎯"
+    },
+    {
+      "char": "內容",
+      "meaning": "content",
+      "icon": "📋"
+    },
+    {
+      "char": "意義",
+      "meaning": "significance",
+      "icon": "💭"
+    },
+    {
+      "char": "一心一意",
+      "meaning": "wholehearted",
+      "icon": "💖"
+    },
+    {
+      "char": "三心兩意",
+      "meaning": "half-hearted",
+      "icon": "😕"
+    },
+    {
+      "char": "一舉兩得",
+      "meaning": "two birds one stone",
+      "icon": "🎯"
+    },
+    {
+      "char": "十全十美",
+      "meaning": "perfect",
+      "icon": "💯"
+    },
+    {
+      "char": "千方百計",
+      "meaning": "by every means",
+      "icon": "🧠"
+    },
+    {
+      "char": "全神貫注",
+      "meaning": "fully focused",
+      "icon": "🧐"
+    },
+    {
+      "char": "自強不息",
+      "meaning": "strive endlessly",
+      "icon": "💪"
+    },
+    {
+      "char": "專心致志",
+      "meaning": "concentrate",
+      "icon": "📚"
+    },
+    {
+      "char": "手忙腳亂",
+      "meaning": "flustered",
+      "icon": "😵"
+    },
+    {
+      "char": "目瞪口呆",
+      "meaning": "dumbfounded",
+      "icon": "😲"
+    },
+    {
+      "char": "心花怒放",
+      "meaning": "overjoyed",
+      "icon": "🌸"
+    },
+    {
+      "char": "興高采烈",
+      "meaning": "jubilant",
+      "icon": "🎉"
+    },
+    {
+      "char": "廢寢忘食",
+      "meaning": "forget sleep and food",
+      "icon": "🍚"
+    },
+    {
+      "char": "精益求精",
+      "meaning": "strive for excellence",
+      "icon": "✨"
+    },
+    {
+      "char": "溫故知新",
+      "meaning": "review to learn anew",
+      "icon": "📜"
+    },
+    {
+      "char": "學以致用",
+      "meaning": "apply what you learn",
+      "icon": "🛠️"
+    },
+    {
+      "char": "達成",
+      "meaning": "achieve",
+      "icon": "✅"
+    },
+    {
+      "char": "實現",
+      "meaning": "realise",
+      "icon": "🌟"
+    },
+    {
+      "char": "克服",
+      "meaning": "overcome",
+      "icon": "🏔️"
+    },
+    {
+      "char": "面對",
+      "meaning": "confront",
+      "icon": "🫡"
+    },
+    {
+      "char": "挑戰",
+      "meaning": "challenge",
+      "icon": "🥊"
+    },
+    {
+      "char": "嘗試",
+      "meaning": "attempt",
+      "icon": "🔬"
+    },
+    {
+      "char": "堅持",
+      "meaning": "persist",
+      "icon": "💪"
+    },
+    {
+      "char": "放棄",
+      "meaning": "give up",
+      "icon": "🏳️"
+    },
+    {
+      "char": "奮鬥",
+      "meaning": "struggle",
+      "icon": "⚔️"
+    },
+    {
+      "char": "追求",
+      "meaning": "pursue",
+      "icon": "🏃"
+    },
+    {
+      "char": "探索",
+      "meaning": "explore",
+      "icon": "🧭"
+    },
+    {
+      "char": "發明",
+      "meaning": "invent",
+      "icon": "💡"
+    },
+    {
+      "char": "創造",
+      "meaning": "create",
+      "icon": "🎨"
+    },
+    {
+      "char": "建立",
+      "meaning": "establish",
+      "icon": "🏗️"
+    },
+    {
+      "char": "理想",
+      "meaning": "ideal",
+      "icon": "🌟"
+    },
+    {
+      "char": "信念",
+      "meaning": "belief",
+      "icon": "🙏"
+    },
+    {
+      "char": "價值",
+      "meaning": "value",
+      "icon": "💎"
+    },
+    {
+      "char": "意志",
+      "meaning": "will",
+      "icon": "🔥"
+    },
+    {
+      "char": "精神",
+      "meaning": "spirit",
+      "icon": "✨"
+    },
+    {
+      "char": "態度",
+      "meaning": "attitude",
+      "icon": "🧭"
+    },
+    {
+      "char": "觀點",
+      "meaning": "viewpoint",
+      "icon": "👁️"
+    },
+    {
+      "char": "立場",
+      "meaning": "stance",
+      "icon": "🧍"
+    },
+    {
+      "char": "原則",
+      "meaning": "principle",
+      "icon": "📏"
+    },
+    {
+      "char": "概念",
+      "meaning": "concept",
+      "icon": "💭"
+    },
+    {
+      "char": "理論",
+      "meaning": "theory",
+      "icon": "📐"
+    },
+    {
+      "char": "現象",
+      "meaning": "phenomenon",
+      "icon": "🌈"
+    },
+    {
+      "char": "本質",
+      "meaning": "essence",
+      "icon": "🔍"
+    },
+    {
+      "char": "友誼",
+      "meaning": "friendship",
+      "icon": "🤝"
+    },
+    {
+      "char": "親情",
+      "meaning": "family love",
+      "icon": "👨‍👩‍👧"
+    },
+    {
+      "char": "愛情",
+      "meaning": "romantic love",
+      "icon": "💕"
+    },
+    {
+      "char": "信任",
+      "meaning": "trust",
+      "icon": "🤲"
+    },
+    {
+      "char": "尊重",
+      "meaning": "respect",
+      "icon": "🙇"
+    },
+    {
+      "char": "諒解",
+      "meaning": "forgive",
+      "icon": "🕊️"
+    },
+    {
+      "char": "包容",
+      "meaning": "tolerate",
+      "icon": "🫂"
+    },
+    {
+      "char": "陪伴",
+      "meaning": "companionship",
+      "icon": "👫"
+    },
+    {
+      "char": "支持",
+      "meaning": "support",
+      "icon": "🙌"
+    },
+    {
+      "char": "鼓勵",
+      "meaning": "encourage",
+      "icon": "📣"
+    },
+    {
+      "char": "安慰",
+      "meaning": "comfort",
+      "icon": "🤗"
+    },
+    {
+      "char": "稱讚",
+      "meaning": "praise",
+      "icon": "👏"
+    },
+    {
+      "char": "批評",
+      "meaning": "criticise",
+      "icon": "🗯️"
+    },
+    {
+      "char": "感謝",
+      "meaning": "thank",
+      "icon": "🙏"
+    }
+  ],
+  "P6": [
+    {
+      "char": "井井有條",
+      "meaning": "orderly",
+      "icon": "📚"
+    },
+    {
+      "char": "一絲不苟",
+      "meaning": "meticulous",
+      "icon": "🔬"
+    },
+    {
+      "char": "全力以赴",
+      "meaning": "go all out",
+      "icon": "🏃"
+    },
+    {
+      "char": "持之以恆",
+      "meaning": "persevere",
+      "icon": "⏳"
+    },
+    {
+      "char": "鍥而不捨",
+      "meaning": "keep chipping away",
+      "icon": "🪚"
+    },
+    {
+      "char": "有條不紊",
+      "meaning": "methodical",
+      "icon": "📋"
+    },
+    {
+      "char": "事半功倍",
+      "meaning": "double the result",
+      "icon": "⚡"
+    },
+    {
+      "char": "集思廣益",
+      "meaning": "brainstorm",
+      "icon": "💡"
+    },
+    {
+      "char": "各抒己見",
+      "meaning": "each shares views",
+      "icon": "🗣️"
+    },
+    {
+      "char": "取長補短",
+      "meaning": "learn from strengths",
+      "icon": "🤝"
+    },
+    {
+      "char": "循序漸進",
+      "meaning": "step by step",
+      "icon": "📶"
+    },
+    {
+      "char": "融會貫通",
+      "meaning": "master thoroughly",
+      "icon": "🧠"
+    },
+    {
+      "char": "舉一反三",
+      "meaning": "extrapolate",
+      "icon": "🔢"
+    },
+    {
+      "char": "觸類旁通",
+      "meaning": "grasp by analogy",
+      "icon": "🔗"
+    },
+    {
+      "char": "一鳴驚人",
+      "meaning": "amaze everyone",
+      "icon": "🎇"
+    },
+    {
+      "char": "名列前茅",
+      "meaning": "top of the class",
+      "icon": "🥇"
+    },
+    {
+      "char": "出類拔萃",
+      "meaning": "stand out",
+      "icon": "🌟"
+    },
+    {
+      "char": "精雕細琢",
+      "meaning": "finely crafted",
+      "icon": "💎"
+    },
+    {
+      "char": "錦上添花",
+      "meaning": "icing on the cake",
+      "icon": "🌸"
+    },
+    {
+      "char": "雪中送炭",
+      "meaning": "timely help",
+      "icon": "❄️"
+    },
+    {
+      "char": "飲水思源",
+      "meaning": "remember the source",
+      "icon": "💧"
+    },
+    {
+      "char": "感恩圖報",
+      "meaning": "repay kindness",
+      "icon": "🙏"
+    },
+    {
+      "char": "將心比心",
+      "meaning": "empathise",
+      "icon": "💗"
+    },
+    {
+      "char": "設身處地",
+      "meaning": "put in their shoes",
+      "icon": "👟"
+    },
+    {
+      "char": "分辨",
+      "meaning": "distinguish",
+      "icon": "🔍"
+    },
+    {
+      "char": "辨別",
+      "meaning": "discern",
+      "icon": "👀"
+    },
+    {
+      "char": "歸納",
+      "meaning": "summarise",
+      "icon": "📊"
+    },
+    {
+      "char": "推理",
+      "meaning": "reason",
+      "icon": "🧩"
+    },
+    {
+      "char": "推測",
+      "meaning": "infer",
+      "icon": "🔮"
+    },
+    {
+      "char": "論證",
+      "meaning": "argue",
+      "icon": "📝"
+    },
+    {
+      "char": "證明",
+      "meaning": "prove",
+      "icon": "✅"
+    },
+    {
+      "char": "質疑",
+      "meaning": "question",
+      "icon": "❓"
+    },
+    {
+      "char": "反思",
+      "meaning": "reflect",
+      "icon": "🪞"
+    },
+    {
+      "char": "領悟",
+      "meaning": "apprehend",
+      "icon": "💡"
+    },
+    {
+      "char": "掌握",
+      "meaning": "master",
+      "icon": "✊"
+    },
+    {
+      "char": "運用",
+      "meaning": "apply",
+      "icon": "🔧"
+    },
+    {
+      "char": "綜合",
+      "meaning": "synthesise",
+      "icon": "🔗"
+    },
+    {
+      "char": "概括",
+      "meaning": "generalise",
+      "icon": "📋"
+    },
+    {
+      "char": "評估",
+      "meaning": "evaluate",
+      "icon": "⚖️"
+    },
+    {
+      "char": "反駁",
+      "meaning": "refute",
+      "icon": "🗯️"
+    },
+    {
+      "char": "民主",
+      "meaning": "democracy",
+      "icon": "🗳️"
+    },
+    {
+      "char": "制度",
+      "meaning": "institution",
+      "icon": "🏛️"
+    },
+    {
+      "char": "憲法",
+      "meaning": "constitution",
+      "icon": "📜"
+    },
+    {
+      "char": "政策",
+      "meaning": "policy",
+      "icon": "📋"
+    },
+    {
+      "char": "選舉",
+      "meaning": "election",
+      "icon": "🗳️"
+    },
+    {
+      "char": "議會",
+      "meaning": "parliament",
+      "icon": "🏛️"
+    },
+    {
+      "char": "法院",
+      "meaning": "court",
+      "icon": "⚖️"
+    },
+    {
+      "char": "罪犯",
+      "meaning": "criminal",
+      "icon": "🚓"
+    },
+    {
+      "char": "監獄",
+      "meaning": "prison",
+      "icon": "🔒"
+    },
+    {
+      "char": "警方",
+      "meaning": "police force",
+      "icon": "👮"
+    },
+    {
+      "char": "軍隊",
+      "meaning": "army",
+      "icon": "🪖"
+    },
+    {
+      "char": "國防",
+      "meaning": "defence",
+      "icon": "🛡️"
+    },
+    {
+      "char": "外交",
+      "meaning": "diplomacy",
+      "icon": "🤝"
+    },
+    {
+      "char": "條約",
+      "meaning": "treaty",
+      "icon": "📄"
+    },
+    {
+      "char": "難民",
+      "meaning": "refugee",
+      "icon": "🏕️"
+    },
+    {
+      "char": "人權",
+      "meaning": "human rights",
+      "icon": "✊"
+    },
+    {
+      "char": "資源",
+      "meaning": "resource",
+      "icon": "🛢️"
+    },
+    {
+      "char": "資本",
+      "meaning": "capital",
+      "icon": "💰"
+    },
+    {
+      "char": "生產",
+      "meaning": "production",
+      "icon": "🏭"
+    },
+    {
+      "char": "消費",
+      "meaning": "consumption",
+      "icon": "🛒"
+    },
+    {
+      "char": "供應",
+      "meaning": "supply",
+      "icon": "📦"
+    },
+    {
+      "char": "需求",
+      "meaning": "demand",
+      "icon": "📈"
+    },
+    {
+      "char": "利潤",
+      "meaning": "profit",
+      "icon": "💵"
+    },
+    {
+      "char": "成本",
+      "meaning": "cost",
+      "icon": "🧾"
+    },
+    {
+      "char": "效率",
+      "meaning": "efficiency",
+      "icon": "⚡"
+    },
+    {
+      "char": "創新",
+      "meaning": "innovation",
+      "icon": "💡"
+    },
+    {
+      "char": "人工智能",
+      "meaning": "artificial intelligence",
+      "icon": "🤖"
+    },
+    {
+      "char": "數據",
+      "meaning": "data",
+      "icon": "📊"
+    },
+    {
+      "char": "程式",
+      "meaning": "program",
+      "icon": "💻"
+    },
+    {
+      "char": "演算",
+      "meaning": "algorithm",
+      "icon": "🧮"
+    },
+    {
+      "char": "機械",
+      "meaning": "machinery",
+      "icon": "⚙️"
+    },
+    {
+      "char": "自動化",
+      "meaning": "automation",
+      "icon": "🔄"
+    },
+    {
+      "char": "生物圈",
+      "meaning": "biosphere",
+      "icon": "🌍"
+    },
+    {
+      "char": "污染",
+      "meaning": "pollution",
+      "icon": "🏭"
+    },
+    {
+      "char": "廢物",
+      "meaning": "waste",
+      "icon": "🗑️"
+    },
+    {
+      "char": "回收",
+      "meaning": "recycle",
+      "icon": "♻️"
+    },
+    {
+      "char": "節約",
+      "meaning": "conserve",
+      "icon": "💧"
+    },
+    {
+      "char": "保育",
+      "meaning": "conservation",
+      "icon": "🌱"
+    },
+    {
+      "char": "瀕危",
+      "meaning": "endangered",
+      "icon": "🐼"
+    },
+    {
+      "char": "絕種",
+      "meaning": "extinct",
+      "icon": "🦖"
+    },
+    {
+      "char": "棲息",
+      "meaning": "habitat",
+      "icon": "🏞️"
+    },
+    {
+      "char": "繁殖",
+      "meaning": "reproduce",
+      "icon": "🥚"
+    },
+    {
+      "char": "演化",
+      "meaning": "evolve",
+      "icon": "🐒"
+    },
+    {
+      "char": "適應",
+      "meaning": "adapt",
+      "icon": "🦎"
+    },
+    {
+      "char": "食物鏈",
+      "meaning": "food chain",
+      "icon": "🔗"
+    },
+    {
+      "char": "物種",
+      "meaning": "species",
+      "icon": "🦋"
+    },
+    {
+      "char": "平衡",
+      "meaning": "balance",
+      "icon": "⚖️"
+    },
+    {
+      "char": "生命",
+      "meaning": "life",
+      "icon": "🌱"
+    },
+    {
+      "char": "氣象",
+      "meaning": "meteorology",
+      "icon": "🌦️"
+    },
+    {
+      "char": "乾旱",
+      "meaning": "drought",
+      "icon": "🏜️"
+    },
+    {
+      "char": "洪水",
+      "meaning": "flood",
+      "icon": "🌊"
+    },
+    {
+      "char": "地震",
+      "meaning": "earthquake",
+      "icon": "🌍"
+    },
+    {
+      "char": "海嘯",
+      "meaning": "tsunami",
+      "icon": "🌊"
+    },
+    {
+      "char": "山泥傾瀉",
+      "meaning": "landslide",
+      "icon": "⛰️"
+    },
+    {
+      "char": "暴雨",
+      "meaning": "rainstorm",
+      "icon": "🌧️"
+    },
+    {
+      "char": "雷暴",
+      "meaning": "thunderstorm",
+      "icon": "⛈️"
+    },
+    {
+      "char": "龍捲風",
+      "meaning": "tornado",
+      "icon": "🌪️"
+    },
+    {
+      "char": "冰雹",
+      "meaning": "hail",
+      "icon": "🧊"
+    },
+    {
+      "char": "酷熱",
+      "meaning": "scorching",
+      "icon": "🥵"
+    },
+    {
+      "char": "嚴寒",
+      "meaning": "severe cold",
+      "icon": "🥶"
+    },
+    {
+      "char": "免疫",
+      "meaning": "immunity",
+      "icon": "🛡️"
+    },
+    {
+      "char": "疾病",
+      "meaning": "disease",
+      "icon": "🤒"
+    },
+    {
+      "char": "傳染",
+      "meaning": "infectious",
+      "icon": "😷"
+    },
+    {
+      "char": "病毒",
+      "meaning": "virus",
+      "icon": "🦠"
+    },
+    {
+      "char": "細菌",
+      "meaning": "bacteria",
+      "icon": "🧫"
+    },
+    {
+      "char": "治療",
+      "meaning": "treatment",
+      "icon": "💊"
+    },
+    {
+      "char": "復原",
+      "meaning": "recovery",
+      "icon": "🩹"
+    },
+    {
+      "char": "保健",
+      "meaning": "healthcare",
+      "icon": "🏥"
+    },
+    {
+      "char": "均衡",
+      "meaning": "balanced diet",
+      "icon": "🥗"
+    },
+    {
+      "char": "鍛煉",
+      "meaning": "physical training",
+      "icon": "🏋️"
+    },
+    {
+      "char": "睡眠",
+      "meaning": "sleep",
+      "icon": "😴"
+    },
+    {
+      "char": "情感",
+      "meaning": "sentiment",
+      "icon": "💞"
+    },
+    {
+      "char": "詩歌",
+      "meaning": "poetry",
+      "icon": "📜"
+    },
+    {
+      "char": "散文",
+      "meaning": "prose",
+      "icon": "📄"
+    },
+    {
+      "char": "小說",
+      "meaning": "novel",
+      "icon": "📕"
+    },
+    {
+      "char": "戲劇",
+      "meaning": "drama",
+      "icon": "🎭"
+    },
+    {
+      "char": "寓言",
+      "meaning": "fable",
+      "icon": "🦊"
+    },
+    {
+      "char": "童話",
+      "meaning": "fairy tale",
+      "icon": "🧚"
+    },
+    {
+      "char": "名著",
+      "meaning": "classic work",
+      "icon": "📚"
+    },
+    {
+      "char": "作者",
+      "meaning": "author",
+      "icon": "✍️"
+    },
+    {
+      "char": "讀者",
+      "meaning": "reader",
+      "icon": "👓"
+    },
+    {
+      "char": "靈感",
+      "meaning": "inspiration",
+      "icon": "💡"
+    },
+    {
+      "char": "想像力",
+      "meaning": "imagination",
+      "icon": "💭"
+    },
+    {
+      "char": "創作",
+      "meaning": "compose",
+      "icon": "🎨"
+    },
+    {
+      "char": "欣賞",
+      "meaning": "appreciate",
+      "icon": "👏"
+    },
+    {
+      "char": "評論",
+      "meaning": "critique",
+      "icon": "🗯️"
+    },
+    {
+      "char": "風格",
+      "meaning": "style",
+      "icon": "🎩"
+    },
+    {
+      "char": "情節",
+      "meaning": "plot",
+      "icon": "📖"
+    },
+    {
+      "char": "心理",
+      "meaning": "psychology",
+      "icon": "🧠"
+    },
+    {
+      "char": "意識",
+      "meaning": "consciousness",
+      "icon": "💡"
+    },
+    {
+      "char": "潛意識",
+      "meaning": "subconscious",
+      "icon": "🌀"
+    },
+    {
+      "char": "直覺",
+      "meaning": "intuition",
+      "icon": "🔮"
+    },
+    {
+      "char": "樂趣",
+      "meaning": "pleasure",
+      "icon": "😄"
+    },
+    {
+      "char": "興趣",
+      "meaning": "interest",
+      "icon": "🎯"
+    },
+    {
+      "char": "志向",
+      "meaning": "ambition",
+      "icon": "🧭"
+    },
+    {
+      "char": "抱負",
+      "meaning": "aspiration",
+      "icon": "🚀"
+    },
+    {
+      "char": "動機",
+      "meaning": "motive",
+      "icon": "🎬"
+    },
+    {
+      "char": "情操",
+      "meaning": "moral sentiment",
+      "icon": "🎼"
+    },
+    {
+      "char": "修養",
+      "meaning": "self-cultivation",
+      "icon": "🧘"
+    },
+    {
+      "char": "氣質",
+      "meaning": "temperament",
+      "icon": "💃"
+    },
+    {
+      "char": "意願",
+      "meaning": "willingness",
+      "icon": "🙋"
+    },
+    {
+      "char": "專注",
+      "meaning": "concentration",
+      "icon": "🔬"
+    },
+    {
+      "char": "永恆",
+      "meaning": "eternal",
+      "icon": "♾️"
+    },
+    {
+      "char": "瞬間",
+      "meaning": "instant",
+      "icon": "⏱️"
+    },
+    {
+      "char": "未來",
+      "meaning": "future",
+      "icon": "🚀"
+    },
+    {
+      "char": "過去",
+      "meaning": "past",
+      "icon": "⏮️"
+    },
+    {
+      "char": "命運",
+      "meaning": "fate",
+      "icon": "🎴"
+    },
+    {
+      "char": "緣分",
+      "meaning": "affinity",
+      "icon": "🧧"
+    },
+    {
+      "char": "機遇",
+      "meaning": "opportune moment",
+      "icon": "🍀"
+    },
+    {
+      "char": "巧合",
+      "meaning": "coincidence",
+      "icon": "🎲"
+    },
+    {
+      "char": "循環",
+      "meaning": "cycle",
+      "icon": "🔁"
+    },
+    {
+      "char": "變遷",
+      "meaning": "changes",
+      "icon": "🔀"
+    },
+    {
+      "char": "演變",
+      "meaning": "develop",
+      "icon": "📈"
+    },
+    {
+      "char": "趨勢",
+      "meaning": "trend",
+      "icon": "📊"
+    },
+    {
+      "char": "優秀",
+      "meaning": "excellent",
+      "icon": "🌟"
+    },
+    {
+      "char": "傑出",
+      "meaning": "outstanding",
+      "icon": "🏆"
+    },
+    {
+      "char": "卓越",
+      "meaning": "exceptional",
+      "icon": "💎"
+    },
+    {
+      "char": "非凡",
+      "meaning": "extraordinary",
+      "icon": "✨"
+    },
+    {
+      "char": "珍貴",
+      "meaning": "precious",
+      "icon": "💍"
+    },
+    {
+      "char": "寶貴",
+      "meaning": "valuable",
+      "icon": "💰"
+    },
+    {
+      "char": "奇妙",
+      "meaning": "marvellous",
+      "icon": "🎇"
+    },
+    {
+      "char": "壯麗",
+      "meaning": "magnificent",
+      "icon": "🏔️"
+    },
+    {
+      "char": "遼闊",
+      "meaning": "vast",
+      "icon": "🌌"
+    },
+    {
+      "char": "宏偉",
+      "meaning": "grand",
+      "icon": "🏛️"
+    },
+    {
+      "char": "精緻",
+      "meaning": "exquisite",
+      "icon": "🎀"
+    },
+    {
+      "char": "樸素",
+      "meaning": "plain",
+      "icon": "🕊️"
+    },
+    {
+      "char": "華麗",
+      "meaning": "gorgeous",
+      "icon": "👑"
+    },
+    {
+      "char": "莊嚴",
+      "meaning": "solemn",
+      "icon": "⛪"
+    },
+    {
+      "char": "神秘",
+      "meaning": "mysterious",
+      "icon": "🔮"
+    },
+    {
+      "char": "深奧",
+      "meaning": "profound",
+      "icon": "📖"
+    },
+    {
+      "char": "微妙",
+      "meaning": "subtle",
+      "icon": "🌗"
+    },
+    {
+      "char": "罕見",
+      "meaning": "rare",
+      "icon": "🦄"
+    },
+    {
+      "char": "團結",
+      "meaning": "unity",
+      "icon": "🤝"
+    },
+    {
+      "char": "互助",
+      "meaning": "mutual aid",
+      "icon": "🫂"
+    },
+    {
+      "char": "和諧",
+      "meaning": "harmony",
+      "icon": "☯️"
+    },
+    {
+      "char": "默契",
+      "meaning": "tacit rapport",
+      "icon": "🤫"
+    },
+    {
+      "char": "誠懇",
+      "meaning": "sincere",
+      "icon": "💗"
+    },
+    {
+      "char": "熱誠",
+      "meaning": "enthusiasm",
+      "icon": "🔥"
+    },
+    {
+      "char": "慈愛",
+      "meaning": "loving-kindness",
+      "icon": "💞"
+    },
+    {
+      "char": "孝順",
+      "meaning": "filial piety",
+      "icon": "🙇"
+    },
+    {
+      "char": "感恩",
+      "meaning": "gratitude",
+      "icon": "🙏"
+    },
+    {
+      "char": "奉獻",
+      "meaning": "dedication",
+      "icon": "🕯️"
+    },
+    {
+      "char": "犧牲",
+      "meaning": "sacrifice",
+      "icon": "⚰️"
+    },
+    {
+      "char": "貢獻",
+      "meaning": "contribution",
+      "icon": "🎁"
+    },
+    {
+      "char": "責任感",
+      "meaning": "sense of duty",
+      "icon": "🛡️"
+    },
+    {
+      "char": "使命",
+      "meaning": "mission",
+      "icon": "🚩"
+    },
+    {
+      "char": "榮譽",
+      "meaning": "honour",
+      "icon": "🏅"
+    },
+    {
+      "char": "尊嚴",
+      "meaning": "dignity",
+      "icon": "🎖️"
+    },
+    {
+      "char": "名譽",
+      "meaning": "reputation",
+      "icon": "📛"
+    },
+    {
+      "char": "信譽",
+      "meaning": "credibility",
+      "icon": "✅"
+    }
+  ],
+  "F1": [
+    {
+      "char": "臥薪嘗膽",
+      "meaning": "endure hardship for a goal",
+      "icon": "🔥"
+    },
+    {
+      "char": "破釜沉舟",
+      "meaning": "burn the boats",
+      "icon": "🚢"
+    },
+    {
+      "char": "背水一戰",
+      "meaning": "fight with no retreat",
+      "icon": "🌊"
+    },
+    {
+      "char": "聞雞起舞",
+      "meaning": "diligent early training",
+      "icon": "🐓"
+    },
+    {
+      "char": "懸樑刺股",
+      "meaning": "study with great effort",
+      "icon": "📚"
+    },
+    {
+      "char": "鑿壁偷光",
+      "meaning": "study despite poverty",
+      "icon": "💡"
+    },
+    {
+      "char": "囊螢映雪",
+      "meaning": "study in hardship",
+      "icon": "✨"
+    },
+    {
+      "char": "韋編三絕",
+      "meaning": "read until the binding wears",
+      "icon": "📜"
+    },
+    {
+      "char": "溫文爾雅",
+      "meaning": "refined and gentle",
+      "icon": "🎩"
+    },
+    {
+      "char": "彬彬有禮",
+      "meaning": "courteous",
+      "icon": "🙇"
+    },
+    {
+      "char": "談笑風生",
+      "meaning": "converse wittily",
+      "icon": "😄"
+    },
+    {
+      "char": "妙語連珠",
+      "meaning": "eloquent remarks",
+      "icon": "💬"
+    },
+    {
+      "char": "出口成章",
+      "meaning": "articulate speech",
+      "icon": "📝"
+    },
+    {
+      "char": "博學多才",
+      "meaning": "learned and talented",
+      "icon": "🎓"
+    },
+    {
+      "char": "才華橫溢",
+      "meaning": "brimming with talent",
+      "icon": "🌟"
+    },
+    {
+      "char": "學富五車",
+      "meaning": "vastly learned",
+      "icon": "📚"
+    },
+    {
+      "char": "滿腹經綸",
+      "meaning": "full of wisdom",
+      "icon": "🧠"
+    },
+    {
+      "char": "見多識廣",
+      "meaning": "experienced and worldly",
+      "icon": "🌍"
+    },
+    {
+      "char": "深思熟慮",
+      "meaning": "deliberate carefully",
+      "icon": "🤔"
+    },
+    {
+      "char": "通情達理",
+      "meaning": "sensible and fair",
+      "icon": "🤝"
+    },
+    {
+      "char": "明辨是非",
+      "meaning": "tell right from wrong",
+      "icon": "⚖️"
+    },
+    {
+      "char": "據理力爭",
+      "meaning": "argue on principle",
+      "icon": "🗣️"
+    },
+    {
+      "char": "實事求是",
+      "meaning": "seek truth from facts",
+      "icon": "🔍"
+    },
+    {
+      "char": "一針見血",
+      "meaning": "hit the crux",
+      "icon": "🎯"
+    },
+    {
+      "char": "對症下藥",
+      "meaning": "apply the right remedy",
+      "icon": "💊"
+    },
+    {
+      "char": "因材施教",
+      "meaning": "teach by aptitude",
+      "icon": "🎓"
+    },
+    {
+      "char": "循循善誘",
+      "meaning": "guide patiently",
+      "icon": "🧭"
+    },
+    {
+      "char": "誨人不倦",
+      "meaning": "teach tirelessly",
+      "icon": "📖"
+    },
+    {
+      "char": "潛移默化",
+      "meaning": "subtle influence",
+      "icon": "🌊"
+    },
+    {
+      "char": "集腋成裘",
+      "meaning": "little things add up",
+      "icon": "🧥"
+    },
+    {
+      "char": "闡述",
+      "meaning": "expound",
+      "icon": "📢"
+    },
+    {
+      "char": "論述",
+      "meaning": "discourse",
+      "icon": "📝"
+    },
+    {
+      "char": "剖析",
+      "meaning": "dissect",
+      "icon": "🔬"
+    },
+    {
+      "char": "詮釋",
+      "meaning": "interpret",
+      "icon": "💬"
+    },
+    {
+      "char": "探討",
+      "meaning": "delve into",
+      "icon": "🔍"
+    },
+    {
+      "char": "鑽研",
+      "meaning": "study intensively",
+      "icon": "📚"
+    },
+    {
+      "char": "領略",
+      "meaning": "savour",
+      "icon": "🌄"
+    },
+    {
+      "char": "體會",
+      "meaning": "realise",
+      "icon": "💭"
+    },
+    {
+      "char": "感悟",
+      "meaning": "apprehend",
+      "icon": "🧘"
+    },
+    {
+      "char": "昇華",
+      "meaning": "sublimate",
+      "icon": "🔥"
+    },
+    {
+      "char": "陶冶",
+      "meaning": "edify",
+      "icon": "🎨"
+    },
+    {
+      "char": "薰陶",
+      "meaning": "nurture",
+      "icon": "🌱"
+    },
+    {
+      "char": "啟迪",
+      "meaning": "enlighten",
+      "icon": "💡"
+    },
+    {
+      "char": "感化",
+      "meaning": "reform by influence",
+      "icon": "🕊️"
+    },
+    {
+      "char": "激勵",
+      "meaning": "inspire",
+      "icon": "📣"
+    },
+    {
+      "char": "鞭策",
+      "meaning": "spur on",
+      "icon": "🐎"
+    },
+    {
+      "char": "砥礪",
+      "meaning": "hone",
+      "icon": "🪨"
+    },
+    {
+      "char": "磨練",
+      "meaning": "temper",
+      "icon": "💪"
+    },
+    {
+      "char": "歷練",
+      "meaning": "seasoning",
+      "icon": "🧗"
+    },
+    {
+      "char": "錘煉",
+      "meaning": "forge",
+      "icon": "🔨"
+    },
+    {
+      "char": "真理",
+      "meaning": "truth",
+      "icon": "💎"
+    },
+    {
+      "char": "哲理",
+      "meaning": "philosophical insight",
+      "icon": "🤔"
+    },
+    {
+      "char": "道德",
+      "meaning": "morality",
+      "icon": "⚖️"
+    },
+    {
+      "char": "倫理",
+      "meaning": "ethics",
+      "icon": "📜"
+    },
+    {
+      "char": "良知",
+      "meaning": "conscience",
+      "icon": "💗"
+    },
+    {
+      "char": "正義",
+      "meaning": "justice",
+      "icon": "⚔️"
+    },
+    {
+      "char": "公義",
+      "meaning": "righteousness",
+      "icon": "🕊️"
+    },
+    {
+      "char": "境界",
+      "meaning": "realm",
+      "icon": "🏔️"
+    },
+    {
+      "char": "意境",
+      "meaning": "artistic conception",
+      "icon": "🎨"
+    },
+    {
+      "char": "內涵",
+      "meaning": "connotation",
+      "icon": "📦"
+    },
+    {
+      "char": "底蘊",
+      "meaning": "depth",
+      "icon": "🗿"
+    },
+    {
+      "char": "涵義",
+      "meaning": "implication",
+      "icon": "💬"
+    },
+    {
+      "char": "本源",
+      "meaning": "origin",
+      "icon": "🌱"
+    },
+    {
+      "char": "根本",
+      "meaning": "fundamental",
+      "icon": "🌳"
+    },
+    {
+      "char": "核心",
+      "meaning": "core",
+      "icon": "🎯"
+    },
+    {
+      "char": "精髓",
+      "meaning": "quintessence",
+      "icon": "✨"
+    },
+    {
+      "char": "要旨",
+      "meaning": "gist",
+      "icon": "📌"
+    },
+    {
+      "char": "宗旨",
+      "meaning": "aim",
+      "icon": "🚩"
+    },
+    {
+      "char": "理念",
+      "meaning": "guiding idea",
+      "icon": "💡"
+    },
+    {
+      "char": "願景",
+      "meaning": "vision",
+      "icon": "🔭"
+    },
+    {
+      "char": "體制",
+      "meaning": "regime",
+      "icon": "🏛️"
+    },
+    {
+      "char": "治理",
+      "meaning": "governance",
+      "icon": "🧑‍⚖️"
+    },
+    {
+      "char": "改革",
+      "meaning": "reform",
+      "icon": "🔧"
+    },
+    {
+      "char": "發展",
+      "meaning": "development",
+      "icon": "📈"
+    },
+    {
+      "char": "繁榮",
+      "meaning": "prosperity",
+      "icon": "🌇"
+    },
+    {
+      "char": "穩定",
+      "meaning": "stability",
+      "icon": "⚖️"
+    },
+    {
+      "char": "公正",
+      "meaning": "impartial",
+      "icon": "🤝"
+    },
+    {
+      "char": "廉潔",
+      "meaning": "incorruptible",
+      "icon": "🧼"
+    },
+    {
+      "char": "監督",
+      "meaning": "supervise",
+      "icon": "👁️"
+    },
+    {
+      "char": "制衡",
+      "meaning": "checks and balances",
+      "icon": "🪢"
+    },
+    {
+      "char": "輿論",
+      "meaning": "public opinion",
+      "icon": "📰"
+    },
+    {
+      "char": "民生",
+      "meaning": "livelihood",
+      "icon": "🏘️"
+    },
+    {
+      "char": "福利",
+      "meaning": "welfare",
+      "icon": "🎁"
+    },
+    {
+      "char": "公益",
+      "meaning": "public good",
+      "icon": "❤️"
+    },
+    {
+      "char": "慈善",
+      "meaning": "charity",
+      "icon": "🕊️"
+    },
+    {
+      "char": "志願",
+      "meaning": "voluntary",
+      "icon": "🙋"
+    },
+    {
+      "char": "團體",
+      "meaning": "group",
+      "icon": "👥"
+    },
+    {
+      "char": "機構",
+      "meaning": "institution",
+      "icon": "🏢"
+    },
+    {
+      "char": "聯盟",
+      "meaning": "alliance",
+      "icon": "🤝"
+    },
+    {
+      "char": "協會",
+      "meaning": "association",
+      "icon": "🏛️"
+    },
+    {
+      "char": "科研",
+      "meaning": "research",
+      "icon": "🔬"
+    },
+    {
+      "char": "實驗",
+      "meaning": "experiment",
+      "icon": "🧪"
+    },
+    {
+      "char": "假設",
+      "meaning": "hypothesis",
+      "icon": "💭"
+    },
+    {
+      "char": "定律",
+      "meaning": "law of nature",
+      "icon": "📐"
+    },
+    {
+      "char": "公式",
+      "meaning": "formula",
+      "icon": "🧮"
+    },
+    {
+      "char": "元素",
+      "meaning": "element",
+      "icon": "⚗️"
+    },
+    {
+      "char": "分子",
+      "meaning": "molecule",
+      "icon": "🧬"
+    },
+    {
+      "char": "原子",
+      "meaning": "atom",
+      "icon": "⚛️"
+    },
+    {
+      "char": "粒子",
+      "meaning": "particle",
+      "icon": "✨"
+    },
+    {
+      "char": "反應",
+      "meaning": "reaction",
+      "icon": "💥"
+    },
+    {
+      "char": "化合",
+      "meaning": "compound",
+      "icon": "🧪"
+    },
+    {
+      "char": "導體",
+      "meaning": "conductor",
+      "icon": "🔌"
+    },
+    {
+      "char": "輻射",
+      "meaning": "radiation",
+      "icon": "☢️"
+    },
+    {
+      "char": "波長",
+      "meaning": "wavelength",
+      "icon": "〰️"
+    },
+    {
+      "char": "頻率",
+      "meaning": "frequency",
+      "icon": "📶"
+    },
+    {
+      "char": "遺傳",
+      "meaning": "heredity",
+      "icon": "🧬"
+    },
+    {
+      "char": "進化",
+      "meaning": "evolution",
+      "icon": "🐒"
+    },
+    {
+      "char": "微生物",
+      "meaning": "microorganism",
+      "icon": "🦠"
+    },
+    {
+      "char": "病理",
+      "meaning": "pathology",
+      "icon": "🩺"
+    },
+    {
+      "char": "免疫力",
+      "meaning": "immunity",
+      "icon": "🛡️"
+    },
+    {
+      "char": "金融",
+      "meaning": "finance",
+      "icon": "🏦"
+    },
+    {
+      "char": "股票",
+      "meaning": "stock",
+      "icon": "📈"
+    },
+    {
+      "char": "通脹",
+      "meaning": "inflation",
+      "icon": "💸"
+    },
+    {
+      "char": "財政",
+      "meaning": "fiscal",
+      "icon": "💰"
+    },
+    {
+      "char": "預算",
+      "meaning": "budget",
+      "icon": "🧾"
+    },
+    {
+      "char": "債務",
+      "meaning": "debt",
+      "icon": "💳"
+    },
+    {
+      "char": "壟斷",
+      "meaning": "monopoly",
+      "icon": "🎩"
+    },
+    {
+      "char": "品牌",
+      "meaning": "brand",
+      "icon": "🏷️"
+    },
+    {
+      "char": "企業",
+      "meaning": "enterprise",
+      "icon": "🏢"
+    },
+    {
+      "char": "產業",
+      "meaning": "industry sector",
+      "icon": "🏭"
+    },
+    {
+      "char": "出口",
+      "meaning": "export",
+      "icon": "🚢"
+    },
+    {
+      "char": "進口",
+      "meaning": "import",
+      "icon": "📦"
+    },
+    {
+      "char": "關稅",
+      "meaning": "tariff",
+      "icon": "🛃"
+    },
+    {
+      "char": "匯率",
+      "meaning": "exchange rate",
+      "icon": "💱"
+    },
+    {
+      "char": "儲蓄",
+      "meaning": "savings",
+      "icon": "🏦"
+    },
+    {
+      "char": "消費者",
+      "meaning": "consumer",
+      "icon": "🛍️"
+    },
+    {
+      "char": "全球化",
+      "meaning": "globalisation",
+      "icon": "🌐"
+    },
+    {
+      "char": "經貿",
+      "meaning": "trade and economy",
+      "icon": "🤝"
+    },
+    {
+      "char": "意象",
+      "meaning": "imagery",
+      "icon": "🖼️"
+    },
+    {
+      "char": "象徵",
+      "meaning": "symbolism",
+      "icon": "🕊️"
+    },
+    {
+      "char": "對比",
+      "meaning": "contrast",
+      "icon": "⚫"
+    },
+    {
+      "char": "誇張",
+      "meaning": "hyperbole",
+      "icon": "📢"
+    },
+    {
+      "char": "擬人",
+      "meaning": "personification",
+      "icon": "🧑"
+    },
+    {
+      "char": "排比",
+      "meaning": "parallelism",
+      "icon": "📊"
+    },
+    {
+      "char": "押韻",
+      "meaning": "rhyme",
+      "icon": "🎵"
+    },
+    {
+      "char": "節奏",
+      "meaning": "rhythm",
+      "icon": "🥁"
+    },
+    {
+      "char": "韻律",
+      "meaning": "metre",
+      "icon": "🎶"
+    },
+    {
+      "char": "格律",
+      "meaning": "metrical form",
+      "icon": "📏"
+    },
+    {
+      "char": "典故",
+      "meaning": "allusion",
+      "icon": "📜"
+    },
+    {
+      "char": "隱喻",
+      "meaning": "metaphor",
+      "icon": "💭"
+    },
+    {
+      "char": "諷刺",
+      "meaning": "satire",
+      "icon": "🎭"
+    },
+    {
+      "char": "幽默",
+      "meaning": "humour",
+      "icon": "😄"
+    },
+    {
+      "char": "韻味",
+      "meaning": "lingering charm",
+      "icon": "🍵"
+    },
+    {
+      "char": "情懷",
+      "meaning": "sentiment",
+      "icon": "💗"
+    },
+    {
+      "char": "氣勢",
+      "meaning": "momentum",
+      "icon": "🌊"
+    },
+    {
+      "char": "筆觸",
+      "meaning": "brushstroke",
+      "icon": "🖌️"
+    },
+    {
+      "char": "胸懷",
+      "meaning": "broad mind",
+      "icon": "🫀"
+    },
+    {
+      "char": "氣魄",
+      "meaning": "boldness",
+      "icon": "🔥"
+    },
+    {
+      "char": "膽識",
+      "meaning": "courage and insight",
+      "icon": "🦁"
+    },
+    {
+      "char": "魄力",
+      "meaning": "drive",
+      "icon": "💥"
+    },
+    {
+      "char": "志氣",
+      "meaning": "aspiration",
+      "icon": "⛰️"
+    },
+    {
+      "char": "鬥志",
+      "meaning": "fighting spirit",
+      "icon": "🥊"
+    },
+    {
+      "char": "恆心",
+      "meaning": "perseverance",
+      "icon": "⏳"
+    },
+    {
+      "char": "定力",
+      "meaning": "composure",
+      "icon": "🧘"
+    },
+    {
+      "char": "修為",
+      "meaning": "attainment",
+      "icon": "☯️"
+    },
+    {
+      "char": "心境",
+      "meaning": "state of mind",
+      "icon": "🌅"
+    },
+    {
+      "char": "情義",
+      "meaning": "loyalty and love",
+      "icon": "💞"
+    },
+    {
+      "char": "恩情",
+      "meaning": "kindness",
+      "icon": "🙏"
+    },
+    {
+      "char": "情誼",
+      "meaning": "bond",
+      "icon": "🤝"
+    },
+    {
+      "char": "眷戀",
+      "meaning": "attachment",
+      "icon": "💐"
+    },
+    {
+      "char": "牽掛",
+      "meaning": "concern",
+      "icon": "💭"
+    },
+    {
+      "char": "惆悵",
+      "meaning": "melancholy",
+      "icon": "🍂"
+    },
+    {
+      "char": "感慨",
+      "meaning": "lament",
+      "icon": "😔"
+    },
+    {
+      "char": "欣慰",
+      "meaning": "gratified",
+      "icon": "😌"
+    },
+    {
+      "char": "風光",
+      "meaning": "scenery",
+      "icon": "🏞️"
+    },
+    {
+      "char": "景色",
+      "meaning": "landscape",
+      "icon": "🌄"
+    },
+    {
+      "char": "景致",
+      "meaning": "view",
+      "icon": "🌅"
+    },
+    {
+      "char": "山水",
+      "meaning": "landscape painting",
+      "icon": "🎑"
+    },
+    {
+      "char": "田園",
+      "meaning": "pastoral",
+      "icon": "🌾"
+    },
+    {
+      "char": "晨曦",
+      "meaning": "morning glow",
+      "icon": "🌄"
+    },
+    {
+      "char": "暮色",
+      "meaning": "twilight",
+      "icon": "🌆"
+    },
+    {
+      "char": "星辰",
+      "meaning": "the stars",
+      "icon": "🌟"
+    },
+    {
+      "char": "皎潔",
+      "meaning": "bright and clear",
+      "icon": "🌕"
+    },
+    {
+      "char": "蔚藍",
+      "meaning": "azure",
+      "icon": "🔵"
+    },
+    {
+      "char": "蒼翠",
+      "meaning": "verdant",
+      "icon": "🌲"
+    },
+    {
+      "char": "碧綠",
+      "meaning": "emerald green",
+      "icon": "💚"
+    },
+    {
+      "char": "綺麗",
+      "meaning": "gorgeous",
+      "icon": "🌸"
+    },
+    {
+      "char": "秀麗",
+      "meaning": "elegant",
+      "icon": "🌺"
+    },
+    {
+      "char": "壯觀",
+      "meaning": "spectacular",
+      "icon": "🏔️"
+    },
+    {
+      "char": "遼遠",
+      "meaning": "far-reaching",
+      "icon": "🌌"
+    },
+    {
+      "char": "幽靜",
+      "meaning": "secluded",
+      "icon": "🍃"
+    },
+    {
+      "char": "恬靜",
+      "meaning": "tranquil",
+      "icon": "😌"
+    },
+    {
+      "char": "高尚",
+      "meaning": "noble",
+      "icon": "👑"
+    },
+    {
+      "char": "崇高",
+      "meaning": "lofty",
+      "icon": "🗻"
+    },
+    {
+      "char": "偉大",
+      "meaning": "great",
+      "icon": "🌟"
+    },
+    {
+      "char": "光榮",
+      "meaning": "glorious",
+      "icon": "🏅"
+    },
+    {
+      "char": "神聖",
+      "meaning": "sacred",
+      "icon": "⛪"
+    },
+    {
+      "char": "忠貞",
+      "meaning": "steadfast",
+      "icon": "🛡️"
+    },
+    {
+      "char": "堅毅",
+      "meaning": "fortitude",
+      "icon": "💪"
+    },
+    {
+      "char": "果斷",
+      "meaning": "decisive",
+      "icon": "⚡"
+    },
+    {
+      "char": "睿智",
+      "meaning": "sagacious",
+      "icon": "🦉"
+    },
+    {
+      "char": "淵博",
+      "meaning": "erudite",
+      "icon": "📚"
+    },
+    {
+      "char": "謙遜",
+      "meaning": "modest",
+      "icon": "🙇"
+    },
+    {
+      "char": "穩重",
+      "meaning": "steady",
+      "icon": "⚖️"
+    },
+    {
+      "char": "沉着",
+      "meaning": "composed",
+      "icon": "😌"
+    },
+    {
+      "char": "豁達",
+      "meaning": "open-minded",
+      "icon": "🌊"
+    },
+    {
+      "char": "灑脫",
+      "meaning": "carefree",
+      "icon": "🕊️"
+    },
+    {
+      "char": "正氣",
+      "meaning": "moral integrity",
+      "icon": "⚔️"
+    },
+    {
+      "char": "風範",
+      "meaning": "demeanour",
+      "icon": "🎩"
+    },
+    {
+      "char": "品格",
+      "meaning": "moral character",
+      "icon": "💠"
+    }
   ]
 }
